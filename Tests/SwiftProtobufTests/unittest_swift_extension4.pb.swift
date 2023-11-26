@@ -256,9 +256,9 @@ extension Ext4MyMessage.C: SwiftProtobuf.Message, SwiftProtobuf._MessageImplemen
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._c {
-      try visitor.visitSingularInt64Field(value: v, fieldNumber: 1410)
-    } }()
+    try {
+      try visitor.visitSingularInt64Field(optionalValue: self._c, fieldNumber: 1410)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -292,9 +292,9 @@ extension Ext4C: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._c {
-      try visitor.visitSingularInt64Field(value: v, fieldNumber: 1420)
-    } }()
+    try {
+      try visitor.visitSingularInt64Field(optionalValue: self._c, fieldNumber: 1420)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 

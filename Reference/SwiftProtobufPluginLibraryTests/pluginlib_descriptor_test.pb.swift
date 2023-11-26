@@ -850,12 +850,12 @@ extension SDTTopLevelMessage: SwiftProtobuf.Message, SwiftProtobuf._MessageImple
       // allocates stack space for every if/case branch local when no optimizations
       // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
       // https://github.com/apple/swift-protobuf/issues/1182
-      try { if let v = _storage._field1 {
-        try visitor.visitSingularStringField(value: v, fieldNumber: 1)
-      } }()
-      try { if let v = _storage._field2 {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 2)
-      } }()
+      try {
+        try visitor.visitSingularStringField(optionalValue: _storage._field1, fieldNumber: 1)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._field2, fieldNumber: 2)
+      }()
       switch _storage._o {
       case .field3?: try {
         guard case .field3(let v)? = _storage._o else { preconditionFailure() }
@@ -958,15 +958,15 @@ extension SDTTopLevelMessage.SubMessage: SwiftProtobuf.Message, SwiftProtobuf._M
       // allocates stack space for every if/case branch local when no optimizations
       // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
       // https://github.com/apple/swift-protobuf/issues/1182
-      try { if let v = _storage._field1 {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-      } }()
-      try { if let v = _storage._field2 {
-        try visitor.visitSingularStringField(value: v, fieldNumber: 2)
-      } }()
-      try { if let v = _storage._field3 {
-        try visitor.visitSingularMessageField(value: v, fieldNumber: 3)
-      } }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._field1, fieldNumber: 1)
+      }()
+      try {
+        try visitor.visitSingularStringField(optionalValue: _storage._field2, fieldNumber: 2)
+      }()
+      try {
+        try visitor.visitSingularMessageField(optionalValue: _storage._field3, fieldNumber: 3)
+      }()
     }
     try unknownFields.traverse(visitor: &visitor)
   }
@@ -1038,12 +1038,12 @@ extension SDTTopLevelMessage2: SwiftProtobuf.Message, SwiftProtobuf._MessageImpl
       // allocates stack space for every if/case branch local when no optimizations
       // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
       // https://github.com/apple/swift-protobuf/issues/1182
-      try { if let v = _storage._left {
-        try visitor.visitSingularMessageField(value: v, fieldNumber: 1)
-      } }()
-      try { if let v = _storage._right {
-        try visitor.visitSingularMessageField(value: v, fieldNumber: 2)
-      } }()
+      try {
+        try visitor.visitSingularMessageField(optionalValue: _storage._left, fieldNumber: 1)
+      }()
+      try {
+        try visitor.visitSingularMessageField(optionalValue: _storage._right, fieldNumber: 2)
+      }()
     }
     try unknownFields.traverse(visitor: &visitor)
   }
@@ -1094,12 +1094,12 @@ extension SDTExternalRefs: SwiftProtobuf.Message, SwiftProtobuf._MessageImplemen
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._desc {
-      try visitor.visitSingularMessageField(value: v, fieldNumber: 1)
-    } }()
-    try { if let v = self._ver {
-      try visitor.visitSingularMessageField(value: v, fieldNumber: 2)
-    } }()
+    try {
+      try visitor.visitSingularMessageField(optionalValue: self._desc, fieldNumber: 1)
+    }()
+    try {
+      try visitor.visitSingularMessageField(optionalValue: self._ver, fieldNumber: 2)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -1224,42 +1224,34 @@ extension SDTProto2MessageForPresence: SwiftProtobuf.Message, SwiftProtobuf._Mes
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._reqStrField {
-      try visitor.visitSingularStringField(value: v, fieldNumber: 1)
-    } }()
-    try { if let v = self._reqInt32Field {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 2)
-    } }()
-    try { if let v = self._reqEnumField {
-      try visitor.visitSingularEnumField(value: v, fieldNumber: 3)
-    } }()
-    try { if let v = self._reqMessageField {
-      try visitor.visitSingularMessageField(value: v, fieldNumber: 4)
-    } }()
-    try { if let v = self._optStrField {
-      try visitor.visitSingularStringField(value: v, fieldNumber: 11)
-    } }()
-    try { if let v = self._optInt32Field {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 12)
-    } }()
-    try { if let v = self._optEnumField {
-      try visitor.visitSingularEnumField(value: v, fieldNumber: 13)
-    } }()
-    try { if let v = self._optMessageField {
-      try visitor.visitSingularMessageField(value: v, fieldNumber: 14)
-    } }()
-    if !self.repeatStrField.isEmpty {
-      try visitor.visitRepeatedStringField(value: self.repeatStrField, fieldNumber: 21)
-    }
-    if !self.repeatInt32Field.isEmpty {
-      try visitor.visitRepeatedInt32Field(value: self.repeatInt32Field, fieldNumber: 22)
-    }
-    if !self.repeatEnumField.isEmpty {
-      try visitor.visitRepeatedEnumField(value: self.repeatEnumField, fieldNumber: 23)
-    }
-    if !self.repeatMessageField.isEmpty {
-      try visitor.visitRepeatedMessageField(value: self.repeatMessageField, fieldNumber: 24)
-    }
+    try {
+      try visitor.visitSingularStringField(optionalValue: self._reqStrField, fieldNumber: 1)
+    }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._reqInt32Field, fieldNumber: 2)
+    }()
+    try {
+      try visitor.visitSingularEnumField(optionalValue: self._reqEnumField, fieldNumber: 3)
+    }()
+    try {
+      try visitor.visitSingularMessageField(optionalValue: self._reqMessageField, fieldNumber: 4)
+    }()
+    try {
+      try visitor.visitSingularStringField(optionalValue: self._optStrField, fieldNumber: 11)
+    }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._optInt32Field, fieldNumber: 12)
+    }()
+    try {
+      try visitor.visitSingularEnumField(optionalValue: self._optEnumField, fieldNumber: 13)
+    }()
+    try {
+      try visitor.visitSingularMessageField(optionalValue: self._optMessageField, fieldNumber: 14)
+    }()
+    try visitor.visitRepeatedStringField(maybeEmptyValue: self.repeatStrField, fieldNumber: 21)
+    try visitor.visitRepeatedInt32Field(maybeEmptyValue: self.repeatInt32Field, fieldNumber: 22)
+    try visitor.visitRepeatedEnumField(maybeEmptyValue: self.repeatEnumField, fieldNumber: 23)
+    try visitor.visitRepeatedMessageField(maybeEmptyValue: self.repeatMessageField, fieldNumber: 24)
     switch self.o {
     case .oneofStrField?: try {
       guard case .oneofStrField(let v)? = self.o else { preconditionFailure() }
@@ -1372,20 +1364,20 @@ extension SDTMsgExtensionRangeOrderingWithFields: SwiftProtobuf.Message, SwiftPr
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
     try visitor.visitExtensionFields(fields: _protobuf_extensionFieldValues, start: 1, end: 5)
-    try { if let v = self._field6 {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 6)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._field6, fieldNumber: 6)
+    }()
     try visitor.visitExtensionFields(fields: _protobuf_extensionFieldValues, start: 7, end: 121)
-    try { if let v = self._field124 {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 124)
-    } }()
-    try { if let v = self._field125 {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 125)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._field124, fieldNumber: 124)
+    }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._field125, fieldNumber: 125)
+    }()
     try visitor.visitExtensionFields(fields: _protobuf_extensionFieldValues, start: 126, end: 131)
-    try { if let v = self._field200 {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 200)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._field200, fieldNumber: 200)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -1440,27 +1432,27 @@ extension SDTMsgExtensionRangeOrderingNoMerging: SwiftProtobuf.Message, SwiftPro
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._field1 {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-    } }()
-    try { if let v = self._field2 {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 2)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._field1, fieldNumber: 1)
+    }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._field2, fieldNumber: 2)
+    }()
     try visitor.visitExtensionFields(fields: _protobuf_extensionFieldValues, start: 3, end: 6)
-    try { if let v = self._field6 {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 6)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._field6, fieldNumber: 6)
+    }()
     try visitor.visitExtensionFields(fields: _protobuf_extensionFieldValues, start: 7, end: 13)
-    try { if let v = self._field13 {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 13)
-    } }()
-    try { if let v = self._field15 {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 15)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._field13, fieldNumber: 13)
+    }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._field15, fieldNumber: 15)
+    }()
     try visitor.visitExtensionFields(fields: _protobuf_extensionFieldValues, start: 16, end: 21)
-    try { if let v = self._field21 {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 21)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._field21, fieldNumber: 21)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 

@@ -543,9 +543,9 @@ extension Swift_Protobuf_TestFieldOrderings: SwiftProtobuf.Message, SwiftProtobu
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._myInt {
-      try visitor.visitSingularInt64Field(value: v, fieldNumber: 1)
-    } }()
+    try {
+      try visitor.visitSingularInt64Field(optionalValue: self._myInt, fieldNumber: 1)
+    }()
     try visitor.visitExtensionFields(fields: _protobuf_extensionFieldValues, start: 2, end: 9)
     switch self.options {
     case .oneofBool?: try {
@@ -558,22 +558,22 @@ extension Swift_Protobuf_TestFieldOrderings: SwiftProtobuf.Message, SwiftProtobu
     }()
     default: break
     }
-    try { if let v = self._myString {
-      try visitor.visitSingularStringField(value: v, fieldNumber: 11)
-    } }()
+    try {
+      try visitor.visitSingularStringField(optionalValue: self._myString, fieldNumber: 11)
+    }()
     try visitor.visitExtensionFields(fields: _protobuf_extensionFieldValues, start: 12, end: 56)
     try { if case .oneofInt64(let v)? = self.options {
       try visitor.visitSingularInt64Field(value: v, fieldNumber: 60)
     } }()
-    try { if let v = self._myFloat {
-      try visitor.visitSingularFloatField(value: v, fieldNumber: 101)
-    } }()
+    try {
+      try visitor.visitSingularFloatField(optionalValue: self._myFloat, fieldNumber: 101)
+    }()
     try { if case .oneofString(let v)? = self.options {
       try visitor.visitSingularStringField(value: v, fieldNumber: 150)
     } }()
-    try { if let v = self._optionalNestedMessage {
-      try visitor.visitSingularMessageField(value: v, fieldNumber: 200)
-    } }()
+    try {
+      try visitor.visitSingularMessageField(optionalValue: self._optionalNestedMessage, fieldNumber: 200)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -614,12 +614,12 @@ extension Swift_Protobuf_TestFieldOrderings.NestedMessage: SwiftProtobuf.Message
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._bb {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-    } }()
-    try { if let v = self._oo {
-      try visitor.visitSingularInt64Field(value: v, fieldNumber: 2)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._bb, fieldNumber: 1)
+    }()
+    try {
+      try visitor.visitSingularInt64Field(optionalValue: self._oo, fieldNumber: 2)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -747,9 +747,9 @@ extension Swift_Protobuf_OneofTraversalGeneration: SwiftProtobuf.Message, SwiftP
     try { if case .a2(let v)? = self.oConflictField {
       try visitor.visitSingularInt32Field(value: v, fieldNumber: 101)
     } }()
-    try { if let v = self._m {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 113)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._m, fieldNumber: 113)
+    }()
     try { if case .b2(let v)? = self.oConflictField {
       try visitor.visitSingularInt32Field(value: v, fieldNumber: 126)
     } }()

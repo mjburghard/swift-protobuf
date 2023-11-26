@@ -93,12 +93,8 @@ extension Proto3Unittest_TestProto3BytesMap: SwiftProtobuf.Message, SwiftProtobu
   }
 
   func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
-    if !self.mapBytes.isEmpty {
-      try visitor.visitMapField(fieldType: SwiftProtobuf._ProtobufMap<SwiftProtobuf.ProtobufInt32,SwiftProtobuf.ProtobufBytes>.self, value: self.mapBytes, fieldNumber: 1)
-    }
-    if !self.mapString.isEmpty {
-      try visitor.visitMapField(fieldType: SwiftProtobuf._ProtobufMap<SwiftProtobuf.ProtobufInt32,SwiftProtobuf.ProtobufString>.self, value: self.mapString, fieldNumber: 2)
-    }
+    try visitor.visitMapField(fieldType: SwiftProtobuf._ProtobufMap<SwiftProtobuf.ProtobufInt32,SwiftProtobuf.ProtobufBytes>.self, maybeEmptyValue: self.mapBytes, fieldNumber: 1)
+    try visitor.visitMapField(fieldType: SwiftProtobuf._ProtobufMap<SwiftProtobuf.ProtobufInt32,SwiftProtobuf.ProtobufString>.self, maybeEmptyValue: self.mapString, fieldNumber: 2)
     try unknownFields.traverse(visitor: &visitor)
   }
 

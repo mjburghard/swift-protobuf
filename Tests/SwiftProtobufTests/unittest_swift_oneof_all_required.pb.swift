@@ -262,9 +262,9 @@ extension ProtobufUnittest_OneOfOptionMessage1: SwiftProtobuf.Message, SwiftProt
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._requiredField {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._requiredField, fieldNumber: 1)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -303,9 +303,9 @@ extension ProtobufUnittest_OneOfOptionMessage2: SwiftProtobuf.Message, SwiftProt
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._requiredField {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._requiredField, fieldNumber: 1)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -452,12 +452,12 @@ extension ProtobufUnittest_OneOfContainer.Option3: SwiftProtobuf.Message, SwiftP
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._a {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 4)
-    } }()
-    try { if let v = self._b {
-      try visitor.visitSingularStringField(value: v, fieldNumber: 5)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._a, fieldNumber: 4)
+    }()
+    try {
+      try visitor.visitSingularStringField(optionalValue: self._b, fieldNumber: 5)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 

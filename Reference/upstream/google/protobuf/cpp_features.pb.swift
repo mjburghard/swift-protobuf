@@ -218,12 +218,12 @@ extension Pb_CppFeatures: SwiftProtobuf.Message, SwiftProtobuf._MessageImplement
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._legacyClosedEnum {
-      try visitor.visitSingularBoolField(value: v, fieldNumber: 1)
-    } }()
-    try { if let v = self._utf8Validation {
-      try visitor.visitSingularEnumField(value: v, fieldNumber: 2)
-    } }()
+    try {
+      try visitor.visitSingularBoolField(optionalValue: self._legacyClosedEnum, fieldNumber: 1)
+    }()
+    try {
+      try visitor.visitSingularEnumField(optionalValue: self._utf8Validation, fieldNumber: 2)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 

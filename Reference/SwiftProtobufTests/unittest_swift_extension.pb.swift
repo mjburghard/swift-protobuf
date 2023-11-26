@@ -488,9 +488,9 @@ extension ProtobufUnittest_Extend_Foo.Bar.Baz: SwiftProtobuf.Message, SwiftProto
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._a {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._a, fieldNumber: 1)
+    }()
     try visitor.visitExtensionFields(fields: _protobuf_extensionFieldValues, start: 100, end: 1001)
     try unknownFields.traverse(visitor: &visitor)
   }
@@ -526,9 +526,9 @@ extension ProtobufUnittest_Extend_C: SwiftProtobuf.Message, SwiftProtobuf._Messa
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._c {
-      try visitor.visitSingularInt64Field(value: v, fieldNumber: 999)
-    } }()
+    try {
+      try visitor.visitSingularInt64Field(optionalValue: self._c, fieldNumber: 999)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -627,9 +627,9 @@ extension ProtobufUnittest_Extend_MsgNoStorage: SwiftProtobuf.Message, SwiftProt
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._x {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._x, fieldNumber: 1)
+    }()
     try visitor.visitExtensionFields(fields: _protobuf_extensionFieldValues, start: 100, end: 201)
     try unknownFields.traverse(visitor: &visitor)
   }
@@ -702,12 +702,12 @@ extension ProtobufUnittest_Extend_MsgUsesStorage: SwiftProtobuf.Message, SwiftPr
       // allocates stack space for every if/case branch local when no optimizations
       // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
       // https://github.com/apple/swift-protobuf/issues/1182
-      try { if let v = _storage._x {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-      } }()
-      try { if let v = _storage._y {
-        try visitor.visitSingularMessageField(value: v, fieldNumber: 2)
-      } }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._x, fieldNumber: 1)
+      }()
+      try {
+        try visitor.visitSingularMessageField(optionalValue: _storage._y, fieldNumber: 2)
+      }()
       try visitor.visitExtensionFields(fields: _protobuf_extensionFieldValues, start: 100, end: 201)
     }
     try unknownFields.traverse(visitor: &visitor)

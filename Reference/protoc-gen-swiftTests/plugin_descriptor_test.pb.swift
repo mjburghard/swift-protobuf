@@ -257,20 +257,20 @@ extension SwiftDescriptorTest_MsgExtensionRangeOrderingWithFields: SwiftProtobuf
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
     try visitor.visitExtensionFields(fields: _protobuf_extensionFieldValues, start: 1, end: 5)
-    try { if let v = self._field6 {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 6)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._field6, fieldNumber: 6)
+    }()
     try visitor.visitExtensionFields(fields: _protobuf_extensionFieldValues, start: 7, end: 121)
-    try { if let v = self._field124 {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 124)
-    } }()
-    try { if let v = self._field125 {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 125)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._field124, fieldNumber: 124)
+    }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._field125, fieldNumber: 125)
+    }()
     try visitor.visitExtensionFields(fields: _protobuf_extensionFieldValues, start: 126, end: 131)
-    try { if let v = self._field200 {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 200)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._field200, fieldNumber: 200)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -325,27 +325,27 @@ extension SwiftDescriptorTest_MsgExtensionRangeOrderingNoMerging: SwiftProtobuf.
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._field1 {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-    } }()
-    try { if let v = self._field2 {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 2)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._field1, fieldNumber: 1)
+    }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._field2, fieldNumber: 2)
+    }()
     try visitor.visitExtensionFields(fields: _protobuf_extensionFieldValues, start: 3, end: 6)
-    try { if let v = self._field6 {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 6)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._field6, fieldNumber: 6)
+    }()
     try visitor.visitExtensionFields(fields: _protobuf_extensionFieldValues, start: 7, end: 13)
-    try { if let v = self._field13 {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 13)
-    } }()
-    try { if let v = self._field15 {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 15)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._field13, fieldNumber: 13)
+    }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._field15, fieldNumber: 15)
+    }()
     try visitor.visitExtensionFields(fields: _protobuf_extensionFieldValues, start: 16, end: 21)
-    try { if let v = self._field21 {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 21)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._field21, fieldNumber: 21)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 

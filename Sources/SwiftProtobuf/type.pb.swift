@@ -536,18 +536,12 @@ extension Google_Protobuf_Type: SwiftProtobuf.Message, SwiftProtobuf._MessageImp
     if !self.name.isEmpty {
       try visitor.visitSingularStringField(value: self.name, fieldNumber: 1)
     }
-    if !self.fields.isEmpty {
-      try visitor.visitRepeatedMessageField(value: self.fields, fieldNumber: 2)
-    }
-    if !self.oneofs.isEmpty {
-      try visitor.visitRepeatedStringField(value: self.oneofs, fieldNumber: 3)
-    }
-    if !self.options.isEmpty {
-      try visitor.visitRepeatedMessageField(value: self.options, fieldNumber: 4)
-    }
-    try { if let v = self._sourceContext {
-      try visitor.visitSingularMessageField(value: v, fieldNumber: 5)
-    } }()
+    try visitor.visitRepeatedMessageField(maybeEmptyValue: self.fields, fieldNumber: 2)
+    try visitor.visitRepeatedStringField(maybeEmptyValue: self.oneofs, fieldNumber: 3)
+    try visitor.visitRepeatedMessageField(maybeEmptyValue: self.options, fieldNumber: 4)
+    try {
+      try visitor.visitSingularMessageField(optionalValue: self._sourceContext, fieldNumber: 5)
+    }()
     if self.syntax != .proto2 {
       try visitor.visitSingularEnumField(value: self.syntax, fieldNumber: 6)
     }
@@ -628,9 +622,7 @@ extension Google_Protobuf_Field: SwiftProtobuf.Message, SwiftProtobuf._MessageIm
     if self.packed != false {
       try visitor.visitSingularBoolField(value: self.packed, fieldNumber: 8)
     }
-    if !self.options.isEmpty {
-      try visitor.visitRepeatedMessageField(value: self.options, fieldNumber: 9)
-    }
+    try visitor.visitRepeatedMessageField(maybeEmptyValue: self.options, fieldNumber: 9)
     if !self.jsonName.isEmpty {
       try visitor.visitSingularStringField(value: self.jsonName, fieldNumber: 10)
     }
@@ -725,15 +717,11 @@ extension Google_Protobuf_Enum: SwiftProtobuf.Message, SwiftProtobuf._MessageImp
     if !self.name.isEmpty {
       try visitor.visitSingularStringField(value: self.name, fieldNumber: 1)
     }
-    if !self.enumvalue.isEmpty {
-      try visitor.visitRepeatedMessageField(value: self.enumvalue, fieldNumber: 2)
-    }
-    if !self.options.isEmpty {
-      try visitor.visitRepeatedMessageField(value: self.options, fieldNumber: 3)
-    }
-    try { if let v = self._sourceContext {
-      try visitor.visitSingularMessageField(value: v, fieldNumber: 4)
-    } }()
+    try visitor.visitRepeatedMessageField(maybeEmptyValue: self.enumvalue, fieldNumber: 2)
+    try visitor.visitRepeatedMessageField(maybeEmptyValue: self.options, fieldNumber: 3)
+    try {
+      try visitor.visitSingularMessageField(optionalValue: self._sourceContext, fieldNumber: 4)
+    }()
     if self.syntax != .proto2 {
       try visitor.visitSingularEnumField(value: self.syntax, fieldNumber: 5)
     }
@@ -784,9 +772,7 @@ extension Google_Protobuf_EnumValue: SwiftProtobuf.Message, SwiftProtobuf._Messa
     if self.number != 0 {
       try visitor.visitSingularInt32Field(value: self.number, fieldNumber: 2)
     }
-    if !self.options.isEmpty {
-      try visitor.visitRepeatedMessageField(value: self.options, fieldNumber: 3)
-    }
+    try visitor.visitRepeatedMessageField(maybeEmptyValue: self.options, fieldNumber: 3)
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -827,9 +813,9 @@ extension Google_Protobuf_Option: SwiftProtobuf.Message, SwiftProtobuf._MessageI
     if !self.name.isEmpty {
       try visitor.visitSingularStringField(value: self.name, fieldNumber: 1)
     }
-    try { if let v = self._value {
-      try visitor.visitSingularMessageField(value: v, fieldNumber: 2)
-    } }()
+    try {
+      try visitor.visitSingularMessageField(optionalValue: self._value, fieldNumber: 2)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 

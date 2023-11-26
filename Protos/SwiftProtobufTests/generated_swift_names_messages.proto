@@ -586,6 +586,7 @@ message GeneratedSwiftReservedMessages {
   message mapVisitor { int32 mapVisitor = 1; }
   message maximumEdition { int32 maximumEdition = 1; }
   message maximumEditionEnum { int32 maximumEditionEnum = 1; }
+  message maybeEmptyValue { int32 maybeEmptyValue = 1; }
   message mdayStart { int32 mdayStart = 1; }
   message merge { int32 merge = 1; }
   message message { int32 message = 1; }
@@ -650,6 +651,7 @@ message GeneratedSwiftReservedMessages {
   message OptionalExtensionField { int32 OptionalExtensionField = 1; }
   message OptionalGroupExtensionField { int32 OptionalGroupExtensionField = 1; }
   message OptionalMessageExtensionField { int32 OptionalMessageExtensionField = 1; }
+  message optionalValue { int32 optionalValue = 1; }
   message OptionRetention { int32 OptionRetention = 1; }
   message options { int32 options = 1; }
   message OptionTargetType { int32 OptionTargetType = 1; }

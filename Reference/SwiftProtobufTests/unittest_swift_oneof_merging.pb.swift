@@ -324,15 +324,15 @@ extension SwiftUnittest_TestMessage.NestedMessage: SwiftProtobuf.Message, SwiftP
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._a {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-    } }()
-    try { if let v = self._b {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 2)
-    } }()
-    try { if let v = self._c {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 3)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._a, fieldNumber: 1)
+    }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._b, fieldNumber: 2)
+    }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._c, fieldNumber: 3)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -370,12 +370,10 @@ extension SwiftUnittest_TestParsingMerge: SwiftProtobuf.Message, SwiftProtobuf._
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._optionalMessage {
-      try visitor.visitSingularMessageField(value: v, fieldNumber: 1)
-    } }()
-    if !self.repeatedMessage.isEmpty {
-      try visitor.visitRepeatedMessageField(value: self.repeatedMessage, fieldNumber: 2)
-    }
+    try {
+      try visitor.visitSingularMessageField(optionalValue: self._optionalMessage, fieldNumber: 1)
+    }()
+    try visitor.visitRepeatedMessageField(maybeEmptyValue: self.repeatedMessage, fieldNumber: 2)
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -408,12 +406,8 @@ extension SwiftUnittest_TestParsingMerge.RepeatedFieldsGenerator: SwiftProtobuf.
   }
 
   func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
-    if !self.field1.isEmpty {
-      try visitor.visitRepeatedMessageField(value: self.field1, fieldNumber: 1)
-    }
-    if !self.field2.isEmpty {
-      try visitor.visitRepeatedMessageField(value: self.field2, fieldNumber: 2)
-    }
+    try visitor.visitRepeatedMessageField(maybeEmptyValue: self.field1, fieldNumber: 1)
+    try visitor.visitRepeatedMessageField(maybeEmptyValue: self.field2, fieldNumber: 2)
     try unknownFields.traverse(visitor: &visitor)
   }
 

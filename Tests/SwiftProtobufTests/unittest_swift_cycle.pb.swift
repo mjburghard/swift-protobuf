@@ -230,15 +230,15 @@ extension ProtobufUnittest_CycleFoo: SwiftProtobuf.Message, SwiftProtobuf._Messa
       // allocates stack space for every if/case branch local when no optimizations
       // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
       // https://github.com/apple/swift-protobuf/issues/1182
-      try { if let v = _storage._aFoo {
-        try visitor.visitSingularMessageField(value: v, fieldNumber: 1)
-      } }()
-      try { if let v = _storage._aBar {
-        try visitor.visitSingularMessageField(value: v, fieldNumber: 2)
-      } }()
-      try { if let v = _storage._aBaz {
-        try visitor.visitSingularMessageField(value: v, fieldNumber: 3)
-      } }()
+      try {
+        try visitor.visitSingularMessageField(optionalValue: _storage._aFoo, fieldNumber: 1)
+      }()
+      try {
+        try visitor.visitSingularMessageField(optionalValue: _storage._aBar, fieldNumber: 2)
+      }()
+      try {
+        try visitor.visitSingularMessageField(optionalValue: _storage._aBaz, fieldNumber: 3)
+      }()
     }
     try unknownFields.traverse(visitor: &visitor)
   }
@@ -314,15 +314,15 @@ extension ProtobufUnittest_CycleBar: SwiftProtobuf.Message, SwiftProtobuf._Messa
       // allocates stack space for every if/case branch local when no optimizations
       // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
       // https://github.com/apple/swift-protobuf/issues/1182
-      try { if let v = _storage._aBar {
-        try visitor.visitSingularMessageField(value: v, fieldNumber: 1)
-      } }()
-      try { if let v = _storage._aBaz {
-        try visitor.visitSingularMessageField(value: v, fieldNumber: 2)
-      } }()
-      try { if let v = _storage._aFoo {
-        try visitor.visitSingularMessageField(value: v, fieldNumber: 3)
-      } }()
+      try {
+        try visitor.visitSingularMessageField(optionalValue: _storage._aBar, fieldNumber: 1)
+      }()
+      try {
+        try visitor.visitSingularMessageField(optionalValue: _storage._aBaz, fieldNumber: 2)
+      }()
+      try {
+        try visitor.visitSingularMessageField(optionalValue: _storage._aFoo, fieldNumber: 3)
+      }()
     }
     try unknownFields.traverse(visitor: &visitor)
   }
@@ -398,15 +398,15 @@ extension ProtobufUnittest_CycleBaz: SwiftProtobuf.Message, SwiftProtobuf._Messa
       // allocates stack space for every if/case branch local when no optimizations
       // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
       // https://github.com/apple/swift-protobuf/issues/1182
-      try { if let v = _storage._aBaz {
-        try visitor.visitSingularMessageField(value: v, fieldNumber: 1)
-      } }()
-      try { if let v = _storage._aFoo {
-        try visitor.visitSingularMessageField(value: v, fieldNumber: 2)
-      } }()
-      try { if let v = _storage._aBar {
-        try visitor.visitSingularMessageField(value: v, fieldNumber: 3)
-      } }()
+      try {
+        try visitor.visitSingularMessageField(optionalValue: _storage._aBaz, fieldNumber: 1)
+      }()
+      try {
+        try visitor.visitSingularMessageField(optionalValue: _storage._aFoo, fieldNumber: 2)
+      }()
+      try {
+        try visitor.visitSingularMessageField(optionalValue: _storage._aBar, fieldNumber: 3)
+      }()
     }
     try unknownFields.traverse(visitor: &visitor)
   }

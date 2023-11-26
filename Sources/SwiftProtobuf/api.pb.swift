@@ -293,21 +293,15 @@ extension Google_Protobuf_Api: SwiftProtobuf.Message, SwiftProtobuf._MessageImpl
     if !self.name.isEmpty {
       try visitor.visitSingularStringField(value: self.name, fieldNumber: 1)
     }
-    if !self.methods.isEmpty {
-      try visitor.visitRepeatedMessageField(value: self.methods, fieldNumber: 2)
-    }
-    if !self.options.isEmpty {
-      try visitor.visitRepeatedMessageField(value: self.options, fieldNumber: 3)
-    }
+    try visitor.visitRepeatedMessageField(maybeEmptyValue: self.methods, fieldNumber: 2)
+    try visitor.visitRepeatedMessageField(maybeEmptyValue: self.options, fieldNumber: 3)
     if !self.version.isEmpty {
       try visitor.visitSingularStringField(value: self.version, fieldNumber: 4)
     }
-    try { if let v = self._sourceContext {
-      try visitor.visitSingularMessageField(value: v, fieldNumber: 5)
-    } }()
-    if !self.mixins.isEmpty {
-      try visitor.visitRepeatedMessageField(value: self.mixins, fieldNumber: 6)
-    }
+    try {
+      try visitor.visitSingularMessageField(optionalValue: self._sourceContext, fieldNumber: 5)
+    }()
+    try visitor.visitRepeatedMessageField(maybeEmptyValue: self.mixins, fieldNumber: 6)
     if self.syntax != .proto2 {
       try visitor.visitSingularEnumField(value: self.syntax, fieldNumber: 7)
     }
@@ -373,9 +367,7 @@ extension Google_Protobuf_Method: SwiftProtobuf.Message, SwiftProtobuf._MessageI
     if self.responseStreaming != false {
       try visitor.visitSingularBoolField(value: self.responseStreaming, fieldNumber: 5)
     }
-    if !self.options.isEmpty {
-      try visitor.visitRepeatedMessageField(value: self.options, fieldNumber: 6)
-    }
+    try visitor.visitRepeatedMessageField(maybeEmptyValue: self.options, fieldNumber: 6)
     if self.syntax != .proto2 {
       try visitor.visitSingularEnumField(value: self.syntax, fieldNumber: 7)
     }

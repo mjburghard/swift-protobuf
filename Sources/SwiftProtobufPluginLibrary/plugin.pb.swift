@@ -386,18 +386,18 @@ extension Google_Protobuf_Compiler_Version: SwiftProtobuf.Message, SwiftProtobuf
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._major {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-    } }()
-    try { if let v = self._minor {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 2)
-    } }()
-    try { if let v = self._patch {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 3)
-    } }()
-    try { if let v = self._suffix {
-      try visitor.visitSingularStringField(value: v, fieldNumber: 4)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._major, fieldNumber: 1)
+    }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._minor, fieldNumber: 2)
+    }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._patch, fieldNumber: 3)
+    }()
+    try {
+      try visitor.visitSingularStringField(optionalValue: self._suffix, fieldNumber: 4)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -448,21 +448,15 @@ extension Google_Protobuf_Compiler_CodeGeneratorRequest: SwiftProtobuf.Message, 
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    if !self.fileToGenerate.isEmpty {
-      try visitor.visitRepeatedStringField(value: self.fileToGenerate, fieldNumber: 1)
-    }
-    try { if let v = self._parameter {
-      try visitor.visitSingularStringField(value: v, fieldNumber: 2)
-    } }()
-    try { if let v = self._compilerVersion {
-      try visitor.visitSingularMessageField(value: v, fieldNumber: 3)
-    } }()
-    if !self.protoFile.isEmpty {
-      try visitor.visitRepeatedMessageField(value: self.protoFile, fieldNumber: 15)
-    }
-    if !self.sourceFileDescriptors.isEmpty {
-      try visitor.visitRepeatedMessageField(value: self.sourceFileDescriptors, fieldNumber: 17)
-    }
+    try visitor.visitRepeatedStringField(maybeEmptyValue: self.fileToGenerate, fieldNumber: 1)
+    try {
+      try visitor.visitSingularStringField(optionalValue: self._parameter, fieldNumber: 2)
+    }()
+    try {
+      try visitor.visitSingularMessageField(optionalValue: self._compilerVersion, fieldNumber: 3)
+    }()
+    try visitor.visitRepeatedMessageField(maybeEmptyValue: self.protoFile, fieldNumber: 15)
+    try visitor.visitRepeatedMessageField(maybeEmptyValue: self.sourceFileDescriptors, fieldNumber: 17)
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -504,15 +498,13 @@ extension Google_Protobuf_Compiler_CodeGeneratorResponse: SwiftProtobuf.Message,
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._error {
-      try visitor.visitSingularStringField(value: v, fieldNumber: 1)
-    } }()
-    try { if let v = self._supportedFeatures {
-      try visitor.visitSingularUInt64Field(value: v, fieldNumber: 2)
-    } }()
-    if !self.file.isEmpty {
-      try visitor.visitRepeatedMessageField(value: self.file, fieldNumber: 15)
-    }
+    try {
+      try visitor.visitSingularStringField(optionalValue: self._error, fieldNumber: 1)
+    }()
+    try {
+      try visitor.visitSingularUInt64Field(optionalValue: self._supportedFeatures, fieldNumber: 2)
+    }()
+    try visitor.visitRepeatedMessageField(maybeEmptyValue: self.file, fieldNumber: 15)
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -562,18 +554,18 @@ extension Google_Protobuf_Compiler_CodeGeneratorResponse.File: SwiftProtobuf.Mes
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._name {
-      try visitor.visitSingularStringField(value: v, fieldNumber: 1)
-    } }()
-    try { if let v = self._insertionPoint {
-      try visitor.visitSingularStringField(value: v, fieldNumber: 2)
-    } }()
-    try { if let v = self._content {
-      try visitor.visitSingularStringField(value: v, fieldNumber: 15)
-    } }()
-    try { if let v = self._generatedCodeInfo {
-      try visitor.visitSingularMessageField(value: v, fieldNumber: 16)
-    } }()
+    try {
+      try visitor.visitSingularStringField(optionalValue: self._name, fieldNumber: 1)
+    }()
+    try {
+      try visitor.visitSingularStringField(optionalValue: self._insertionPoint, fieldNumber: 2)
+    }()
+    try {
+      try visitor.visitSingularStringField(optionalValue: self._content, fieldNumber: 15)
+    }()
+    try {
+      try visitor.visitSingularMessageField(optionalValue: self._generatedCodeInfo, fieldNumber: 16)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 

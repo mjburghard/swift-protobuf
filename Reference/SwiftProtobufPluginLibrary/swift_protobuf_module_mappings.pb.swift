@@ -95,9 +95,7 @@ extension SwiftProtobuf_GenSwift_ModuleMappings: SwiftProtobuf.Message, SwiftPro
   }
 
   func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
-    if !self.mapping.isEmpty {
-      try visitor.visitRepeatedMessageField(value: self.mapping, fieldNumber: 1)
-    }
+    try visitor.visitRepeatedMessageField(maybeEmptyValue: self.mapping, fieldNumber: 1)
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -132,9 +130,7 @@ extension SwiftProtobuf_GenSwift_ModuleMappings.Entry: SwiftProtobuf.Message, Sw
     if !self.moduleName.isEmpty {
       try visitor.visitSingularStringField(value: self.moduleName, fieldNumber: 1)
     }
-    if !self.protoFilePath.isEmpty {
-      try visitor.visitRepeatedStringField(value: self.protoFilePath, fieldNumber: 2)
-    }
+    try visitor.visitRepeatedStringField(maybeEmptyValue: self.protoFilePath, fieldNumber: 2)
     try unknownFields.traverse(visitor: &visitor)
   }
 

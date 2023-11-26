@@ -256,9 +256,9 @@ extension ProtobufUnittest_Extend2_MyMessage.C: SwiftProtobuf.Message, SwiftProt
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._c {
-      try visitor.visitSingularInt64Field(value: v, fieldNumber: 1210)
-    } }()
+    try {
+      try visitor.visitSingularInt64Field(optionalValue: self._c, fieldNumber: 1210)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -292,9 +292,9 @@ extension ProtobufUnittest_Extend2_C: SwiftProtobuf.Message, SwiftProtobuf._Mess
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._c {
-      try visitor.visitSingularInt64Field(value: v, fieldNumber: 1220)
-    } }()
+    try {
+      try visitor.visitSingularInt64Field(optionalValue: self._c, fieldNumber: 1220)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 

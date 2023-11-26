@@ -152,9 +152,9 @@ extension Proto2WireformatUnittest_TestMessageSetWireFormatContainer: SwiftProto
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._messageSet {
-      try visitor.visitSingularMessageField(value: v, fieldNumber: 1)
-    } }()
+    try {
+      try visitor.visitSingularMessageField(optionalValue: self._messageSet, fieldNumber: 1)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 

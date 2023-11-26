@@ -586,6 +586,7 @@ message GeneratedSwiftReservedEnums {
   enum mapVisitor { NONE_mapVisitor = 0; }
   enum maximumEdition { NONE_maximumEdition = 0; }
   enum maximumEditionEnum { NONE_maximumEditionEnum = 0; }
+  enum maybeEmptyValue { NONE_maybeEmptyValue = 0; }
   enum mdayStart { NONE_mdayStart = 0; }
   enum merge { NONE_merge = 0; }
   enum message { NONE_message = 0; }
@@ -650,6 +651,7 @@ message GeneratedSwiftReservedEnums {
   enum OptionalExtensionField { NONE_OptionalExtensionField = 0; }
   enum OptionalGroupExtensionField { NONE_OptionalGroupExtensionField = 0; }
   enum OptionalMessageExtensionField { NONE_OptionalMessageExtensionField = 0; }
+  enum optionalValue { NONE_optionalValue = 0; }
   enum OptionRetention { NONE_OptionRetention = 0; }
   enum options { NONE_options = 0; }
   enum OptionTargetType { NONE_OptionTargetType = 0; }

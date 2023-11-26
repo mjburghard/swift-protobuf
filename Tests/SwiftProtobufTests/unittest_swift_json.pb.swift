@@ -69,9 +69,7 @@ extension ProtobufUnittest_SwiftJSONTest: SwiftProtobuf.Message, SwiftProtobuf._
   }
 
   func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
-    if !self.repeatedNullValue.isEmpty {
-      try visitor.visitPackedEnumField(value: self.repeatedNullValue, fieldNumber: 318)
-    }
+    try visitor.visitPackedEnumField(maybeEmptyValue: self.repeatedNullValue, fieldNumber: 318)
     try unknownFields.traverse(visitor: &visitor)
   }
 

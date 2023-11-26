@@ -7015,6 +7015,18 @@ struct ProtobufUnittestGenerated_GeneratedSwiftReservedMessages {
     init() {}
   }
 
+  struct maybeEmptyValue {
+    // SwiftProtobuf.Message conformance is added in an extension below. See the
+    // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
+    // methods supported on all messages.
+
+    var maybeEmptyValue: Int32 = 0
+
+    var unknownFields = SwiftProtobuf.UnknownStorage()
+
+    init() {}
+  }
+
   struct mdayStart {
     // SwiftProtobuf.Message conformance is added in an extension below. See the
     // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
@@ -7777,6 +7789,18 @@ struct ProtobufUnittestGenerated_GeneratedSwiftReservedMessages {
     // methods supported on all messages.
 
     var optionalMessageExtensionField: Int32 = 0
+
+    var unknownFields = SwiftProtobuf.UnknownStorage()
+
+    init() {}
+  }
+
+  struct optionalValue {
+    // SwiftProtobuf.Message conformance is added in an extension below. See the
+    // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
+    // methods supported on all messages.
+
+    var optionalValue: Int32 = 0
 
     var unknownFields = SwiftProtobuf.UnknownStorage()
 
@@ -12066,6 +12090,7 @@ extension ProtobufUnittestGenerated_GeneratedSwiftReservedMessages.MapValueType:
 extension ProtobufUnittestGenerated_GeneratedSwiftReservedMessages.mapVisitor: @unchecked Sendable {}
 extension ProtobufUnittestGenerated_GeneratedSwiftReservedMessages.maximumEdition: @unchecked Sendable {}
 extension ProtobufUnittestGenerated_GeneratedSwiftReservedMessages.maximumEditionEnum: @unchecked Sendable {}
+extension ProtobufUnittestGenerated_GeneratedSwiftReservedMessages.maybeEmptyValue: @unchecked Sendable {}
 extension ProtobufUnittestGenerated_GeneratedSwiftReservedMessages.mdayStart: @unchecked Sendable {}
 extension ProtobufUnittestGenerated_GeneratedSwiftReservedMessages.merge: @unchecked Sendable {}
 extension ProtobufUnittestGenerated_GeneratedSwiftReservedMessages.message: @unchecked Sendable {}
@@ -12130,6 +12155,7 @@ extension ProtobufUnittestGenerated_GeneratedSwiftReservedMessages.OptionalEnumE
 extension ProtobufUnittestGenerated_GeneratedSwiftReservedMessages.OptionalExtensionField: @unchecked Sendable {}
 extension ProtobufUnittestGenerated_GeneratedSwiftReservedMessages.OptionalGroupExtensionField: @unchecked Sendable {}
 extension ProtobufUnittestGenerated_GeneratedSwiftReservedMessages.OptionalMessageExtensionField: @unchecked Sendable {}
+extension ProtobufUnittestGenerated_GeneratedSwiftReservedMessages.optionalValue: @unchecked Sendable {}
 extension ProtobufUnittestGenerated_GeneratedSwiftReservedMessages.OptionRetention: @unchecked Sendable {}
 extension ProtobufUnittestGenerated_GeneratedSwiftReservedMessages.options: @unchecked Sendable {}
 extension ProtobufUnittestGenerated_GeneratedSwiftReservedMessages.OptionTargetType: @unchecked Sendable {}
@@ -31087,6 +31113,38 @@ extension ProtobufUnittestGenerated_GeneratedSwiftReservedMessages.maximumEditio
   }
 }
 
+extension ProtobufUnittestGenerated_GeneratedSwiftReservedMessages.maybeEmptyValue: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+  static let protoMessageName: String = ProtobufUnittestGenerated_GeneratedSwiftReservedMessages.protoMessageName + ".maybeEmptyValue"
+  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+    1: .same(proto: "maybeEmptyValue"),
+  ]
+
+  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+    while let fieldNumber = try decoder.nextFieldNumber() {
+      // The use of inline closures is to circumvent an issue where the compiler
+      // allocates stack space for every case branch when no optimizations are
+      // enabled. https://github.com/apple/swift-protobuf/issues/1034
+      switch fieldNumber {
+      case 1: try { try decoder.decodeSingularInt32Field(value: &self.maybeEmptyValue) }()
+      default: break
+      }
+    }
+  }
+
+  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+    if self.maybeEmptyValue != 0 {
+      try visitor.visitSingularInt32Field(value: self.maybeEmptyValue, fieldNumber: 1)
+    }
+    try unknownFields.traverse(visitor: &visitor)
+  }
+
+  static func ==(lhs: ProtobufUnittestGenerated_GeneratedSwiftReservedMessages.maybeEmptyValue, rhs: ProtobufUnittestGenerated_GeneratedSwiftReservedMessages.maybeEmptyValue) -> Bool {
+    if lhs.maybeEmptyValue != rhs.maybeEmptyValue {return false}
+    if lhs.unknownFields != rhs.unknownFields {return false}
+    return true
+  }
+}
+
 extension ProtobufUnittestGenerated_GeneratedSwiftReservedMessages.mdayStart: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
   static let protoMessageName: String = ProtobufUnittestGenerated_GeneratedSwiftReservedMessages.protoMessageName + ".mdayStart"
   static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
@@ -33130,6 +33188,38 @@ extension ProtobufUnittestGenerated_GeneratedSwiftReservedMessages.OptionalMessa
 
   static func ==(lhs: ProtobufUnittestGenerated_GeneratedSwiftReservedMessages.OptionalMessageExtensionField, rhs: ProtobufUnittestGenerated_GeneratedSwiftReservedMessages.OptionalMessageExtensionField) -> Bool {
     if lhs.optionalMessageExtensionField != rhs.optionalMessageExtensionField {return false}
+    if lhs.unknownFields != rhs.unknownFields {return false}
+    return true
+  }
+}
+
+extension ProtobufUnittestGenerated_GeneratedSwiftReservedMessages.optionalValue: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+  static let protoMessageName: String = ProtobufUnittestGenerated_GeneratedSwiftReservedMessages.protoMessageName + ".optionalValue"
+  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+    1: .same(proto: "optionalValue"),
+  ]
+
+  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+    while let fieldNumber = try decoder.nextFieldNumber() {
+      // The use of inline closures is to circumvent an issue where the compiler
+      // allocates stack space for every case branch when no optimizations are
+      // enabled. https://github.com/apple/swift-protobuf/issues/1034
+      switch fieldNumber {
+      case 1: try { try decoder.decodeSingularInt32Field(value: &self.optionalValue) }()
+      default: break
+      }
+    }
+  }
+
+  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+    if self.optionalValue != 0 {
+      try visitor.visitSingularInt32Field(value: self.optionalValue, fieldNumber: 1)
+    }
+    try unknownFields.traverse(visitor: &visitor)
+  }
+
+  static func ==(lhs: ProtobufUnittestGenerated_GeneratedSwiftReservedMessages.optionalValue, rhs: ProtobufUnittestGenerated_GeneratedSwiftReservedMessages.optionalValue) -> Bool {
+    if lhs.optionalValue != rhs.optionalValue {return false}
     if lhs.unknownFields != rhs.unknownFields {return false}
     return true
   }

@@ -341,33 +341,25 @@ extension SwiftDescriptorTest_Proto3MessageForPresence: SwiftProtobuf.Message, S
     if self.enumField != .subValue0 {
       try visitor.visitSingularEnumField(value: self.enumField, fieldNumber: 3)
     }
-    try { if let v = self._messageField {
-      try visitor.visitSingularMessageField(value: v, fieldNumber: 4)
-    } }()
-    try { if let v = self._optStrField {
-      try visitor.visitSingularStringField(value: v, fieldNumber: 11)
-    } }()
-    try { if let v = self._optInt32Field {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 12)
-    } }()
-    try { if let v = self._optEnumField {
-      try visitor.visitSingularEnumField(value: v, fieldNumber: 13)
-    } }()
-    try { if let v = self._optMessageField {
-      try visitor.visitSingularMessageField(value: v, fieldNumber: 14)
-    } }()
-    if !self.repeatStrField.isEmpty {
-      try visitor.visitRepeatedStringField(value: self.repeatStrField, fieldNumber: 21)
-    }
-    if !self.repeatInt32Field.isEmpty {
-      try visitor.visitPackedInt32Field(value: self.repeatInt32Field, fieldNumber: 22)
-    }
-    if !self.repeatEnumField.isEmpty {
-      try visitor.visitPackedEnumField(value: self.repeatEnumField, fieldNumber: 23)
-    }
-    if !self.repeatMessageField.isEmpty {
-      try visitor.visitRepeatedMessageField(value: self.repeatMessageField, fieldNumber: 24)
-    }
+    try {
+      try visitor.visitSingularMessageField(optionalValue: self._messageField, fieldNumber: 4)
+    }()
+    try {
+      try visitor.visitSingularStringField(optionalValue: self._optStrField, fieldNumber: 11)
+    }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._optInt32Field, fieldNumber: 12)
+    }()
+    try {
+      try visitor.visitSingularEnumField(optionalValue: self._optEnumField, fieldNumber: 13)
+    }()
+    try {
+      try visitor.visitSingularMessageField(optionalValue: self._optMessageField, fieldNumber: 14)
+    }()
+    try visitor.visitRepeatedStringField(maybeEmptyValue: self.repeatStrField, fieldNumber: 21)
+    try visitor.visitPackedInt32Field(maybeEmptyValue: self.repeatInt32Field, fieldNumber: 22)
+    try visitor.visitPackedEnumField(maybeEmptyValue: self.repeatEnumField, fieldNumber: 23)
+    try visitor.visitRepeatedMessageField(maybeEmptyValue: self.repeatMessageField, fieldNumber: 24)
     switch self.o {
     case .oneofStrField?: try {
       guard case .oneofStrField(let v)? = self.o else { preconditionFailure() }

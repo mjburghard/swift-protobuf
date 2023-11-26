@@ -136,9 +136,7 @@ extension Pb_TestInvalidFeatures: SwiftProtobuf.Message, SwiftProtobuf._MessageI
   }
 
   func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
-    if !self.repeatedFeature.isEmpty {
-      try visitor.visitRepeatedInt32Field(value: self.repeatedFeature, fieldNumber: 1)
-    }
+    try visitor.visitRepeatedInt32Field(maybeEmptyValue: self.repeatedFeature, fieldNumber: 1)
     try unknownFields.traverse(visitor: &visitor)
   }
 

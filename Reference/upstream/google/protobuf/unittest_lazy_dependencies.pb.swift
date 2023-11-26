@@ -130,9 +130,9 @@ extension ProtobufUnittest_LazyImports_ImportedMessage: SwiftProtobuf.Message, S
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._lazyMessage {
-      try visitor.visitSingularMessageField(value: v, fieldNumber: 1)
-    } }()
+    try {
+      try visitor.visitSingularMessageField(optionalValue: self._lazyMessage, fieldNumber: 1)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 

@@ -88,9 +88,9 @@ extension _4fun_Mumble_MyMessage: SwiftProtobuf.Message, SwiftProtobuf._MessageI
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._a {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._a, fieldNumber: 1)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 

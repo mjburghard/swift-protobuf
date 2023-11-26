@@ -120,12 +120,10 @@ extension ProtobufUnittest_TestEmbedOptimizedForSize: SwiftProtobuf.Message, Swi
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._optionalMessage {
-      try visitor.visitSingularMessageField(value: v, fieldNumber: 1)
-    } }()
-    if !self.repeatedMessage.isEmpty {
-      try visitor.visitRepeatedMessageField(value: self.repeatedMessage, fieldNumber: 2)
-    }
+    try {
+      try visitor.visitSingularMessageField(optionalValue: self._optionalMessage, fieldNumber: 1)
+    }()
+    try visitor.visitRepeatedMessageField(maybeEmptyValue: self.repeatedMessage, fieldNumber: 2)
     try unknownFields.traverse(visitor: &visitor)
   }
 

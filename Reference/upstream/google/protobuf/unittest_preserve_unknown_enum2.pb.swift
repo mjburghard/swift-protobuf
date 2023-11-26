@@ -222,18 +222,12 @@ extension Proto2PreserveUnknownEnumUnittest_MyMessage: SwiftProtobuf.Message, Sw
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._e {
-      try visitor.visitSingularEnumField(value: v, fieldNumber: 1)
-    } }()
-    if !self.repeatedE.isEmpty {
-      try visitor.visitRepeatedEnumField(value: self.repeatedE, fieldNumber: 2)
-    }
-    if !self.repeatedPackedE.isEmpty {
-      try visitor.visitPackedEnumField(value: self.repeatedPackedE, fieldNumber: 3)
-    }
-    if !self.repeatedPackedUnexpectedE.isEmpty {
-      try visitor.visitRepeatedEnumField(value: self.repeatedPackedUnexpectedE, fieldNumber: 4)
-    }
+    try {
+      try visitor.visitSingularEnumField(optionalValue: self._e, fieldNumber: 1)
+    }()
+    try visitor.visitRepeatedEnumField(maybeEmptyValue: self.repeatedE, fieldNumber: 2)
+    try visitor.visitPackedEnumField(maybeEmptyValue: self.repeatedPackedE, fieldNumber: 3)
+    try visitor.visitRepeatedEnumField(maybeEmptyValue: self.repeatedPackedUnexpectedE, fieldNumber: 4)
     switch self.o {
     case .oneofE1?: try {
       guard case .oneofE1(let v)? = self.o else { preconditionFailure() }

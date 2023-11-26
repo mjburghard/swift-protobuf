@@ -576,54 +576,54 @@ extension Pb_TestFeatures: SwiftProtobuf.Message, SwiftProtobuf._MessageImplemen
       // allocates stack space for every if/case branch local when no optimizations
       // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
       // https://github.com/apple/swift-protobuf/issues/1182
-      try { if let v = _storage._intFileFeature {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-      } }()
-      try { if let v = _storage._intExtensionRangeFeature {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 2)
-      } }()
-      try { if let v = _storage._intMessageFeature {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 3)
-      } }()
-      try { if let v = _storage._intFieldFeature {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 4)
-      } }()
-      try { if let v = _storage._intOneofFeature {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 5)
-      } }()
-      try { if let v = _storage._intEnumFeature {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 6)
-      } }()
-      try { if let v = _storage._intEnumEntryFeature {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 7)
-      } }()
-      try { if let v = _storage._intServiceFeature {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 8)
-      } }()
-      try { if let v = _storage._intMethodFeature {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 9)
-      } }()
-      try { if let v = _storage._intMultipleFeature {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 10)
-      } }()
-      try { if let v = _storage._boolFieldFeature {
-        try visitor.visitSingularBoolField(value: v, fieldNumber: 11)
-      } }()
-      try { if let v = _storage._floatFieldFeature {
-        try visitor.visitSingularFloatField(value: v, fieldNumber: 12)
-      } }()
-      try { if let v = _storage._messageFieldFeature {
-        try visitor.visitSingularMessageField(value: v, fieldNumber: 13)
-      } }()
-      try { if let v = _storage._enumFieldFeature {
-        try visitor.visitSingularEnumField(value: v, fieldNumber: 14)
-      } }()
-      try { if let v = _storage._intSourceFeature {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 15)
-      } }()
-      try { if let v = _storage._stringSourceFeature {
-        try visitor.visitSingularStringField(value: v, fieldNumber: 16)
-      } }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._intFileFeature, fieldNumber: 1)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._intExtensionRangeFeature, fieldNumber: 2)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._intMessageFeature, fieldNumber: 3)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._intFieldFeature, fieldNumber: 4)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._intOneofFeature, fieldNumber: 5)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._intEnumFeature, fieldNumber: 6)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._intEnumEntryFeature, fieldNumber: 7)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._intServiceFeature, fieldNumber: 8)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._intMethodFeature, fieldNumber: 9)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._intMultipleFeature, fieldNumber: 10)
+      }()
+      try {
+        try visitor.visitSingularBoolField(optionalValue: _storage._boolFieldFeature, fieldNumber: 11)
+      }()
+      try {
+        try visitor.visitSingularFloatField(optionalValue: _storage._floatFieldFeature, fieldNumber: 12)
+      }()
+      try {
+        try visitor.visitSingularMessageField(optionalValue: _storage._messageFieldFeature, fieldNumber: 13)
+      }()
+      try {
+        try visitor.visitSingularEnumField(optionalValue: _storage._enumFieldFeature, fieldNumber: 14)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._intSourceFeature, fieldNumber: 15)
+      }()
+      try {
+        try visitor.visitSingularStringField(optionalValue: _storage._stringSourceFeature, fieldNumber: 16)
+      }()
     }
     try unknownFields.traverse(visitor: &visitor)
   }
@@ -698,18 +698,18 @@ extension Pb_TestFeatures.MessageFeature: SwiftProtobuf.Message, SwiftProtobuf._
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._boolField {
-      try visitor.visitSingularBoolField(value: v, fieldNumber: 1)
-    } }()
-    try { if let v = self._intField {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 2)
-    } }()
-    try { if let v = self._floatField {
-      try visitor.visitSingularFloatField(value: v, fieldNumber: 3)
-    } }()
-    try { if let v = self._stringField {
-      try visitor.visitSingularStringField(value: v, fieldNumber: 4)
-    } }()
+    try {
+      try visitor.visitSingularBoolField(optionalValue: self._boolField, fieldNumber: 1)
+    }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._intField, fieldNumber: 2)
+    }()
+    try {
+      try visitor.visitSingularFloatField(optionalValue: self._floatField, fieldNumber: 3)
+    }()
+    try {
+      try visitor.visitSingularStringField(optionalValue: self._stringField, fieldNumber: 4)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 

@@ -1988,15 +1988,13 @@ extension ProtobufUnittest_TestMessageWithCustomOptions: SwiftProtobuf.Message, 
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._field1 {
-      try visitor.visitSingularStringField(value: v, fieldNumber: 1)
-    } }()
+    try {
+      try visitor.visitSingularStringField(optionalValue: self._field1, fieldNumber: 1)
+    }()
     try { if case .oneofField(let v)? = self.anOneof {
       try visitor.visitSingularInt32Field(value: v, fieldNumber: 2)
     } }()
-    if !self.mapField.isEmpty {
-      try visitor.visitMapField(fieldType: SwiftProtobuf._ProtobufMap<SwiftProtobuf.ProtobufString,SwiftProtobuf.ProtobufString>.self, value: self.mapField, fieldNumber: 3)
-    }
+    try visitor.visitMapField(fieldType: SwiftProtobuf._ProtobufMap<SwiftProtobuf.ProtobufString,SwiftProtobuf.ProtobufString>.self, maybeEmptyValue: self.mapField, fieldNumber: 3)
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -2268,18 +2266,16 @@ extension ProtobufUnittest_ComplexOptionType1: SwiftProtobuf.Message, SwiftProto
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._foo {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-    } }()
-    try { if let v = self._foo2 {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 2)
-    } }()
-    try { if let v = self._foo3 {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 3)
-    } }()
-    if !self.foo4.isEmpty {
-      try visitor.visitRepeatedInt32Field(value: self.foo4, fieldNumber: 4)
-    }
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._foo, fieldNumber: 1)
+    }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._foo2, fieldNumber: 2)
+    }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._foo3, fieldNumber: 3)
+    }()
+    try visitor.visitRepeatedInt32Field(maybeEmptyValue: self.foo4, fieldNumber: 4)
     try visitor.visitExtensionFields(fields: _protobuf_extensionFieldValues, start: 100, end: 536870912)
     try unknownFields.traverse(visitor: &visitor)
   }
@@ -2332,18 +2328,16 @@ extension ProtobufUnittest_ComplexOptionType2: SwiftProtobuf.Message, SwiftProto
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._bar {
-      try visitor.visitSingularMessageField(value: v, fieldNumber: 1)
-    } }()
-    try { if let v = self._baz {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 2)
-    } }()
-    try { if let v = self._fred {
-      try visitor.visitSingularMessageField(value: v, fieldNumber: 3)
-    } }()
-    if !self.barney.isEmpty {
-      try visitor.visitRepeatedMessageField(value: self.barney, fieldNumber: 4)
-    }
+    try {
+      try visitor.visitSingularMessageField(optionalValue: self._bar, fieldNumber: 1)
+    }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._baz, fieldNumber: 2)
+    }()
+    try {
+      try visitor.visitSingularMessageField(optionalValue: self._fred, fieldNumber: 3)
+    }()
+    try visitor.visitRepeatedMessageField(maybeEmptyValue: self.barney, fieldNumber: 4)
     try visitor.visitExtensionFields(fields: _protobuf_extensionFieldValues, start: 100, end: 536870912)
     try unknownFields.traverse(visitor: &visitor)
   }
@@ -2382,9 +2376,9 @@ extension ProtobufUnittest_ComplexOptionType2.ComplexOptionType4: SwiftProtobuf.
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._waldo {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._waldo, fieldNumber: 1)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -2420,12 +2414,12 @@ extension ProtobufUnittest_ComplexOptionType3: SwiftProtobuf.Message, SwiftProto
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._moo {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-    } }()
-    try { if let v = self._complexOptionType5 {
-      try visitor.visitSingularGroupField(value: v, fieldNumber: 2)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._moo, fieldNumber: 1)
+    }()
+    try {
+      try visitor.visitSingularGroupField(optionalValue: self._complexOptionType5, fieldNumber: 2)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -2460,9 +2454,9 @@ extension ProtobufUnittest_ComplexOptionType3.ComplexOptionType5: SwiftProtobuf.
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._plugh {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 3)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._plugh, fieldNumber: 3)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -2496,9 +2490,9 @@ extension ProtobufUnittest_ComplexOpt6: SwiftProtobuf.Message, SwiftProtobuf._Me
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._xyzzy {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 7593951)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._xyzzy, fieldNumber: 7593951)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -2576,9 +2570,9 @@ extension ProtobufUnittest_AggregateMessageSetElement: SwiftProtobuf.Message, Sw
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._s {
-      try visitor.visitSingularStringField(value: v, fieldNumber: 1)
-    } }()
+    try {
+      try visitor.visitSingularStringField(optionalValue: self._s, fieldNumber: 1)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -2664,24 +2658,24 @@ extension ProtobufUnittest_Aggregate: SwiftProtobuf.Message, SwiftProtobuf._Mess
       // allocates stack space for every if/case branch local when no optimizations
       // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
       // https://github.com/apple/swift-protobuf/issues/1182
-      try { if let v = _storage._i {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-      } }()
-      try { if let v = _storage._s {
-        try visitor.visitSingularStringField(value: v, fieldNumber: 2)
-      } }()
-      try { if let v = _storage._sub {
-        try visitor.visitSingularMessageField(value: v, fieldNumber: 3)
-      } }()
-      try { if let v = _storage._file {
-        try visitor.visitSingularMessageField(value: v, fieldNumber: 4)
-      } }()
-      try { if let v = _storage._mset {
-        try visitor.visitSingularMessageField(value: v, fieldNumber: 5)
-      } }()
-      try { if let v = _storage._any {
-        try visitor.visitSingularMessageField(value: v, fieldNumber: 6)
-      } }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._i, fieldNumber: 1)
+      }()
+      try {
+        try visitor.visitSingularStringField(optionalValue: _storage._s, fieldNumber: 2)
+      }()
+      try {
+        try visitor.visitSingularMessageField(optionalValue: _storage._sub, fieldNumber: 3)
+      }()
+      try {
+        try visitor.visitSingularMessageField(optionalValue: _storage._file, fieldNumber: 4)
+      }()
+      try {
+        try visitor.visitSingularMessageField(optionalValue: _storage._mset, fieldNumber: 5)
+      }()
+      try {
+        try visitor.visitSingularMessageField(optionalValue: _storage._any, fieldNumber: 6)
+      }()
     }
     try unknownFields.traverse(visitor: &visitor)
   }
@@ -2729,9 +2723,9 @@ extension ProtobufUnittest_AggregateMessage: SwiftProtobuf.Message, SwiftProtobu
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._fieldname {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._fieldname, fieldNumber: 1)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -2790,9 +2784,9 @@ extension ProtobufUnittest_NestedOptionType.NestedMessage: SwiftProtobuf.Message
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._nestedField {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._nestedField, fieldNumber: 1)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -2831,9 +2825,9 @@ extension ProtobufUnittest_OldOptionType: SwiftProtobuf.Message, SwiftProtobuf._
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._value {
-      try visitor.visitSingularEnumField(value: v, fieldNumber: 1)
-    } }()
+    try {
+      try visitor.visitSingularEnumField(optionalValue: self._value, fieldNumber: 1)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -2878,9 +2872,9 @@ extension ProtobufUnittest_NewOptionType: SwiftProtobuf.Message, SwiftProtobuf._
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._value {
-      try visitor.visitSingularEnumField(value: v, fieldNumber: 1)
-    } }()
+    try {
+      try visitor.visitSingularEnumField(optionalValue: self._value, fieldNumber: 1)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 

@@ -288,9 +288,7 @@ extension Google_Protobuf_FieldMask: SwiftProtobuf.Message, SwiftProtobuf._Messa
   }
 
   public func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
-    if !self.paths.isEmpty {
-      try visitor.visitRepeatedStringField(value: self.paths, fieldNumber: 1)
-    }
+    try visitor.visitRepeatedStringField(maybeEmptyValue: self.paths, fieldNumber: 1)
     try unknownFields.traverse(visitor: &visitor)
   }
 

@@ -601,30 +601,30 @@ extension ProtobufUnittest_SwiftReservedTest: SwiftProtobuf.Message, SwiftProtob
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._protoMessageName {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 10)
-    } }()
-    try { if let v = self._protoPackageName {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 11)
-    } }()
-    try { if let v = self._anyTypePrefix {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 12)
-    } }()
-    try { if let v = self._anyTypeURL {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 13)
-    } }()
-    try { if let v = self._isInitialized_p {
-      try visitor.visitSingularStringField(value: v, fieldNumber: 20)
-    } }()
-    try { if let v = self._hashValue_p {
-      try visitor.visitSingularStringField(value: v, fieldNumber: 21)
-    } }()
-    try { if let v = self._debugDescription_p {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 22)
-    } }()
-    try { if let v = self._requiredInt {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 30)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._protoMessageName, fieldNumber: 10)
+    }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._protoPackageName, fieldNumber: 11)
+    }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._anyTypePrefix, fieldNumber: 12)
+    }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._anyTypeURL, fieldNumber: 13)
+    }()
+    try {
+      try visitor.visitSingularStringField(optionalValue: self._isInitialized_p, fieldNumber: 20)
+    }()
+    try {
+      try visitor.visitSingularStringField(optionalValue: self._hashValue_p, fieldNumber: 21)
+    }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._debugDescription_p, fieldNumber: 22)
+    }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._requiredInt, fieldNumber: 30)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 

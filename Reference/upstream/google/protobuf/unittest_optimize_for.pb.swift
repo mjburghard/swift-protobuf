@@ -305,9 +305,9 @@ extension ProtobufUnittest_TestOptimizedForSize: SwiftProtobuf.Message, SwiftPro
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._i {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._i, fieldNumber: 1)
+    }()
     switch self.foo {
     case .integerField?: try {
       guard case .integerField(let v)? = self.foo else { preconditionFailure() }
@@ -319,9 +319,9 @@ extension ProtobufUnittest_TestOptimizedForSize: SwiftProtobuf.Message, SwiftPro
     }()
     case nil: break
     }
-    try { if let v = self._msg {
-      try visitor.visitSingularMessageField(value: v, fieldNumber: 19)
-    } }()
+    try {
+      try visitor.visitSingularMessageField(optionalValue: self._msg, fieldNumber: 19)
+    }()
     try visitor.visitExtensionFields(fields: _protobuf_extensionFieldValues, start: 1000, end: 536870912)
     try unknownFields.traverse(visitor: &visitor)
   }
@@ -364,9 +364,9 @@ extension ProtobufUnittest_TestRequiredOptimizedForSize: SwiftProtobuf.Message, 
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._x {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._x, fieldNumber: 1)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -405,9 +405,9 @@ extension ProtobufUnittest_TestOptionalOptimizedForSize: SwiftProtobuf.Message, 
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._o {
-      try visitor.visitSingularMessageField(value: v, fieldNumber: 1)
-    } }()
+    try {
+      try visitor.visitSingularMessageField(optionalValue: self._o, fieldNumber: 1)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 

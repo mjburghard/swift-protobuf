@@ -4388,222 +4388,172 @@ extension ProtobufUnittest_TestAllTypesLite: SwiftProtobuf.Message, SwiftProtobu
       // allocates stack space for every if/case branch local when no optimizations
       // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
       // https://github.com/apple/swift-protobuf/issues/1182
-      try { if let v = _storage._optionalInt32 {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-      } }()
-      try { if let v = _storage._optionalInt64 {
-        try visitor.visitSingularInt64Field(value: v, fieldNumber: 2)
-      } }()
-      try { if let v = _storage._optionalUint32 {
-        try visitor.visitSingularUInt32Field(value: v, fieldNumber: 3)
-      } }()
-      try { if let v = _storage._optionalUint64 {
-        try visitor.visitSingularUInt64Field(value: v, fieldNumber: 4)
-      } }()
-      try { if let v = _storage._optionalSint32 {
-        try visitor.visitSingularSInt32Field(value: v, fieldNumber: 5)
-      } }()
-      try { if let v = _storage._optionalSint64 {
-        try visitor.visitSingularSInt64Field(value: v, fieldNumber: 6)
-      } }()
-      try { if let v = _storage._optionalFixed32 {
-        try visitor.visitSingularFixed32Field(value: v, fieldNumber: 7)
-      } }()
-      try { if let v = _storage._optionalFixed64 {
-        try visitor.visitSingularFixed64Field(value: v, fieldNumber: 8)
-      } }()
-      try { if let v = _storage._optionalSfixed32 {
-        try visitor.visitSingularSFixed32Field(value: v, fieldNumber: 9)
-      } }()
-      try { if let v = _storage._optionalSfixed64 {
-        try visitor.visitSingularSFixed64Field(value: v, fieldNumber: 10)
-      } }()
-      try { if let v = _storage._optionalFloat {
-        try visitor.visitSingularFloatField(value: v, fieldNumber: 11)
-      } }()
-      try { if let v = _storage._optionalDouble {
-        try visitor.visitSingularDoubleField(value: v, fieldNumber: 12)
-      } }()
-      try { if let v = _storage._optionalBool {
-        try visitor.visitSingularBoolField(value: v, fieldNumber: 13)
-      } }()
-      try { if let v = _storage._optionalString {
-        try visitor.visitSingularStringField(value: v, fieldNumber: 14)
-      } }()
-      try { if let v = _storage._optionalBytes {
-        try visitor.visitSingularBytesField(value: v, fieldNumber: 15)
-      } }()
-      try { if let v = _storage._optionalGroup {
-        try visitor.visitSingularGroupField(value: v, fieldNumber: 16)
-      } }()
-      try { if let v = _storage._optionalNestedMessage {
-        try visitor.visitSingularMessageField(value: v, fieldNumber: 18)
-      } }()
-      try { if let v = _storage._optionalForeignMessage {
-        try visitor.visitSingularMessageField(value: v, fieldNumber: 19)
-      } }()
-      try { if let v = _storage._optionalImportMessage {
-        try visitor.visitSingularMessageField(value: v, fieldNumber: 20)
-      } }()
-      try { if let v = _storage._optionalNestedEnum {
-        try visitor.visitSingularEnumField(value: v, fieldNumber: 21)
-      } }()
-      try { if let v = _storage._optionalForeignEnum {
-        try visitor.visitSingularEnumField(value: v, fieldNumber: 22)
-      } }()
-      try { if let v = _storage._optionalImportEnum {
-        try visitor.visitSingularEnumField(value: v, fieldNumber: 23)
-      } }()
-      try { if let v = _storage._optionalStringPiece {
-        try visitor.visitSingularStringField(value: v, fieldNumber: 24)
-      } }()
-      try { if let v = _storage._optionalCord {
-        try visitor.visitSingularStringField(value: v, fieldNumber: 25)
-      } }()
-      try { if let v = _storage._optionalPublicImportMessage {
-        try visitor.visitSingularMessageField(value: v, fieldNumber: 26)
-      } }()
-      try { if let v = _storage._optionalLazyMessage {
-        try visitor.visitSingularMessageField(value: v, fieldNumber: 27)
-      } }()
-      try { if let v = _storage._optionalUnverifiedLazyMessage {
-        try visitor.visitSingularMessageField(value: v, fieldNumber: 28)
-      } }()
-      if !_storage._repeatedInt32.isEmpty {
-        try visitor.visitRepeatedInt32Field(value: _storage._repeatedInt32, fieldNumber: 31)
-      }
-      if !_storage._repeatedInt64.isEmpty {
-        try visitor.visitRepeatedInt64Field(value: _storage._repeatedInt64, fieldNumber: 32)
-      }
-      if !_storage._repeatedUint32.isEmpty {
-        try visitor.visitRepeatedUInt32Field(value: _storage._repeatedUint32, fieldNumber: 33)
-      }
-      if !_storage._repeatedUint64.isEmpty {
-        try visitor.visitRepeatedUInt64Field(value: _storage._repeatedUint64, fieldNumber: 34)
-      }
-      if !_storage._repeatedSint32.isEmpty {
-        try visitor.visitRepeatedSInt32Field(value: _storage._repeatedSint32, fieldNumber: 35)
-      }
-      if !_storage._repeatedSint64.isEmpty {
-        try visitor.visitRepeatedSInt64Field(value: _storage._repeatedSint64, fieldNumber: 36)
-      }
-      if !_storage._repeatedFixed32.isEmpty {
-        try visitor.visitRepeatedFixed32Field(value: _storage._repeatedFixed32, fieldNumber: 37)
-      }
-      if !_storage._repeatedFixed64.isEmpty {
-        try visitor.visitRepeatedFixed64Field(value: _storage._repeatedFixed64, fieldNumber: 38)
-      }
-      if !_storage._repeatedSfixed32.isEmpty {
-        try visitor.visitRepeatedSFixed32Field(value: _storage._repeatedSfixed32, fieldNumber: 39)
-      }
-      if !_storage._repeatedSfixed64.isEmpty {
-        try visitor.visitRepeatedSFixed64Field(value: _storage._repeatedSfixed64, fieldNumber: 40)
-      }
-      if !_storage._repeatedFloat.isEmpty {
-        try visitor.visitRepeatedFloatField(value: _storage._repeatedFloat, fieldNumber: 41)
-      }
-      if !_storage._repeatedDouble.isEmpty {
-        try visitor.visitRepeatedDoubleField(value: _storage._repeatedDouble, fieldNumber: 42)
-      }
-      if !_storage._repeatedBool.isEmpty {
-        try visitor.visitRepeatedBoolField(value: _storage._repeatedBool, fieldNumber: 43)
-      }
-      if !_storage._repeatedString.isEmpty {
-        try visitor.visitRepeatedStringField(value: _storage._repeatedString, fieldNumber: 44)
-      }
-      if !_storage._repeatedBytes.isEmpty {
-        try visitor.visitRepeatedBytesField(value: _storage._repeatedBytes, fieldNumber: 45)
-      }
-      if !_storage._repeatedGroup.isEmpty {
-        try visitor.visitRepeatedGroupField(value: _storage._repeatedGroup, fieldNumber: 46)
-      }
-      if !_storage._repeatedNestedMessage.isEmpty {
-        try visitor.visitRepeatedMessageField(value: _storage._repeatedNestedMessage, fieldNumber: 48)
-      }
-      if !_storage._repeatedForeignMessage.isEmpty {
-        try visitor.visitRepeatedMessageField(value: _storage._repeatedForeignMessage, fieldNumber: 49)
-      }
-      if !_storage._repeatedImportMessage.isEmpty {
-        try visitor.visitRepeatedMessageField(value: _storage._repeatedImportMessage, fieldNumber: 50)
-      }
-      if !_storage._repeatedNestedEnum.isEmpty {
-        try visitor.visitRepeatedEnumField(value: _storage._repeatedNestedEnum, fieldNumber: 51)
-      }
-      if !_storage._repeatedForeignEnum.isEmpty {
-        try visitor.visitRepeatedEnumField(value: _storage._repeatedForeignEnum, fieldNumber: 52)
-      }
-      if !_storage._repeatedImportEnum.isEmpty {
-        try visitor.visitRepeatedEnumField(value: _storage._repeatedImportEnum, fieldNumber: 53)
-      }
-      if !_storage._repeatedStringPiece.isEmpty {
-        try visitor.visitRepeatedStringField(value: _storage._repeatedStringPiece, fieldNumber: 54)
-      }
-      if !_storage._repeatedCord.isEmpty {
-        try visitor.visitRepeatedStringField(value: _storage._repeatedCord, fieldNumber: 55)
-      }
-      if !_storage._repeatedLazyMessage.isEmpty {
-        try visitor.visitRepeatedMessageField(value: _storage._repeatedLazyMessage, fieldNumber: 57)
-      }
-      try { if let v = _storage._defaultInt32 {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 61)
-      } }()
-      try { if let v = _storage._defaultInt64 {
-        try visitor.visitSingularInt64Field(value: v, fieldNumber: 62)
-      } }()
-      try { if let v = _storage._defaultUint32 {
-        try visitor.visitSingularUInt32Field(value: v, fieldNumber: 63)
-      } }()
-      try { if let v = _storage._defaultUint64 {
-        try visitor.visitSingularUInt64Field(value: v, fieldNumber: 64)
-      } }()
-      try { if let v = _storage._defaultSint32 {
-        try visitor.visitSingularSInt32Field(value: v, fieldNumber: 65)
-      } }()
-      try { if let v = _storage._defaultSint64 {
-        try visitor.visitSingularSInt64Field(value: v, fieldNumber: 66)
-      } }()
-      try { if let v = _storage._defaultFixed32 {
-        try visitor.visitSingularFixed32Field(value: v, fieldNumber: 67)
-      } }()
-      try { if let v = _storage._defaultFixed64 {
-        try visitor.visitSingularFixed64Field(value: v, fieldNumber: 68)
-      } }()
-      try { if let v = _storage._defaultSfixed32 {
-        try visitor.visitSingularSFixed32Field(value: v, fieldNumber: 69)
-      } }()
-      try { if let v = _storage._defaultSfixed64 {
-        try visitor.visitSingularSFixed64Field(value: v, fieldNumber: 70)
-      } }()
-      try { if let v = _storage._defaultFloat {
-        try visitor.visitSingularFloatField(value: v, fieldNumber: 71)
-      } }()
-      try { if let v = _storage._defaultDouble {
-        try visitor.visitSingularDoubleField(value: v, fieldNumber: 72)
-      } }()
-      try { if let v = _storage._defaultBool {
-        try visitor.visitSingularBoolField(value: v, fieldNumber: 73)
-      } }()
-      try { if let v = _storage._defaultString {
-        try visitor.visitSingularStringField(value: v, fieldNumber: 74)
-      } }()
-      try { if let v = _storage._defaultBytes {
-        try visitor.visitSingularBytesField(value: v, fieldNumber: 75)
-      } }()
-      try { if let v = _storage._defaultNestedEnum {
-        try visitor.visitSingularEnumField(value: v, fieldNumber: 81)
-      } }()
-      try { if let v = _storage._defaultForeignEnum {
-        try visitor.visitSingularEnumField(value: v, fieldNumber: 82)
-      } }()
-      try { if let v = _storage._defaultImportEnum {
-        try visitor.visitSingularEnumField(value: v, fieldNumber: 83)
-      } }()
-      try { if let v = _storage._defaultStringPiece {
-        try visitor.visitSingularStringField(value: v, fieldNumber: 84)
-      } }()
-      try { if let v = _storage._defaultCord {
-        try visitor.visitSingularStringField(value: v, fieldNumber: 85)
-      } }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._optionalInt32, fieldNumber: 1)
+      }()
+      try {
+        try visitor.visitSingularInt64Field(optionalValue: _storage._optionalInt64, fieldNumber: 2)
+      }()
+      try {
+        try visitor.visitSingularUInt32Field(optionalValue: _storage._optionalUint32, fieldNumber: 3)
+      }()
+      try {
+        try visitor.visitSingularUInt64Field(optionalValue: _storage._optionalUint64, fieldNumber: 4)
+      }()
+      try {
+        try visitor.visitSingularSInt32Field(optionalValue: _storage._optionalSint32, fieldNumber: 5)
+      }()
+      try {
+        try visitor.visitSingularSInt64Field(optionalValue: _storage._optionalSint64, fieldNumber: 6)
+      }()
+      try {
+        try visitor.visitSingularFixed32Field(optionalValue: _storage._optionalFixed32, fieldNumber: 7)
+      }()
+      try {
+        try visitor.visitSingularFixed64Field(optionalValue: _storage._optionalFixed64, fieldNumber: 8)
+      }()
+      try {
+        try visitor.visitSingularSFixed32Field(optionalValue: _storage._optionalSfixed32, fieldNumber: 9)
+      }()
+      try {
+        try visitor.visitSingularSFixed64Field(optionalValue: _storage._optionalSfixed64, fieldNumber: 10)
+      }()
+      try {
+        try visitor.visitSingularFloatField(optionalValue: _storage._optionalFloat, fieldNumber: 11)
+      }()
+      try {
+        try visitor.visitSingularDoubleField(optionalValue: _storage._optionalDouble, fieldNumber: 12)
+      }()
+      try {
+        try visitor.visitSingularBoolField(optionalValue: _storage._optionalBool, fieldNumber: 13)
+      }()
+      try {
+        try visitor.visitSingularStringField(optionalValue: _storage._optionalString, fieldNumber: 14)
+      }()
+      try {
+        try visitor.visitSingularBytesField(optionalValue: _storage._optionalBytes, fieldNumber: 15)
+      }()
+      try {
+        try visitor.visitSingularGroupField(optionalValue: _storage._optionalGroup, fieldNumber: 16)
+      }()
+      try {
+        try visitor.visitSingularMessageField(optionalValue: _storage._optionalNestedMessage, fieldNumber: 18)
+      }()
+      try {
+        try visitor.visitSingularMessageField(optionalValue: _storage._optionalForeignMessage, fieldNumber: 19)
+      }()
+      try {
+        try visitor.visitSingularMessageField(optionalValue: _storage._optionalImportMessage, fieldNumber: 20)
+      }()
+      try {
+        try visitor.visitSingularEnumField(optionalValue: _storage._optionalNestedEnum, fieldNumber: 21)
+      }()
+      try {
+        try visitor.visitSingularEnumField(optionalValue: _storage._optionalForeignEnum, fieldNumber: 22)
+      }()
+      try {
+        try visitor.visitSingularEnumField(optionalValue: _storage._optionalImportEnum, fieldNumber: 23)
+      }()
+      try {
+        try visitor.visitSingularStringField(optionalValue: _storage._optionalStringPiece, fieldNumber: 24)
+      }()
+      try {
+        try visitor.visitSingularStringField(optionalValue: _storage._optionalCord, fieldNumber: 25)
+      }()
+      try {
+        try visitor.visitSingularMessageField(optionalValue: _storage._optionalPublicImportMessage, fieldNumber: 26)
+      }()
+      try {
+        try visitor.visitSingularMessageField(optionalValue: _storage._optionalLazyMessage, fieldNumber: 27)
+      }()
+      try {
+        try visitor.visitSingularMessageField(optionalValue: _storage._optionalUnverifiedLazyMessage, fieldNumber: 28)
+      }()
+      try visitor.visitRepeatedInt32Field(maybeEmptyValue: _storage._repeatedInt32, fieldNumber: 31)
+      try visitor.visitRepeatedInt64Field(maybeEmptyValue: _storage._repeatedInt64, fieldNumber: 32)
+      try visitor.visitRepeatedUInt32Field(maybeEmptyValue: _storage._repeatedUint32, fieldNumber: 33)
+      try visitor.visitRepeatedUInt64Field(maybeEmptyValue: _storage._repeatedUint64, fieldNumber: 34)
+      try visitor.visitRepeatedSInt32Field(maybeEmptyValue: _storage._repeatedSint32, fieldNumber: 35)
+      try visitor.visitRepeatedSInt64Field(maybeEmptyValue: _storage._repeatedSint64, fieldNumber: 36)
+      try visitor.visitRepeatedFixed32Field(maybeEmptyValue: _storage._repeatedFixed32, fieldNumber: 37)
+      try visitor.visitRepeatedFixed64Field(maybeEmptyValue: _storage._repeatedFixed64, fieldNumber: 38)
+      try visitor.visitRepeatedSFixed32Field(maybeEmptyValue: _storage._repeatedSfixed32, fieldNumber: 39)
+      try visitor.visitRepeatedSFixed64Field(maybeEmptyValue: _storage._repeatedSfixed64, fieldNumber: 40)
+      try visitor.visitRepeatedFloatField(maybeEmptyValue: _storage._repeatedFloat, fieldNumber: 41)
+      try visitor.visitRepeatedDoubleField(maybeEmptyValue: _storage._repeatedDouble, fieldNumber: 42)
+      try visitor.visitRepeatedBoolField(maybeEmptyValue: _storage._repeatedBool, fieldNumber: 43)
+      try visitor.visitRepeatedStringField(maybeEmptyValue: _storage._repeatedString, fieldNumber: 44)
+      try visitor.visitRepeatedBytesField(maybeEmptyValue: _storage._repeatedBytes, fieldNumber: 45)
+      try visitor.visitRepeatedGroupField(maybeEmptyValue: _storage._repeatedGroup, fieldNumber: 46)
+      try visitor.visitRepeatedMessageField(maybeEmptyValue: _storage._repeatedNestedMessage, fieldNumber: 48)
+      try visitor.visitRepeatedMessageField(maybeEmptyValue: _storage._repeatedForeignMessage, fieldNumber: 49)
+      try visitor.visitRepeatedMessageField(maybeEmptyValue: _storage._repeatedImportMessage, fieldNumber: 50)
+      try visitor.visitRepeatedEnumField(maybeEmptyValue: _storage._repeatedNestedEnum, fieldNumber: 51)
+      try visitor.visitRepeatedEnumField(maybeEmptyValue: _storage._repeatedForeignEnum, fieldNumber: 52)
+      try visitor.visitRepeatedEnumField(maybeEmptyValue: _storage._repeatedImportEnum, fieldNumber: 53)
+      try visitor.visitRepeatedStringField(maybeEmptyValue: _storage._repeatedStringPiece, fieldNumber: 54)
+      try visitor.visitRepeatedStringField(maybeEmptyValue: _storage._repeatedCord, fieldNumber: 55)
+      try visitor.visitRepeatedMessageField(maybeEmptyValue: _storage._repeatedLazyMessage, fieldNumber: 57)
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._defaultInt32, fieldNumber: 61)
+      }()
+      try {
+        try visitor.visitSingularInt64Field(optionalValue: _storage._defaultInt64, fieldNumber: 62)
+      }()
+      try {
+        try visitor.visitSingularUInt32Field(optionalValue: _storage._defaultUint32, fieldNumber: 63)
+      }()
+      try {
+        try visitor.visitSingularUInt64Field(optionalValue: _storage._defaultUint64, fieldNumber: 64)
+      }()
+      try {
+        try visitor.visitSingularSInt32Field(optionalValue: _storage._defaultSint32, fieldNumber: 65)
+      }()
+      try {
+        try visitor.visitSingularSInt64Field(optionalValue: _storage._defaultSint64, fieldNumber: 66)
+      }()
+      try {
+        try visitor.visitSingularFixed32Field(optionalValue: _storage._defaultFixed32, fieldNumber: 67)
+      }()
+      try {
+        try visitor.visitSingularFixed64Field(optionalValue: _storage._defaultFixed64, fieldNumber: 68)
+      }()
+      try {
+        try visitor.visitSingularSFixed32Field(optionalValue: _storage._defaultSfixed32, fieldNumber: 69)
+      }()
+      try {
+        try visitor.visitSingularSFixed64Field(optionalValue: _storage._defaultSfixed64, fieldNumber: 70)
+      }()
+      try {
+        try visitor.visitSingularFloatField(optionalValue: _storage._defaultFloat, fieldNumber: 71)
+      }()
+      try {
+        try visitor.visitSingularDoubleField(optionalValue: _storage._defaultDouble, fieldNumber: 72)
+      }()
+      try {
+        try visitor.visitSingularBoolField(optionalValue: _storage._defaultBool, fieldNumber: 73)
+      }()
+      try {
+        try visitor.visitSingularStringField(optionalValue: _storage._defaultString, fieldNumber: 74)
+      }()
+      try {
+        try visitor.visitSingularBytesField(optionalValue: _storage._defaultBytes, fieldNumber: 75)
+      }()
+      try {
+        try visitor.visitSingularEnumField(optionalValue: _storage._defaultNestedEnum, fieldNumber: 81)
+      }()
+      try {
+        try visitor.visitSingularEnumField(optionalValue: _storage._defaultForeignEnum, fieldNumber: 82)
+      }()
+      try {
+        try visitor.visitSingularEnumField(optionalValue: _storage._defaultImportEnum, fieldNumber: 83)
+      }()
+      try {
+        try visitor.visitSingularStringField(optionalValue: _storage._defaultStringPiece, fieldNumber: 84)
+      }()
+      try {
+        try visitor.visitSingularStringField(optionalValue: _storage._defaultCord, fieldNumber: 85)
+      }()
       switch _storage._oneofField {
       case .oneofUint32?: try {
         guard case .oneofUint32(let v)? = _storage._oneofField else { preconditionFailure() }
@@ -4627,9 +4577,9 @@ extension ProtobufUnittest_TestAllTypesLite: SwiftProtobuf.Message, SwiftProtobu
       }()
       default: break
       }
-      try { if let v = _storage._deceptivelyNamedList {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 116)
-      } }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._deceptivelyNamedList, fieldNumber: 116)
+      }()
       try { if case .oneofNestedMessage2(let v)? = _storage._oneofField {
         try visitor.visitSingularMessageField(value: v, fieldNumber: 117)
       } }()
@@ -4760,15 +4710,13 @@ extension ProtobufUnittest_TestAllTypesLite.NestedMessage: SwiftProtobuf.Message
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._bb {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-    } }()
-    try { if let v = self._cc {
-      try visitor.visitSingularInt64Field(value: v, fieldNumber: 2)
-    } }()
-    if !self.dd.isEmpty {
-      try visitor.visitPackedInt32Field(value: self.dd, fieldNumber: 3)
-    }
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._bb, fieldNumber: 1)
+    }()
+    try {
+      try visitor.visitSingularInt64Field(optionalValue: self._cc, fieldNumber: 2)
+    }()
+    try visitor.visitPackedInt32Field(maybeEmptyValue: self.dd, fieldNumber: 3)
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -4804,9 +4752,9 @@ extension ProtobufUnittest_TestAllTypesLite.NestedMessage2: SwiftProtobuf.Messag
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._dd {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._dd, fieldNumber: 1)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -4840,9 +4788,9 @@ extension ProtobufUnittest_TestAllTypesLite.OptionalGroup: SwiftProtobuf.Message
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._a {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 17)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._a, fieldNumber: 17)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -4876,9 +4824,9 @@ extension ProtobufUnittest_TestAllTypesLite.RepeatedGroup: SwiftProtobuf.Message
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._a {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 47)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._a, fieldNumber: 47)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -4912,9 +4860,9 @@ extension ProtobufUnittest_ForeignMessageLite: SwiftProtobuf.Message, SwiftProto
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._c {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._c, fieldNumber: 1)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -4970,48 +4918,20 @@ extension ProtobufUnittest_TestPackedTypesLite: SwiftProtobuf.Message, SwiftProt
   }
 
   func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
-    if !self.packedInt32.isEmpty {
-      try visitor.visitPackedInt32Field(value: self.packedInt32, fieldNumber: 90)
-    }
-    if !self.packedInt64.isEmpty {
-      try visitor.visitPackedInt64Field(value: self.packedInt64, fieldNumber: 91)
-    }
-    if !self.packedUint32.isEmpty {
-      try visitor.visitPackedUInt32Field(value: self.packedUint32, fieldNumber: 92)
-    }
-    if !self.packedUint64.isEmpty {
-      try visitor.visitPackedUInt64Field(value: self.packedUint64, fieldNumber: 93)
-    }
-    if !self.packedSint32.isEmpty {
-      try visitor.visitPackedSInt32Field(value: self.packedSint32, fieldNumber: 94)
-    }
-    if !self.packedSint64.isEmpty {
-      try visitor.visitPackedSInt64Field(value: self.packedSint64, fieldNumber: 95)
-    }
-    if !self.packedFixed32.isEmpty {
-      try visitor.visitPackedFixed32Field(value: self.packedFixed32, fieldNumber: 96)
-    }
-    if !self.packedFixed64.isEmpty {
-      try visitor.visitPackedFixed64Field(value: self.packedFixed64, fieldNumber: 97)
-    }
-    if !self.packedSfixed32.isEmpty {
-      try visitor.visitPackedSFixed32Field(value: self.packedSfixed32, fieldNumber: 98)
-    }
-    if !self.packedSfixed64.isEmpty {
-      try visitor.visitPackedSFixed64Field(value: self.packedSfixed64, fieldNumber: 99)
-    }
-    if !self.packedFloat.isEmpty {
-      try visitor.visitPackedFloatField(value: self.packedFloat, fieldNumber: 100)
-    }
-    if !self.packedDouble.isEmpty {
-      try visitor.visitPackedDoubleField(value: self.packedDouble, fieldNumber: 101)
-    }
-    if !self.packedBool.isEmpty {
-      try visitor.visitPackedBoolField(value: self.packedBool, fieldNumber: 102)
-    }
-    if !self.packedEnum.isEmpty {
-      try visitor.visitPackedEnumField(value: self.packedEnum, fieldNumber: 103)
-    }
+    try visitor.visitPackedInt32Field(maybeEmptyValue: self.packedInt32, fieldNumber: 90)
+    try visitor.visitPackedInt64Field(maybeEmptyValue: self.packedInt64, fieldNumber: 91)
+    try visitor.visitPackedUInt32Field(maybeEmptyValue: self.packedUint32, fieldNumber: 92)
+    try visitor.visitPackedUInt64Field(maybeEmptyValue: self.packedUint64, fieldNumber: 93)
+    try visitor.visitPackedSInt32Field(maybeEmptyValue: self.packedSint32, fieldNumber: 94)
+    try visitor.visitPackedSInt64Field(maybeEmptyValue: self.packedSint64, fieldNumber: 95)
+    try visitor.visitPackedFixed32Field(maybeEmptyValue: self.packedFixed32, fieldNumber: 96)
+    try visitor.visitPackedFixed64Field(maybeEmptyValue: self.packedFixed64, fieldNumber: 97)
+    try visitor.visitPackedSFixed32Field(maybeEmptyValue: self.packedSfixed32, fieldNumber: 98)
+    try visitor.visitPackedSFixed64Field(maybeEmptyValue: self.packedSfixed64, fieldNumber: 99)
+    try visitor.visitPackedFloatField(maybeEmptyValue: self.packedFloat, fieldNumber: 100)
+    try visitor.visitPackedDoubleField(maybeEmptyValue: self.packedDouble, fieldNumber: 101)
+    try visitor.visitPackedBoolField(maybeEmptyValue: self.packedBool, fieldNumber: 102)
+    try visitor.visitPackedEnumField(maybeEmptyValue: self.packedEnum, fieldNumber: 103)
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -5087,9 +5007,9 @@ extension ProtobufUnittest_OptionalGroup_extension_lite: SwiftProtobuf.Message, 
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._a {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 17)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._a, fieldNumber: 17)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -5123,9 +5043,9 @@ extension ProtobufUnittest_RepeatedGroup_extension_lite: SwiftProtobuf.Message, 
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._a {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 47)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._a, fieldNumber: 47)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -5250,18 +5170,18 @@ extension ProtobufUnittest_TestDeprecatedLite: SwiftProtobuf.Message, SwiftProto
       // allocates stack space for every if/case branch local when no optimizations
       // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
       // https://github.com/apple/swift-protobuf/issues/1182
-      try { if let v = _storage._deprecatedField {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-      } }()
-      try { if let v = _storage._deprecatedField2 {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 2)
-      } }()
-      try { if let v = _storage._deprecatedField3 {
-        try visitor.visitSingularStringField(value: v, fieldNumber: 3)
-      } }()
-      try { if let v = _storage._deprecatedField4 {
-        try visitor.visitSingularMessageField(value: v, fieldNumber: 4)
-      } }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._deprecatedField, fieldNumber: 1)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._deprecatedField2, fieldNumber: 2)
+      }()
+      try {
+        try visitor.visitSingularStringField(optionalValue: _storage._deprecatedField3, fieldNumber: 3)
+      }()
+      try {
+        try visitor.visitSingularMessageField(optionalValue: _storage._deprecatedField4, fieldNumber: 4)
+      }()
     }
     try unknownFields.traverse(visitor: &visitor)
   }
@@ -5323,21 +5243,17 @@ extension ProtobufUnittest_TestParsingMergeLite: SwiftProtobuf.Message, SwiftPro
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._requiredAllTypes {
-      try visitor.visitSingularMessageField(value: v, fieldNumber: 1)
-    } }()
-    try { if let v = self._optionalAllTypes {
-      try visitor.visitSingularMessageField(value: v, fieldNumber: 2)
-    } }()
-    if !self.repeatedAllTypes.isEmpty {
-      try visitor.visitRepeatedMessageField(value: self.repeatedAllTypes, fieldNumber: 3)
-    }
-    try { if let v = self._optionalGroup {
-      try visitor.visitSingularGroupField(value: v, fieldNumber: 10)
-    } }()
-    if !self.repeatedGroup.isEmpty {
-      try visitor.visitRepeatedGroupField(value: self.repeatedGroup, fieldNumber: 20)
-    }
+    try {
+      try visitor.visitSingularMessageField(optionalValue: self._requiredAllTypes, fieldNumber: 1)
+    }()
+    try {
+      try visitor.visitSingularMessageField(optionalValue: self._optionalAllTypes, fieldNumber: 2)
+    }()
+    try visitor.visitRepeatedMessageField(maybeEmptyValue: self.repeatedAllTypes, fieldNumber: 3)
+    try {
+      try visitor.visitSingularGroupField(optionalValue: self._optionalGroup, fieldNumber: 10)
+    }()
+    try visitor.visitRepeatedGroupField(maybeEmptyValue: self.repeatedGroup, fieldNumber: 20)
     try visitor.visitExtensionFields(fields: _protobuf_extensionFieldValues, start: 1000, end: 536870912)
     try unknownFields.traverse(visitor: &visitor)
   }
@@ -5385,27 +5301,13 @@ extension ProtobufUnittest_TestParsingMergeLite.RepeatedFieldsGenerator: SwiftPr
   }
 
   func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
-    if !self.field1.isEmpty {
-      try visitor.visitRepeatedMessageField(value: self.field1, fieldNumber: 1)
-    }
-    if !self.field2.isEmpty {
-      try visitor.visitRepeatedMessageField(value: self.field2, fieldNumber: 2)
-    }
-    if !self.field3.isEmpty {
-      try visitor.visitRepeatedMessageField(value: self.field3, fieldNumber: 3)
-    }
-    if !self.group1.isEmpty {
-      try visitor.visitRepeatedGroupField(value: self.group1, fieldNumber: 10)
-    }
-    if !self.group2.isEmpty {
-      try visitor.visitRepeatedGroupField(value: self.group2, fieldNumber: 20)
-    }
-    if !self.ext1.isEmpty {
-      try visitor.visitRepeatedMessageField(value: self.ext1, fieldNumber: 1000)
-    }
-    if !self.ext2.isEmpty {
-      try visitor.visitRepeatedMessageField(value: self.ext2, fieldNumber: 1001)
-    }
+    try visitor.visitRepeatedMessageField(maybeEmptyValue: self.field1, fieldNumber: 1)
+    try visitor.visitRepeatedMessageField(maybeEmptyValue: self.field2, fieldNumber: 2)
+    try visitor.visitRepeatedMessageField(maybeEmptyValue: self.field3, fieldNumber: 3)
+    try visitor.visitRepeatedGroupField(maybeEmptyValue: self.group1, fieldNumber: 10)
+    try visitor.visitRepeatedGroupField(maybeEmptyValue: self.group2, fieldNumber: 20)
+    try visitor.visitRepeatedMessageField(maybeEmptyValue: self.ext1, fieldNumber: 1000)
+    try visitor.visitRepeatedMessageField(maybeEmptyValue: self.ext2, fieldNumber: 1001)
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -5445,9 +5347,9 @@ extension ProtobufUnittest_TestParsingMergeLite.RepeatedFieldsGenerator.Group1: 
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._field1 {
-      try visitor.visitSingularMessageField(value: v, fieldNumber: 11)
-    } }()
+    try {
+      try visitor.visitSingularMessageField(optionalValue: self._field1, fieldNumber: 11)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -5481,9 +5383,9 @@ extension ProtobufUnittest_TestParsingMergeLite.RepeatedFieldsGenerator.Group2: 
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._field1 {
-      try visitor.visitSingularMessageField(value: v, fieldNumber: 21)
-    } }()
+    try {
+      try visitor.visitSingularMessageField(optionalValue: self._field1, fieldNumber: 21)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -5517,9 +5419,9 @@ extension ProtobufUnittest_TestParsingMergeLite.OptionalGroup: SwiftProtobuf.Mes
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._optionalGroupAllTypes {
-      try visitor.visitSingularMessageField(value: v, fieldNumber: 11)
-    } }()
+    try {
+      try visitor.visitSingularMessageField(optionalValue: self._optionalGroupAllTypes, fieldNumber: 11)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -5553,9 +5455,9 @@ extension ProtobufUnittest_TestParsingMergeLite.RepeatedGroup: SwiftProtobuf.Mes
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._repeatedGroupAllTypes {
-      try visitor.visitSingularMessageField(value: v, fieldNumber: 21)
-    } }()
+    try {
+      try visitor.visitSingularMessageField(optionalValue: self._repeatedGroupAllTypes, fieldNumber: 21)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -5594,9 +5496,9 @@ extension ProtobufUnittest_TestMergeExceptionLite: SwiftProtobuf.Message, SwiftP
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._allExtensions {
-      try visitor.visitSingularMessageField(value: v, fieldNumber: 1)
-    } }()
+    try {
+      try visitor.visitSingularMessageField(optionalValue: self._allExtensions, fieldNumber: 1)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -5685,12 +5587,12 @@ extension ProtobufUnittest_V1MessageLite: SwiftProtobuf.Message, SwiftProtobuf._
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._intField {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-    } }()
-    try { if let v = self._enumField {
-      try visitor.visitSingularEnumField(value: v, fieldNumber: 2)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._intField, fieldNumber: 1)
+    }()
+    try {
+      try visitor.visitSingularEnumField(optionalValue: self._enumField, fieldNumber: 2)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -5732,12 +5634,12 @@ extension ProtobufUnittest_V2MessageLite: SwiftProtobuf.Message, SwiftProtobuf._
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._intField {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-    } }()
-    try { if let v = self._enumField {
-      try visitor.visitSingularEnumField(value: v, fieldNumber: 2)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._intField, fieldNumber: 1)
+    }()
+    try {
+      try visitor.visitSingularEnumField(optionalValue: self._enumField, fieldNumber: 2)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -5839,36 +5741,30 @@ extension ProtobufUnittest_TestHugeFieldNumbersLite: SwiftProtobuf.Message, Swif
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
     try visitor.visitExtensionFields(fields: _protobuf_extensionFieldValues, start: 536860000, end: 536870000)
-    try { if let v = self._optionalInt32 {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 536870000)
-    } }()
-    try { if let v = self._fixed32 {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 536870001)
-    } }()
-    if !self.repeatedInt32.isEmpty {
-      try visitor.visitRepeatedInt32Field(value: self.repeatedInt32, fieldNumber: 536870002)
-    }
-    if !self.packedInt32.isEmpty {
-      try visitor.visitPackedInt32Field(value: self.packedInt32, fieldNumber: 536870003)
-    }
-    try { if let v = self._optionalEnum {
-      try visitor.visitSingularEnumField(value: v, fieldNumber: 536870004)
-    } }()
-    try { if let v = self._optionalString {
-      try visitor.visitSingularStringField(value: v, fieldNumber: 536870005)
-    } }()
-    try { if let v = self._optionalBytes {
-      try visitor.visitSingularBytesField(value: v, fieldNumber: 536870006)
-    } }()
-    try { if let v = self._optionalMessage {
-      try visitor.visitSingularMessageField(value: v, fieldNumber: 536870007)
-    } }()
-    try { if let v = self._optionalGroup {
-      try visitor.visitSingularGroupField(value: v, fieldNumber: 536870008)
-    } }()
-    if !self.stringStringMap.isEmpty {
-      try visitor.visitMapField(fieldType: SwiftProtobuf._ProtobufMap<SwiftProtobuf.ProtobufString,SwiftProtobuf.ProtobufString>.self, value: self.stringStringMap, fieldNumber: 536870010)
-    }
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._optionalInt32, fieldNumber: 536870000)
+    }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._fixed32, fieldNumber: 536870001)
+    }()
+    try visitor.visitRepeatedInt32Field(maybeEmptyValue: self.repeatedInt32, fieldNumber: 536870002)
+    try visitor.visitPackedInt32Field(maybeEmptyValue: self.packedInt32, fieldNumber: 536870003)
+    try {
+      try visitor.visitSingularEnumField(optionalValue: self._optionalEnum, fieldNumber: 536870004)
+    }()
+    try {
+      try visitor.visitSingularStringField(optionalValue: self._optionalString, fieldNumber: 536870005)
+    }()
+    try {
+      try visitor.visitSingularBytesField(optionalValue: self._optionalBytes, fieldNumber: 536870006)
+    }()
+    try {
+      try visitor.visitSingularMessageField(optionalValue: self._optionalMessage, fieldNumber: 536870007)
+    }()
+    try {
+      try visitor.visitSingularGroupField(optionalValue: self._optionalGroup, fieldNumber: 536870008)
+    }()
+    try visitor.visitMapField(fieldType: SwiftProtobuf._ProtobufMap<SwiftProtobuf.ProtobufString,SwiftProtobuf.ProtobufString>.self, maybeEmptyValue: self.stringStringMap, fieldNumber: 536870010)
     switch self.oneofField {
     case .oneofUint32?: try {
       guard case .oneofUint32(let v)? = self.oneofField else { preconditionFailure() }
@@ -5932,9 +5828,9 @@ extension ProtobufUnittest_TestHugeFieldNumbersLite.OptionalGroup: SwiftProtobuf
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._groupA {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 536870009)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._groupA, fieldNumber: 536870009)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -6145,9 +6041,7 @@ extension ProtobufUnittest_PackedInt32: SwiftProtobuf.Message, SwiftProtobuf._Me
   }
 
   func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
-    if !self.repeatedInt32.isEmpty {
-      try visitor.visitPackedInt32Field(value: self.repeatedInt32, fieldNumber: 2048)
-    }
+    try visitor.visitPackedInt32Field(maybeEmptyValue: self.repeatedInt32, fieldNumber: 2048)
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -6177,9 +6071,7 @@ extension ProtobufUnittest_NonPackedInt32: SwiftProtobuf.Message, SwiftProtobuf.
   }
 
   func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
-    if !self.repeatedInt32.isEmpty {
-      try visitor.visitRepeatedInt32Field(value: self.repeatedInt32, fieldNumber: 2048)
-    }
+    try visitor.visitRepeatedInt32Field(maybeEmptyValue: self.repeatedInt32, fieldNumber: 2048)
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -6209,9 +6101,7 @@ extension ProtobufUnittest_PackedFixed32: SwiftProtobuf.Message, SwiftProtobuf._
   }
 
   func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
-    if !self.repeatedFixed32.isEmpty {
-      try visitor.visitPackedFixed32Field(value: self.repeatedFixed32, fieldNumber: 2048)
-    }
+    try visitor.visitPackedFixed32Field(maybeEmptyValue: self.repeatedFixed32, fieldNumber: 2048)
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -6241,9 +6131,7 @@ extension ProtobufUnittest_NonPackedFixed32: SwiftProtobuf.Message, SwiftProtobu
   }
 
   func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
-    if !self.repeatedFixed32.isEmpty {
-      try visitor.visitRepeatedFixed32Field(value: self.repeatedFixed32, fieldNumber: 2048)
-    }
+    try visitor.visitRepeatedFixed32Field(maybeEmptyValue: self.repeatedFixed32, fieldNumber: 2048)
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -6331,12 +6219,12 @@ extension ProtobufUnittest_RecursiveMessage: SwiftProtobuf.Message, SwiftProtobu
       // allocates stack space for every if/case branch local when no optimizations
       // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
       // https://github.com/apple/swift-protobuf/issues/1182
-      try { if let v = _storage._recurse {
-        try visitor.visitSingularMessageField(value: v, fieldNumber: 1)
-      } }()
-      try { if let v = _storage._payload {
-        try visitor.visitSingularBytesField(value: v, fieldNumber: 2)
-      } }()
+      try {
+        try visitor.visitSingularMessageField(optionalValue: _storage._recurse, fieldNumber: 1)
+      }()
+      try {
+        try visitor.visitSingularBytesField(optionalValue: _storage._payload, fieldNumber: 2)
+      }()
     }
     try unknownFields.traverse(visitor: &visitor)
   }

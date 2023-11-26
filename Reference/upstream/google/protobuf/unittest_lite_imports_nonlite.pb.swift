@@ -124,12 +124,12 @@ extension ProtobufUnittest_TestLiteImportsNonlite: SwiftProtobuf.Message, SwiftP
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._message {
-      try visitor.visitSingularMessageField(value: v, fieldNumber: 1)
-    } }()
-    try { if let v = self._messageWithRequired {
-      try visitor.visitSingularMessageField(value: v, fieldNumber: 2)
-    } }()
+    try {
+      try visitor.visitSingularMessageField(optionalValue: self._message, fieldNumber: 1)
+    }()
+    try {
+      try visitor.visitSingularMessageField(optionalValue: self._messageWithRequired, fieldNumber: 2)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 

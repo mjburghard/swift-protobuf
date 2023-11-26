@@ -17695,672 +17695,672 @@ extension SwiftUnittest_Names_FieldNames: SwiftProtobuf.Message, SwiftProtobuf._
       // allocates stack space for every if/case branch local when no optimizations
       // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
       // https://github.com/apple/swift-protobuf/issues/1182
-      try { if let v = _storage._string {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-      } }()
-      try { if let v = _storage._int {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 2)
-      } }()
-      try { if let v = _storage._double {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 3)
-      } }()
-      try { if let v = _storage._float {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 4)
-      } }()
-      try { if let v = _storage._uint {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 5)
-      } }()
-      try { if let v = _storage._hashValue_p {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 6)
-      } }()
-      try { if let v = _storage._description_p {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 7)
-      } }()
-      try { if let v = _storage._debugDescription_p {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 8)
-      } }()
-      try { if let v = _storage._swift {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 9)
-      } }()
-      try { if let v = _storage._unrecognized {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 10)
-      } }()
-      try { if let v = _storage._class {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 11)
-      } }()
-      try { if let v = _storage._deinit {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 12)
-      } }()
-      try { if let v = _storage._enum {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 13)
-      } }()
-      try { if let v = _storage._func {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 15)
-      } }()
-      try { if let v = _storage._import {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 16)
-      } }()
-      try { if let v = _storage._init_p {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 17)
-      } }()
-      try { if let v = _storage._inout {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 18)
-      } }()
-      try { if let v = _storage._internal {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 19)
-      } }()
-      try { if let v = _storage._let {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 20)
-      } }()
-      try { if let v = _storage._operator {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 21)
-      } }()
-      try { if let v = _storage._private {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 22)
-      } }()
-      try { if let v = _storage._protocol {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 23)
-      } }()
-      try { if let v = _storage._public {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 24)
-      } }()
-      try { if let v = _storage._static {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 25)
-      } }()
-      try { if let v = _storage._struct {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 26)
-      } }()
-      try { if let v = _storage._subscript {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 27)
-      } }()
-      try { if let v = _storage._typealias {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 28)
-      } }()
-      try { if let v = _storage._var {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 29)
-      } }()
-      try { if let v = _storage._break {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 30)
-      } }()
-      try { if let v = _storage._case {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 31)
-      } }()
-      try { if let v = _storage._continue {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 32)
-      } }()
-      try { if let v = _storage._default {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 33)
-      } }()
-      try { if let v = _storage._defer {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 34)
-      } }()
-      try { if let v = _storage._do {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 35)
-      } }()
-      try { if let v = _storage._else {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 36)
-      } }()
-      try { if let v = _storage._fallthrough {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 37)
-      } }()
-      try { if let v = _storage._for {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 38)
-      } }()
-      try { if let v = _storage._guard {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 39)
-      } }()
-      try { if let v = _storage._if {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 40)
-      } }()
-      try { if let v = _storage._in {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 41)
-      } }()
-      try { if let v = _storage._repeat {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 42)
-      } }()
-      try { if let v = _storage._return {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 43)
-      } }()
-      try { if let v = _storage._switch {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 44)
-      } }()
-      try { if let v = _storage._where {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 45)
-      } }()
-      try { if let v = _storage._while {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 46)
-      } }()
-      try { if let v = _storage._as {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 47)
-      } }()
-      try { if let v = _storage._catch {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 48)
-      } }()
-      try { if let v = _storage._dynamicType_p {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 49)
-      } }()
-      try { if let v = _storage._false {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 50)
-      } }()
-      try { if let v = _storage._is {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 51)
-      } }()
-      try { if let v = _storage._nil {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 52)
-      } }()
-      try { if let v = _storage._rethrows {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 53)
-      } }()
-      try { if let v = _storage._super {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 54)
-      } }()
-      try { if let v = _storage._self_p {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 55)
-      } }()
-      try { if let v = _storage._throw {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 57)
-      } }()
-      try { if let v = _storage._throws {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 58)
-      } }()
-      try { if let v = _storage._true {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 59)
-      } }()
-      try { if let v = _storage._try {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 60)
-      } }()
-      try { if let v = _storage.__Column__ {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 61)
-      } }()
-      try { if let v = _storage.__File__ {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 62)
-      } }()
-      try { if let v = _storage.__Function__ {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 63)
-      } }()
-      try { if let v = _storage.__Line__ {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 64)
-      } }()
-      try { if let v = _storage.____ {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 65)
-      } }()
-      try { if let v = _storage._associativity {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 66)
-      } }()
-      try { if let v = _storage._convenience {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 67)
-      } }()
-      try { if let v = _storage._dynamic {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 68)
-      } }()
-      try { if let v = _storage._didSet {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 69)
-      } }()
-      try { if let v = _storage._final {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 70)
-      } }()
-      try { if let v = _storage._get {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 71)
-      } }()
-      try { if let v = _storage._infix {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 72)
-      } }()
-      try { if let v = _storage._indirect {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 73)
-      } }()
-      try { if let v = _storage._lazy {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 74)
-      } }()
-      try { if let v = _storage._left {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 75)
-      } }()
-      try { if let v = _storage._mutating {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 76)
-      } }()
-      try { if let v = _storage._none {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 77)
-      } }()
-      try { if let v = _storage._nonmutating {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 78)
-      } }()
-      try { if let v = _storage._optional {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 79)
-      } }()
-      try { if let v = _storage._override {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 80)
-      } }()
-      try { if let v = _storage._postfix {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 81)
-      } }()
-      try { if let v = _storage._precedence {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 82)
-      } }()
-      try { if let v = _storage._prefix {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 83)
-      } }()
-      try { if let v = _storage._required {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 85)
-      } }()
-      try { if let v = _storage._right {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 86)
-      } }()
-      try { if let v = _storage._set {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 87)
-      } }()
-      try { if let v = _storage._type {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 88)
-      } }()
-      try { if let v = _storage._unowned {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 89)
-      } }()
-      try { if let v = _storage._weak {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 90)
-      } }()
-      try { if let v = _storage._willSet {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 91)
-      } }()
-      try { if let v = _storage._id {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 92)
-      } }()
-      try { if let v = _storage._cmd {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 93)
-      } }()
-      try { if let v = _storage._out {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 96)
-      } }()
-      try { if let v = _storage._bycopy {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 98)
-      } }()
-      try { if let v = _storage._byref {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 99)
-      } }()
-      try { if let v = _storage._oneway {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 100)
-      } }()
-      try { if let v = _storage._and {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 102)
-      } }()
-      try { if let v = _storage._andEq {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 103)
-      } }()
-      try { if let v = _storage._alignas {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 104)
-      } }()
-      try { if let v = _storage._alignof {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 105)
-      } }()
-      try { if let v = _storage._asm {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 106)
-      } }()
-      try { if let v = _storage._auto {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 107)
-      } }()
-      try { if let v = _storage._bitand {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 108)
-      } }()
-      try { if let v = _storage._bitor {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 109)
-      } }()
-      try { if let v = _storage._bool {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 110)
-      } }()
-      try { if let v = _storage._char {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 114)
-      } }()
-      try { if let v = _storage._char16T {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 115)
-      } }()
-      try { if let v = _storage._char32T {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 116)
-      } }()
-      try { if let v = _storage._compl {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 118)
-      } }()
-      try { if let v = _storage._const {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 119)
-      } }()
-      try { if let v = _storage._constexpr {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 120)
-      } }()
-      try { if let v = _storage._constCast {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 121)
-      } }()
-      try { if let v = _storage._decltype {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 123)
-      } }()
-      try { if let v = _storage._delete {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 125)
-      } }()
-      try { if let v = _storage._dynamicCast {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 127)
-      } }()
-      try { if let v = _storage._explicit {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 130)
-      } }()
-      try { if let v = _storage._export {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 131)
-      } }()
-      try { if let v = _storage._extern {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 132)
-      } }()
-      try { if let v = _storage._friend {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 136)
-      } }()
-      try { if let v = _storage._goto {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 137)
-      } }()
-      try { if let v = _storage._inline {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 139)
-      } }()
-      try { if let v = _storage._long {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 141)
-      } }()
-      try { if let v = _storage._mutable {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 142)
-      } }()
-      try { if let v = _storage._namespace {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 143)
-      } }()
-      try { if let v = _storage._new {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 144)
-      } }()
-      try { if let v = _storage._noexcept {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 145)
-      } }()
-      try { if let v = _storage._not {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 146)
-      } }()
-      try { if let v = _storage._notEq {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 147)
-      } }()
-      try { if let v = _storage._nullptr {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 148)
-      } }()
-      try { if let v = _storage._or {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 150)
-      } }()
-      try { if let v = _storage._orEq {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 151)
-      } }()
-      try { if let v = _storage._protected {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 153)
-      } }()
-      try { if let v = _storage._register {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 155)
-      } }()
-      try { if let v = _storage._reinterpretCast {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 156)
-      } }()
-      try { if let v = _storage._short {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 158)
-      } }()
-      try { if let v = _storage._signed {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 159)
-      } }()
-      try { if let v = _storage._sizeof {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 160)
-      } }()
-      try { if let v = _storage._staticAssert {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 162)
-      } }()
-      try { if let v = _storage._staticCast {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 163)
-      } }()
-      try { if let v = _storage._template {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 166)
-      } }()
-      try { if let v = _storage._this {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 167)
-      } }()
-      try { if let v = _storage._threadLocal {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 168)
-      } }()
-      try { if let v = _storage._typedef {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 172)
-      } }()
-      try { if let v = _storage._typeid {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 173)
-      } }()
-      try { if let v = _storage._typename {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 174)
-      } }()
-      try { if let v = _storage._union {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 175)
-      } }()
-      try { if let v = _storage._unsigned {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 176)
-      } }()
-      try { if let v = _storage._using {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 177)
-      } }()
-      try { if let v = _storage._virtual {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 178)
-      } }()
-      try { if let v = _storage._void {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 179)
-      } }()
-      try { if let v = _storage._volatile {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 180)
-      } }()
-      try { if let v = _storage._wcharT {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 181)
-      } }()
-      try { if let v = _storage._xor {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 183)
-      } }()
-      try { if let v = _storage._xorEq {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 184)
-      } }()
-      try { if let v = _storage._restrict {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 185)
-      } }()
-      try { if let v = _storage._category {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 186)
-      } }()
-      try { if let v = _storage._ivar {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 187)
-      } }()
-      try { if let v = _storage._method {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 188)
-      } }()
-      try { if let v = _storage._finalize {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 192)
-      } }()
-      try { if let v = _storage._hash {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 193)
-      } }()
-      try { if let v = _storage._dealloc {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 194)
-      } }()
-      try { if let v = _storage._superclass {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 197)
-      } }()
-      try { if let v = _storage._retain {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 198)
-      } }()
-      try { if let v = _storage._release {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 199)
-      } }()
-      try { if let v = _storage._autorelease {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 200)
-      } }()
-      try { if let v = _storage._retainCount {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 201)
-      } }()
-      try { if let v = _storage._zone {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 202)
-      } }()
-      try { if let v = _storage._isProxy {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 203)
-      } }()
-      try { if let v = _storage._copy {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 204)
-      } }()
-      try { if let v = _storage._mutableCopy {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 205)
-      } }()
-      try { if let v = _storage._classForCoder {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 206)
-      } }()
-      try { if let v = _storage._clear {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 207)
-      } }()
-      try { if let v = _storage._data {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 208)
-      } }()
-      try { if let v = _storage._delimitedData {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 209)
-      } }()
-      try { if let v = _storage._descriptor {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 210)
-      } }()
-      try { if let v = _storage._extensionRegistry {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 211)
-      } }()
-      try { if let v = _storage._extensionsCurrentlySet {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 212)
-      } }()
-      try { if let v = _storage._isInitialized_p {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 213)
-      } }()
-      try { if let v = _storage._serializedSize {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 214)
-      } }()
-      try { if let v = _storage._sortedExtensionsInUse {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 215)
-      } }()
-      try { if let v = _storage._unknownFields_p {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 216)
-      } }()
-      try { if let v = _storage._fixed {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 217)
-      } }()
-      try { if let v = _storage._fract {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 218)
-      } }()
-      try { if let v = _storage._size {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 219)
-      } }()
-      try { if let v = _storage._logicalAddress {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 220)
-      } }()
-      try { if let v = _storage._physicalAddress {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 221)
-      } }()
-      try { if let v = _storage._byteCount {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 222)
-      } }()
-      try { if let v = _storage._byteOffset {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 223)
-      } }()
-      try { if let v = _storage._duration {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 224)
-      } }()
-      try { if let v = _storage._absoluteTime {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 225)
-      } }()
-      try { if let v = _storage._optionBits {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 226)
-      } }()
-      try { if let v = _storage._itemCount {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 227)
-      } }()
-      try { if let v = _storage._pbversion {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 228)
-      } }()
-      try { if let v = _storage._scriptCode {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 229)
-      } }()
-      try { if let v = _storage._langCode {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 230)
-      } }()
-      try { if let v = _storage._regionCode {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 231)
-      } }()
-      try { if let v = _storage._ostype {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 232)
-      } }()
-      try { if let v = _storage._processSerialNumber {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 233)
-      } }()
-      try { if let v = _storage._point {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 234)
-      } }()
-      try { if let v = _storage._rect {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 235)
-      } }()
-      try { if let v = _storage._fixedPoint {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 236)
-      } }()
-      try { if let v = _storage._fixedRect {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 237)
-      } }()
-      try { if let v = _storage._style {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 238)
-      } }()
-      try { if let v = _storage._styleParameter {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 239)
-      } }()
-      try { if let v = _storage._styleField {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 240)
-      } }()
-      try { if let v = _storage._timeScale {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 241)
-      } }()
-      try { if let v = _storage._timeBase {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 242)
-      } }()
-      try { if let v = _storage._timeRecord {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 243)
-      } }()
-      try { if let v = _storage._jsonShouldBeOverridden {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 244)
-      } }()
-      try { if let v = _storage._any {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 245)
-      } }()
-      try { if let v = _storage._int32 {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 246)
-      } }()
-      try { if let v = _storage._int64 {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 247)
-      } }()
-      try { if let v = _storage._uint32 {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 250)
-      } }()
-      try { if let v = _storage._uint64 {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 251)
-      } }()
-      try { if let v = _storage._associatedtype {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 252)
-      } }()
-      try { if let v = _storage._fileprivate {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 253)
-      } }()
-      try { if let v = _storage._open {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 254)
-      } }()
-      try { if let v = _storage._serializedData {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 255)
-      } }()
-      try { if let v = _storage._hasSerializedData_p {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 256)
-      } }()
-      try { if let v = _storage._clearSerializedData_p {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 257)
-      } }()
-      try { if let v = _storage._jsonUtf8Data {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 258)
-      } }()
-      try { if let v = _storage._jsonString {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 259)
-      } }()
-      try { if let v = _storage._extension {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 260)
-      } }()
-      try { if let v = _storage._extensions {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 261)
-      } }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._string, fieldNumber: 1)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._int, fieldNumber: 2)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._double, fieldNumber: 3)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._float, fieldNumber: 4)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._uint, fieldNumber: 5)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._hashValue_p, fieldNumber: 6)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._description_p, fieldNumber: 7)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._debugDescription_p, fieldNumber: 8)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._swift, fieldNumber: 9)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._unrecognized, fieldNumber: 10)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._class, fieldNumber: 11)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._deinit, fieldNumber: 12)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._enum, fieldNumber: 13)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._func, fieldNumber: 15)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._import, fieldNumber: 16)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._init_p, fieldNumber: 17)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._inout, fieldNumber: 18)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._internal, fieldNumber: 19)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._let, fieldNumber: 20)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._operator, fieldNumber: 21)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._private, fieldNumber: 22)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._protocol, fieldNumber: 23)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._public, fieldNumber: 24)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._static, fieldNumber: 25)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._struct, fieldNumber: 26)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._subscript, fieldNumber: 27)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._typealias, fieldNumber: 28)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._var, fieldNumber: 29)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._break, fieldNumber: 30)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._case, fieldNumber: 31)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._continue, fieldNumber: 32)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._default, fieldNumber: 33)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._defer, fieldNumber: 34)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._do, fieldNumber: 35)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._else, fieldNumber: 36)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._fallthrough, fieldNumber: 37)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._for, fieldNumber: 38)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._guard, fieldNumber: 39)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._if, fieldNumber: 40)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._in, fieldNumber: 41)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._repeat, fieldNumber: 42)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._return, fieldNumber: 43)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._switch, fieldNumber: 44)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._where, fieldNumber: 45)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._while, fieldNumber: 46)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._as, fieldNumber: 47)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._catch, fieldNumber: 48)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._dynamicType_p, fieldNumber: 49)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._false, fieldNumber: 50)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._is, fieldNumber: 51)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._nil, fieldNumber: 52)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._rethrows, fieldNumber: 53)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._super, fieldNumber: 54)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._self_p, fieldNumber: 55)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._throw, fieldNumber: 57)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._throws, fieldNumber: 58)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._true, fieldNumber: 59)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._try, fieldNumber: 60)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage.__Column__, fieldNumber: 61)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage.__File__, fieldNumber: 62)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage.__Function__, fieldNumber: 63)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage.__Line__, fieldNumber: 64)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage.____, fieldNumber: 65)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._associativity, fieldNumber: 66)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._convenience, fieldNumber: 67)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._dynamic, fieldNumber: 68)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._didSet, fieldNumber: 69)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._final, fieldNumber: 70)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._get, fieldNumber: 71)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._infix, fieldNumber: 72)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._indirect, fieldNumber: 73)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._lazy, fieldNumber: 74)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._left, fieldNumber: 75)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._mutating, fieldNumber: 76)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._none, fieldNumber: 77)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._nonmutating, fieldNumber: 78)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._optional, fieldNumber: 79)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._override, fieldNumber: 80)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._postfix, fieldNumber: 81)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._precedence, fieldNumber: 82)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._prefix, fieldNumber: 83)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._required, fieldNumber: 85)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._right, fieldNumber: 86)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._set, fieldNumber: 87)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._type, fieldNumber: 88)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._unowned, fieldNumber: 89)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._weak, fieldNumber: 90)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._willSet, fieldNumber: 91)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._id, fieldNumber: 92)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._cmd, fieldNumber: 93)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._out, fieldNumber: 96)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._bycopy, fieldNumber: 98)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._byref, fieldNumber: 99)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._oneway, fieldNumber: 100)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._and, fieldNumber: 102)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._andEq, fieldNumber: 103)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._alignas, fieldNumber: 104)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._alignof, fieldNumber: 105)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._asm, fieldNumber: 106)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._auto, fieldNumber: 107)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._bitand, fieldNumber: 108)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._bitor, fieldNumber: 109)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._bool, fieldNumber: 110)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._char, fieldNumber: 114)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._char16T, fieldNumber: 115)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._char32T, fieldNumber: 116)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._compl, fieldNumber: 118)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._const, fieldNumber: 119)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._constexpr, fieldNumber: 120)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._constCast, fieldNumber: 121)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._decltype, fieldNumber: 123)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._delete, fieldNumber: 125)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._dynamicCast, fieldNumber: 127)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._explicit, fieldNumber: 130)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._export, fieldNumber: 131)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._extern, fieldNumber: 132)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._friend, fieldNumber: 136)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._goto, fieldNumber: 137)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._inline, fieldNumber: 139)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._long, fieldNumber: 141)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._mutable, fieldNumber: 142)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._namespace, fieldNumber: 143)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._new, fieldNumber: 144)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._noexcept, fieldNumber: 145)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._not, fieldNumber: 146)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._notEq, fieldNumber: 147)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._nullptr, fieldNumber: 148)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._or, fieldNumber: 150)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._orEq, fieldNumber: 151)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._protected, fieldNumber: 153)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._register, fieldNumber: 155)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._reinterpretCast, fieldNumber: 156)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._short, fieldNumber: 158)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._signed, fieldNumber: 159)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._sizeof, fieldNumber: 160)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._staticAssert, fieldNumber: 162)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._staticCast, fieldNumber: 163)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._template, fieldNumber: 166)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._this, fieldNumber: 167)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._threadLocal, fieldNumber: 168)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._typedef, fieldNumber: 172)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._typeid, fieldNumber: 173)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._typename, fieldNumber: 174)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._union, fieldNumber: 175)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._unsigned, fieldNumber: 176)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._using, fieldNumber: 177)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._virtual, fieldNumber: 178)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._void, fieldNumber: 179)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._volatile, fieldNumber: 180)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._wcharT, fieldNumber: 181)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._xor, fieldNumber: 183)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._xorEq, fieldNumber: 184)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._restrict, fieldNumber: 185)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._category, fieldNumber: 186)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._ivar, fieldNumber: 187)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._method, fieldNumber: 188)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._finalize, fieldNumber: 192)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._hash, fieldNumber: 193)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._dealloc, fieldNumber: 194)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._superclass, fieldNumber: 197)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._retain, fieldNumber: 198)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._release, fieldNumber: 199)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._autorelease, fieldNumber: 200)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._retainCount, fieldNumber: 201)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._zone, fieldNumber: 202)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._isProxy, fieldNumber: 203)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._copy, fieldNumber: 204)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._mutableCopy, fieldNumber: 205)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._classForCoder, fieldNumber: 206)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._clear, fieldNumber: 207)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._data, fieldNumber: 208)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._delimitedData, fieldNumber: 209)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._descriptor, fieldNumber: 210)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._extensionRegistry, fieldNumber: 211)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._extensionsCurrentlySet, fieldNumber: 212)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._isInitialized_p, fieldNumber: 213)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._serializedSize, fieldNumber: 214)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._sortedExtensionsInUse, fieldNumber: 215)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._unknownFields_p, fieldNumber: 216)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._fixed, fieldNumber: 217)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._fract, fieldNumber: 218)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._size, fieldNumber: 219)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._logicalAddress, fieldNumber: 220)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._physicalAddress, fieldNumber: 221)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._byteCount, fieldNumber: 222)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._byteOffset, fieldNumber: 223)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._duration, fieldNumber: 224)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._absoluteTime, fieldNumber: 225)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._optionBits, fieldNumber: 226)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._itemCount, fieldNumber: 227)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._pbversion, fieldNumber: 228)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._scriptCode, fieldNumber: 229)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._langCode, fieldNumber: 230)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._regionCode, fieldNumber: 231)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._ostype, fieldNumber: 232)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._processSerialNumber, fieldNumber: 233)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._point, fieldNumber: 234)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._rect, fieldNumber: 235)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._fixedPoint, fieldNumber: 236)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._fixedRect, fieldNumber: 237)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._style, fieldNumber: 238)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._styleParameter, fieldNumber: 239)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._styleField, fieldNumber: 240)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._timeScale, fieldNumber: 241)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._timeBase, fieldNumber: 242)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._timeRecord, fieldNumber: 243)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._jsonShouldBeOverridden, fieldNumber: 244)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._any, fieldNumber: 245)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._int32, fieldNumber: 246)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._int64, fieldNumber: 247)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._uint32, fieldNumber: 250)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._uint64, fieldNumber: 251)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._associatedtype, fieldNumber: 252)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._fileprivate, fieldNumber: 253)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._open, fieldNumber: 254)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._serializedData, fieldNumber: 255)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._hasSerializedData_p, fieldNumber: 256)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._clearSerializedData_p, fieldNumber: 257)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._jsonUtf8Data, fieldNumber: 258)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._jsonString, fieldNumber: 259)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._extension, fieldNumber: 260)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._extensions, fieldNumber: 261)
+      }()
     }
     try unknownFields.traverse(visitor: &visitor)
   }
@@ -18643,9 +18643,9 @@ extension SwiftUnittest_Names_MessageNames.StringMessage: SwiftProtobuf.Message,
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._string {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._string, fieldNumber: 1)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -18679,9 +18679,9 @@ extension SwiftUnittest_Names_MessageNames.ProtocolMessage: SwiftProtobuf.Messag
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._protocol {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._protocol, fieldNumber: 1)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -18715,9 +18715,9 @@ extension SwiftUnittest_Names_MessageNames.IntMessage: SwiftProtobuf.Message, Sw
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._int {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._int, fieldNumber: 1)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -18751,9 +18751,9 @@ extension SwiftUnittest_Names_MessageNames.DoubleMessage: SwiftProtobuf.Message,
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._double {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._double, fieldNumber: 1)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -18787,9 +18787,9 @@ extension SwiftUnittest_Names_MessageNames.FloatMessage: SwiftProtobuf.Message, 
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._float {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._float, fieldNumber: 1)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -18823,9 +18823,9 @@ extension SwiftUnittest_Names_MessageNames.UIntMessage: SwiftProtobuf.Message, S
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._uint {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._uint, fieldNumber: 1)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -18859,9 +18859,9 @@ extension SwiftUnittest_Names_MessageNames.hashValueMessage: SwiftProtobuf.Messa
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._hashValue_p {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._hashValue_p, fieldNumber: 1)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -18895,9 +18895,9 @@ extension SwiftUnittest_Names_MessageNames.descriptionMessage: SwiftProtobuf.Mes
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._description_p {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._description_p, fieldNumber: 1)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -18931,9 +18931,9 @@ extension SwiftUnittest_Names_MessageNames.debugDescriptionMessage: SwiftProtobu
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._debugDescription_p {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._debugDescription_p, fieldNumber: 1)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -18967,9 +18967,9 @@ extension SwiftUnittest_Names_MessageNames.SwiftMessage: SwiftProtobuf.Message, 
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._swift {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._swift, fieldNumber: 1)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -19003,9 +19003,9 @@ extension SwiftUnittest_Names_MessageNames.UNRECOGNIZED: SwiftProtobuf.Message, 
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._unrecognized {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._unrecognized, fieldNumber: 1)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -19039,9 +19039,9 @@ extension SwiftUnittest_Names_MessageNames.classMessage: SwiftProtobuf.Message, 
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._class {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._class, fieldNumber: 1)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -19075,9 +19075,9 @@ extension SwiftUnittest_Names_MessageNames.deinitMessage: SwiftProtobuf.Message,
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._deinit {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._deinit, fieldNumber: 1)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -19111,9 +19111,9 @@ extension SwiftUnittest_Names_MessageNames.enumMessage: SwiftProtobuf.Message, S
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._enum {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._enum, fieldNumber: 1)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -19147,9 +19147,9 @@ extension SwiftUnittest_Names_MessageNames.extensionMessage: SwiftProtobuf.Messa
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._extension {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._extension, fieldNumber: 1)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -19183,9 +19183,9 @@ extension SwiftUnittest_Names_MessageNames.funcMessage: SwiftProtobuf.Message, S
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._func {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._func, fieldNumber: 1)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -19219,9 +19219,9 @@ extension SwiftUnittest_Names_MessageNames.importMessage: SwiftProtobuf.Message,
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._import {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._import, fieldNumber: 1)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -19255,9 +19255,9 @@ extension SwiftUnittest_Names_MessageNames.initMessage: SwiftProtobuf.Message, S
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._init_p {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._init_p, fieldNumber: 1)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -19291,9 +19291,9 @@ extension SwiftUnittest_Names_MessageNames.inoutMessage: SwiftProtobuf.Message, 
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._inout {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._inout, fieldNumber: 1)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -19327,9 +19327,9 @@ extension SwiftUnittest_Names_MessageNames.internalMessage: SwiftProtobuf.Messag
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._internal {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._internal, fieldNumber: 1)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -19363,9 +19363,9 @@ extension SwiftUnittest_Names_MessageNames.letMessage: SwiftProtobuf.Message, Sw
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._let {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._let, fieldNumber: 1)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -19399,9 +19399,9 @@ extension SwiftUnittest_Names_MessageNames.operatorMessage: SwiftProtobuf.Messag
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._operator {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._operator, fieldNumber: 1)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -19435,9 +19435,9 @@ extension SwiftUnittest_Names_MessageNames.privateMessage: SwiftProtobuf.Message
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._private {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._private, fieldNumber: 1)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -19471,9 +19471,9 @@ extension SwiftUnittest_Names_MessageNames.protocolMessage: SwiftProtobuf.Messag
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._protocol {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._protocol, fieldNumber: 1)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -19507,9 +19507,9 @@ extension SwiftUnittest_Names_MessageNames.publicMessage: SwiftProtobuf.Message,
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._public {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._public, fieldNumber: 1)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -19543,9 +19543,9 @@ extension SwiftUnittest_Names_MessageNames.staticMessage: SwiftProtobuf.Message,
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._static {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._static, fieldNumber: 1)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -19579,9 +19579,9 @@ extension SwiftUnittest_Names_MessageNames.structMessage: SwiftProtobuf.Message,
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._struct {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._struct, fieldNumber: 1)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -19615,9 +19615,9 @@ extension SwiftUnittest_Names_MessageNames.subscriptMessage: SwiftProtobuf.Messa
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._subscript {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._subscript, fieldNumber: 1)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -19651,9 +19651,9 @@ extension SwiftUnittest_Names_MessageNames.typealiasMessage: SwiftProtobuf.Messa
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._typealias {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._typealias, fieldNumber: 1)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -19687,9 +19687,9 @@ extension SwiftUnittest_Names_MessageNames.varMessage: SwiftProtobuf.Message, Sw
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._var {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._var, fieldNumber: 1)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -19723,9 +19723,9 @@ extension SwiftUnittest_Names_MessageNames.breakMessage: SwiftProtobuf.Message, 
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._break {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._break, fieldNumber: 1)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -19759,9 +19759,9 @@ extension SwiftUnittest_Names_MessageNames.caseMessage: SwiftProtobuf.Message, S
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._case {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._case, fieldNumber: 1)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -19795,9 +19795,9 @@ extension SwiftUnittest_Names_MessageNames.continueMessage: SwiftProtobuf.Messag
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._continue {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._continue, fieldNumber: 1)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -19831,9 +19831,9 @@ extension SwiftUnittest_Names_MessageNames.defaultMessage: SwiftProtobuf.Message
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._default {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._default, fieldNumber: 1)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -19867,9 +19867,9 @@ extension SwiftUnittest_Names_MessageNames.deferMessage: SwiftProtobuf.Message, 
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._defer {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._defer, fieldNumber: 1)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -19903,9 +19903,9 @@ extension SwiftUnittest_Names_MessageNames.doMessage: SwiftProtobuf.Message, Swi
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._do {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._do, fieldNumber: 1)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -19939,9 +19939,9 @@ extension SwiftUnittest_Names_MessageNames.elseMessage: SwiftProtobuf.Message, S
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._else {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._else, fieldNumber: 1)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -19975,9 +19975,9 @@ extension SwiftUnittest_Names_MessageNames.fallthroughMessage: SwiftProtobuf.Mes
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._fallthrough {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._fallthrough, fieldNumber: 1)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -20011,9 +20011,9 @@ extension SwiftUnittest_Names_MessageNames.forMessage: SwiftProtobuf.Message, Sw
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._for {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._for, fieldNumber: 1)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -20047,9 +20047,9 @@ extension SwiftUnittest_Names_MessageNames.guardMessage: SwiftProtobuf.Message, 
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._guard {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._guard, fieldNumber: 1)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -20083,9 +20083,9 @@ extension SwiftUnittest_Names_MessageNames.ifMessage: SwiftProtobuf.Message, Swi
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._if {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._if, fieldNumber: 1)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -20119,9 +20119,9 @@ extension SwiftUnittest_Names_MessageNames.inMessage: SwiftProtobuf.Message, Swi
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._in {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._in, fieldNumber: 1)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -20155,9 +20155,9 @@ extension SwiftUnittest_Names_MessageNames.repeatMessage: SwiftProtobuf.Message,
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._repeat {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._repeat, fieldNumber: 1)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -20191,9 +20191,9 @@ extension SwiftUnittest_Names_MessageNames.returnMessage: SwiftProtobuf.Message,
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._return {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._return, fieldNumber: 1)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -20227,9 +20227,9 @@ extension SwiftUnittest_Names_MessageNames.switchMessage: SwiftProtobuf.Message,
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._switch {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._switch, fieldNumber: 1)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -20263,9 +20263,9 @@ extension SwiftUnittest_Names_MessageNames.whereMessage: SwiftProtobuf.Message, 
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._where {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._where, fieldNumber: 1)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -20299,9 +20299,9 @@ extension SwiftUnittest_Names_MessageNames.whileMessage: SwiftProtobuf.Message, 
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._while {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._while, fieldNumber: 1)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -20335,9 +20335,9 @@ extension SwiftUnittest_Names_MessageNames.asMessage: SwiftProtobuf.Message, Swi
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._as {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._as, fieldNumber: 1)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -20371,9 +20371,9 @@ extension SwiftUnittest_Names_MessageNames.catchMessage: SwiftProtobuf.Message, 
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._catch {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._catch, fieldNumber: 1)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -20407,9 +20407,9 @@ extension SwiftUnittest_Names_MessageNames.dynamicTypeMessage: SwiftProtobuf.Mes
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._dynamicType_p {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._dynamicType_p, fieldNumber: 1)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -20443,9 +20443,9 @@ extension SwiftUnittest_Names_MessageNames.falseMessage: SwiftProtobuf.Message, 
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._false {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._false, fieldNumber: 1)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -20479,9 +20479,9 @@ extension SwiftUnittest_Names_MessageNames.isMessage: SwiftProtobuf.Message, Swi
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._is {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._is, fieldNumber: 1)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -20515,9 +20515,9 @@ extension SwiftUnittest_Names_MessageNames.nilMessage: SwiftProtobuf.Message, Sw
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._nil {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._nil, fieldNumber: 1)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -20551,9 +20551,9 @@ extension SwiftUnittest_Names_MessageNames.rethrowsMessage: SwiftProtobuf.Messag
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._rethrows {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._rethrows, fieldNumber: 1)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -20587,9 +20587,9 @@ extension SwiftUnittest_Names_MessageNames.superMessage: SwiftProtobuf.Message, 
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._super {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._super, fieldNumber: 1)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -20623,9 +20623,9 @@ extension SwiftUnittest_Names_MessageNames.selfMessage: SwiftProtobuf.Message, S
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._self_p {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._self_p, fieldNumber: 1)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -20659,9 +20659,9 @@ extension SwiftUnittest_Names_MessageNames.throwMessage: SwiftProtobuf.Message, 
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._throw {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._throw, fieldNumber: 1)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -20695,9 +20695,9 @@ extension SwiftUnittest_Names_MessageNames.throwsMessage: SwiftProtobuf.Message,
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._throws {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._throws, fieldNumber: 1)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -20731,9 +20731,9 @@ extension SwiftUnittest_Names_MessageNames.trueMessage: SwiftProtobuf.Message, S
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._true {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._true, fieldNumber: 1)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -20767,9 +20767,9 @@ extension SwiftUnittest_Names_MessageNames.tryMessage: SwiftProtobuf.Message, Sw
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._try {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._try, fieldNumber: 1)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -20803,9 +20803,9 @@ extension SwiftUnittest_Names_MessageNames.__COLUMN__Message: SwiftProtobuf.Mess
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self.__Column__ {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self.__Column__, fieldNumber: 1)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -20839,9 +20839,9 @@ extension SwiftUnittest_Names_MessageNames.__FILE__Message: SwiftProtobuf.Messag
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self.__File__ {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self.__File__, fieldNumber: 1)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -20875,9 +20875,9 @@ extension SwiftUnittest_Names_MessageNames.__FUNCTION__Message: SwiftProtobuf.Me
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self.__Function__ {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self.__Function__, fieldNumber: 1)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -20911,9 +20911,9 @@ extension SwiftUnittest_Names_MessageNames.__LINE__Message: SwiftProtobuf.Messag
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self.__Line__ {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self.__Line__, fieldNumber: 1)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -20947,9 +20947,9 @@ extension SwiftUnittest_Names_MessageNames._Message: SwiftProtobuf.Message, Swif
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self.____ {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self.____, fieldNumber: 1)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -20983,9 +20983,9 @@ extension SwiftUnittest_Names_MessageNames.__Message: SwiftProtobuf.Message, Swi
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._____ {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._____, fieldNumber: 1)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -21019,9 +21019,9 @@ extension SwiftUnittest_Names_MessageNames.associativity: SwiftProtobuf.Message,
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._associativity {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._associativity, fieldNumber: 1)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -21055,9 +21055,9 @@ extension SwiftUnittest_Names_MessageNames.convenience: SwiftProtobuf.Message, S
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._convenience {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._convenience, fieldNumber: 1)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -21091,9 +21091,9 @@ extension SwiftUnittest_Names_MessageNames.dynamic: SwiftProtobuf.Message, Swift
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._dynamic {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._dynamic, fieldNumber: 1)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -21127,9 +21127,9 @@ extension SwiftUnittest_Names_MessageNames.didSet: SwiftProtobuf.Message, SwiftP
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._didSet {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._didSet, fieldNumber: 1)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -21163,9 +21163,9 @@ extension SwiftUnittest_Names_MessageNames.final: SwiftProtobuf.Message, SwiftPr
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._final {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._final, fieldNumber: 1)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -21199,9 +21199,9 @@ extension SwiftUnittest_Names_MessageNames.get: SwiftProtobuf.Message, SwiftProt
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._get {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._get, fieldNumber: 1)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -21235,9 +21235,9 @@ extension SwiftUnittest_Names_MessageNames.infix: SwiftProtobuf.Message, SwiftPr
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._infix {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._infix, fieldNumber: 1)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -21271,9 +21271,9 @@ extension SwiftUnittest_Names_MessageNames.indirect: SwiftProtobuf.Message, Swif
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._indirect {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._indirect, fieldNumber: 1)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -21307,9 +21307,9 @@ extension SwiftUnittest_Names_MessageNames.lazy: SwiftProtobuf.Message, SwiftPro
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._lazy {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._lazy, fieldNumber: 1)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -21343,9 +21343,9 @@ extension SwiftUnittest_Names_MessageNames.left: SwiftProtobuf.Message, SwiftPro
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._left {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._left, fieldNumber: 1)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -21379,9 +21379,9 @@ extension SwiftUnittest_Names_MessageNames.mutating: SwiftProtobuf.Message, Swif
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._mutating {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._mutating, fieldNumber: 1)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -21415,9 +21415,9 @@ extension SwiftUnittest_Names_MessageNames.none: SwiftProtobuf.Message, SwiftPro
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._none {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._none, fieldNumber: 1)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -21451,9 +21451,9 @@ extension SwiftUnittest_Names_MessageNames.nonmutating: SwiftProtobuf.Message, S
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._nonmutating {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._nonmutating, fieldNumber: 1)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -21487,9 +21487,9 @@ extension SwiftUnittest_Names_MessageNames.optional: SwiftProtobuf.Message, Swif
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._optional {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._optional, fieldNumber: 1)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -21523,9 +21523,9 @@ extension SwiftUnittest_Names_MessageNames.override: SwiftProtobuf.Message, Swif
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._override {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._override, fieldNumber: 1)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -21559,9 +21559,9 @@ extension SwiftUnittest_Names_MessageNames.postfix: SwiftProtobuf.Message, Swift
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._postfix {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._postfix, fieldNumber: 1)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -21595,9 +21595,9 @@ extension SwiftUnittest_Names_MessageNames.precedence: SwiftProtobuf.Message, Sw
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._precedence {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._precedence, fieldNumber: 1)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -21631,9 +21631,9 @@ extension SwiftUnittest_Names_MessageNames.prefix: SwiftProtobuf.Message, SwiftP
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._prefix {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._prefix, fieldNumber: 1)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -21667,9 +21667,9 @@ extension SwiftUnittest_Names_MessageNames.required: SwiftProtobuf.Message, Swif
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._required {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._required, fieldNumber: 1)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -21703,9 +21703,9 @@ extension SwiftUnittest_Names_MessageNames.right: SwiftProtobuf.Message, SwiftPr
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._right {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._right, fieldNumber: 1)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -21739,9 +21739,9 @@ extension SwiftUnittest_Names_MessageNames.set: SwiftProtobuf.Message, SwiftProt
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._set {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._set, fieldNumber: 1)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -21775,9 +21775,9 @@ extension SwiftUnittest_Names_MessageNames.TypeMessage: SwiftProtobuf.Message, S
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._type {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._type, fieldNumber: 1)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -21811,9 +21811,9 @@ extension SwiftUnittest_Names_MessageNames.unowned: SwiftProtobuf.Message, Swift
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._unowned {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._unowned, fieldNumber: 1)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -21847,9 +21847,9 @@ extension SwiftUnittest_Names_MessageNames.weak: SwiftProtobuf.Message, SwiftPro
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._weak {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._weak, fieldNumber: 1)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -21883,9 +21883,9 @@ extension SwiftUnittest_Names_MessageNames.willSet: SwiftProtobuf.Message, Swift
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._willSet {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._willSet, fieldNumber: 1)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -21919,9 +21919,9 @@ extension SwiftUnittest_Names_MessageNames.id: SwiftProtobuf.Message, SwiftProto
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._id {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._id, fieldNumber: 1)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -21955,9 +21955,9 @@ extension SwiftUnittest_Names_MessageNames._cmd: SwiftProtobuf.Message, SwiftPro
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._cmd {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._cmd, fieldNumber: 1)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -21991,9 +21991,9 @@ extension SwiftUnittest_Names_MessageNames.out: SwiftProtobuf.Message, SwiftProt
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._out {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._out, fieldNumber: 1)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -22027,9 +22027,9 @@ extension SwiftUnittest_Names_MessageNames.bycopy: SwiftProtobuf.Message, SwiftP
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._bycopy {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._bycopy, fieldNumber: 1)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -22063,9 +22063,9 @@ extension SwiftUnittest_Names_MessageNames.byref: SwiftProtobuf.Message, SwiftPr
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._byref {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._byref, fieldNumber: 1)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -22099,9 +22099,9 @@ extension SwiftUnittest_Names_MessageNames.oneway: SwiftProtobuf.Message, SwiftP
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._oneway {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._oneway, fieldNumber: 1)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -22135,9 +22135,9 @@ extension SwiftUnittest_Names_MessageNames.and: SwiftProtobuf.Message, SwiftProt
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._and {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._and, fieldNumber: 1)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -22171,9 +22171,9 @@ extension SwiftUnittest_Names_MessageNames.and_eq: SwiftProtobuf.Message, SwiftP
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._andEq {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._andEq, fieldNumber: 1)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -22207,9 +22207,9 @@ extension SwiftUnittest_Names_MessageNames.alignas: SwiftProtobuf.Message, Swift
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._alignas {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._alignas, fieldNumber: 1)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -22243,9 +22243,9 @@ extension SwiftUnittest_Names_MessageNames.alignof: SwiftProtobuf.Message, Swift
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._alignof {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._alignof, fieldNumber: 1)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -22279,9 +22279,9 @@ extension SwiftUnittest_Names_MessageNames.asm: SwiftProtobuf.Message, SwiftProt
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._asm {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._asm, fieldNumber: 1)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -22315,9 +22315,9 @@ extension SwiftUnittest_Names_MessageNames.auto: SwiftProtobuf.Message, SwiftPro
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._auto {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._auto, fieldNumber: 1)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -22351,9 +22351,9 @@ extension SwiftUnittest_Names_MessageNames.bitand: SwiftProtobuf.Message, SwiftP
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._bitand {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._bitand, fieldNumber: 1)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -22387,9 +22387,9 @@ extension SwiftUnittest_Names_MessageNames.bitor: SwiftProtobuf.Message, SwiftPr
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._bitor {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._bitor, fieldNumber: 1)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -22423,9 +22423,9 @@ extension SwiftUnittest_Names_MessageNames.bool: SwiftProtobuf.Message, SwiftPro
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._bool {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._bool, fieldNumber: 1)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -22459,9 +22459,9 @@ extension SwiftUnittest_Names_MessageNames.char: SwiftProtobuf.Message, SwiftPro
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._char {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._char, fieldNumber: 1)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -22495,9 +22495,9 @@ extension SwiftUnittest_Names_MessageNames.char16_t: SwiftProtobuf.Message, Swif
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._char16T {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._char16T, fieldNumber: 1)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -22531,9 +22531,9 @@ extension SwiftUnittest_Names_MessageNames.char32_t: SwiftProtobuf.Message, Swif
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._char32T {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._char32T, fieldNumber: 1)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -22567,9 +22567,9 @@ extension SwiftUnittest_Names_MessageNames.compl: SwiftProtobuf.Message, SwiftPr
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._compl {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._compl, fieldNumber: 1)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -22603,9 +22603,9 @@ extension SwiftUnittest_Names_MessageNames.const: SwiftProtobuf.Message, SwiftPr
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._const {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._const, fieldNumber: 1)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -22639,9 +22639,9 @@ extension SwiftUnittest_Names_MessageNames.constexpr: SwiftProtobuf.Message, Swi
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._constexpr {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._constexpr, fieldNumber: 1)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -22675,9 +22675,9 @@ extension SwiftUnittest_Names_MessageNames.const_cast: SwiftProtobuf.Message, Sw
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._constCast {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._constCast, fieldNumber: 1)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -22711,9 +22711,9 @@ extension SwiftUnittest_Names_MessageNames.decltype: SwiftProtobuf.Message, Swif
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._decltype {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._decltype, fieldNumber: 1)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -22747,9 +22747,9 @@ extension SwiftUnittest_Names_MessageNames.delete: SwiftProtobuf.Message, SwiftP
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._delete {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._delete, fieldNumber: 1)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -22783,9 +22783,9 @@ extension SwiftUnittest_Names_MessageNames.dynamic_cast: SwiftProtobuf.Message, 
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._dynamicCast {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._dynamicCast, fieldNumber: 1)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -22819,9 +22819,9 @@ extension SwiftUnittest_Names_MessageNames.explicit: SwiftProtobuf.Message, Swif
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._explicit {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._explicit, fieldNumber: 1)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -22855,9 +22855,9 @@ extension SwiftUnittest_Names_MessageNames.export: SwiftProtobuf.Message, SwiftP
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._export {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._export, fieldNumber: 1)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -22891,9 +22891,9 @@ extension SwiftUnittest_Names_MessageNames.extern: SwiftProtobuf.Message, SwiftP
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._extern {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._extern, fieldNumber: 1)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -22927,9 +22927,9 @@ extension SwiftUnittest_Names_MessageNames.friend: SwiftProtobuf.Message, SwiftP
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._friend {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._friend, fieldNumber: 1)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -22963,9 +22963,9 @@ extension SwiftUnittest_Names_MessageNames.goto: SwiftProtobuf.Message, SwiftPro
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._goto {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._goto, fieldNumber: 1)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -22999,9 +22999,9 @@ extension SwiftUnittest_Names_MessageNames.inline: SwiftProtobuf.Message, SwiftP
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._inline {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._inline, fieldNumber: 1)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -23035,9 +23035,9 @@ extension SwiftUnittest_Names_MessageNames.long: SwiftProtobuf.Message, SwiftPro
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._long {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._long, fieldNumber: 1)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -23071,9 +23071,9 @@ extension SwiftUnittest_Names_MessageNames.mutable: SwiftProtobuf.Message, Swift
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._mutable {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._mutable, fieldNumber: 1)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -23107,9 +23107,9 @@ extension SwiftUnittest_Names_MessageNames.namespace: SwiftProtobuf.Message, Swi
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._namespace {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._namespace, fieldNumber: 1)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -23143,9 +23143,9 @@ extension SwiftUnittest_Names_MessageNames.new: SwiftProtobuf.Message, SwiftProt
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._new {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._new, fieldNumber: 1)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -23179,9 +23179,9 @@ extension SwiftUnittest_Names_MessageNames.noexcept: SwiftProtobuf.Message, Swif
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._noexcept {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._noexcept, fieldNumber: 1)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -23215,9 +23215,9 @@ extension SwiftUnittest_Names_MessageNames.not: SwiftProtobuf.Message, SwiftProt
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._not {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._not, fieldNumber: 1)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -23251,9 +23251,9 @@ extension SwiftUnittest_Names_MessageNames.not_eq: SwiftProtobuf.Message, SwiftP
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._notEq {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._notEq, fieldNumber: 1)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -23287,9 +23287,9 @@ extension SwiftUnittest_Names_MessageNames.nullptr: SwiftProtobuf.Message, Swift
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._nullptr {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._nullptr, fieldNumber: 1)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -23323,9 +23323,9 @@ extension SwiftUnittest_Names_MessageNames.or: SwiftProtobuf.Message, SwiftProto
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._or {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._or, fieldNumber: 1)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -23359,9 +23359,9 @@ extension SwiftUnittest_Names_MessageNames.or_eq: SwiftProtobuf.Message, SwiftPr
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._orEq {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._orEq, fieldNumber: 1)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -23395,9 +23395,9 @@ extension SwiftUnittest_Names_MessageNames.protected: SwiftProtobuf.Message, Swi
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._protected {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._protected, fieldNumber: 1)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -23431,9 +23431,9 @@ extension SwiftUnittest_Names_MessageNames.register: SwiftProtobuf.Message, Swif
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._register {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._register, fieldNumber: 1)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -23467,9 +23467,9 @@ extension SwiftUnittest_Names_MessageNames.reinterpret_cast: SwiftProtobuf.Messa
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._reinterpretCast {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._reinterpretCast, fieldNumber: 1)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -23503,9 +23503,9 @@ extension SwiftUnittest_Names_MessageNames.short: SwiftProtobuf.Message, SwiftPr
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._short {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._short, fieldNumber: 1)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -23539,9 +23539,9 @@ extension SwiftUnittest_Names_MessageNames.signed: SwiftProtobuf.Message, SwiftP
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._signed {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._signed, fieldNumber: 1)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -23575,9 +23575,9 @@ extension SwiftUnittest_Names_MessageNames.sizeof: SwiftProtobuf.Message, SwiftP
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._sizeof {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._sizeof, fieldNumber: 1)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -23611,9 +23611,9 @@ extension SwiftUnittest_Names_MessageNames.static_assert: SwiftProtobuf.Message,
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._staticAssert {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._staticAssert, fieldNumber: 1)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -23647,9 +23647,9 @@ extension SwiftUnittest_Names_MessageNames.static_cast: SwiftProtobuf.Message, S
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._staticCast {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._staticCast, fieldNumber: 1)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -23683,9 +23683,9 @@ extension SwiftUnittest_Names_MessageNames.template: SwiftProtobuf.Message, Swif
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._template {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._template, fieldNumber: 1)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -23719,9 +23719,9 @@ extension SwiftUnittest_Names_MessageNames.this: SwiftProtobuf.Message, SwiftPro
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._this {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._this, fieldNumber: 1)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -23755,9 +23755,9 @@ extension SwiftUnittest_Names_MessageNames.thread_local: SwiftProtobuf.Message, 
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._threadLocal {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._threadLocal, fieldNumber: 1)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -23791,9 +23791,9 @@ extension SwiftUnittest_Names_MessageNames.typedef: SwiftProtobuf.Message, Swift
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._typedef {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._typedef, fieldNumber: 1)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -23827,9 +23827,9 @@ extension SwiftUnittest_Names_MessageNames.typeid: SwiftProtobuf.Message, SwiftP
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._typeid {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._typeid, fieldNumber: 1)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -23863,9 +23863,9 @@ extension SwiftUnittest_Names_MessageNames.typename: SwiftProtobuf.Message, Swif
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._typename {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._typename, fieldNumber: 1)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -23899,9 +23899,9 @@ extension SwiftUnittest_Names_MessageNames.union: SwiftProtobuf.Message, SwiftPr
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._union {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._union, fieldNumber: 1)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -23935,9 +23935,9 @@ extension SwiftUnittest_Names_MessageNames.unsigned: SwiftProtobuf.Message, Swif
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._unsigned {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._unsigned, fieldNumber: 1)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -23971,9 +23971,9 @@ extension SwiftUnittest_Names_MessageNames.using: SwiftProtobuf.Message, SwiftPr
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._using {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._using, fieldNumber: 1)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -24007,9 +24007,9 @@ extension SwiftUnittest_Names_MessageNames.virtual: SwiftProtobuf.Message, Swift
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._virtual {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._virtual, fieldNumber: 1)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -24043,9 +24043,9 @@ extension SwiftUnittest_Names_MessageNames.void: SwiftProtobuf.Message, SwiftPro
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._void {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._void, fieldNumber: 1)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -24079,9 +24079,9 @@ extension SwiftUnittest_Names_MessageNames.volatile: SwiftProtobuf.Message, Swif
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._volatile {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._volatile, fieldNumber: 1)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -24115,9 +24115,9 @@ extension SwiftUnittest_Names_MessageNames.wchar_t: SwiftProtobuf.Message, Swift
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._wcharT {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._wcharT, fieldNumber: 1)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -24151,9 +24151,9 @@ extension SwiftUnittest_Names_MessageNames.xor: SwiftProtobuf.Message, SwiftProt
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._xor {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._xor, fieldNumber: 1)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -24187,9 +24187,9 @@ extension SwiftUnittest_Names_MessageNames.xor_eq: SwiftProtobuf.Message, SwiftP
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._xorEq {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._xorEq, fieldNumber: 1)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -24223,9 +24223,9 @@ extension SwiftUnittest_Names_MessageNames.restrict: SwiftProtobuf.Message, Swif
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._restrict {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._restrict, fieldNumber: 1)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -24259,9 +24259,9 @@ extension SwiftUnittest_Names_MessageNames.Category: SwiftProtobuf.Message, Swif
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._category {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._category, fieldNumber: 1)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -24295,9 +24295,9 @@ extension SwiftUnittest_Names_MessageNames.Ivar: SwiftProtobuf.Message, SwiftPro
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._ivar {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._ivar, fieldNumber: 1)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -24331,9 +24331,9 @@ extension SwiftUnittest_Names_MessageNames.Method: SwiftProtobuf.Message, SwiftP
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._method {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._method, fieldNumber: 1)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -24367,9 +24367,9 @@ extension SwiftUnittest_Names_MessageNames.finalize: SwiftProtobuf.Message, Swif
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._finalize {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._finalize, fieldNumber: 1)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -24403,9 +24403,9 @@ extension SwiftUnittest_Names_MessageNames.hash: SwiftProtobuf.Message, SwiftPro
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._hash {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._hash, fieldNumber: 1)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -24439,9 +24439,9 @@ extension SwiftUnittest_Names_MessageNames.dealloc: SwiftProtobuf.Message, Swift
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._dealloc {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._dealloc, fieldNumber: 1)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -24475,9 +24475,9 @@ extension SwiftUnittest_Names_MessageNames.superclass: SwiftProtobuf.Message, Sw
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._superclass {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._superclass, fieldNumber: 1)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -24511,9 +24511,9 @@ extension SwiftUnittest_Names_MessageNames.retain: SwiftProtobuf.Message, SwiftP
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._retain {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._retain, fieldNumber: 1)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -24547,9 +24547,9 @@ extension SwiftUnittest_Names_MessageNames.release: SwiftProtobuf.Message, Swift
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._release {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._release, fieldNumber: 1)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -24583,9 +24583,9 @@ extension SwiftUnittest_Names_MessageNames.autorelease: SwiftProtobuf.Message, S
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._autorelease {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._autorelease, fieldNumber: 1)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -24619,9 +24619,9 @@ extension SwiftUnittest_Names_MessageNames.retainCount: SwiftProtobuf.Message, S
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._retainCount {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._retainCount, fieldNumber: 1)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -24655,9 +24655,9 @@ extension SwiftUnittest_Names_MessageNames.zone: SwiftProtobuf.Message, SwiftPro
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._zone {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._zone, fieldNumber: 1)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -24691,9 +24691,9 @@ extension SwiftUnittest_Names_MessageNames.isProxy: SwiftProtobuf.Message, Swift
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._isProxy {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._isProxy, fieldNumber: 1)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -24727,9 +24727,9 @@ extension SwiftUnittest_Names_MessageNames.copy: SwiftProtobuf.Message, SwiftPro
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._copy {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._copy, fieldNumber: 1)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -24763,9 +24763,9 @@ extension SwiftUnittest_Names_MessageNames.mutableCopy: SwiftProtobuf.Message, S
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._mutableCopy {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._mutableCopy, fieldNumber: 1)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -24799,9 +24799,9 @@ extension SwiftUnittest_Names_MessageNames.classForCoder: SwiftProtobuf.Message,
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._classForCoder {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._classForCoder, fieldNumber: 1)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -24835,9 +24835,9 @@ extension SwiftUnittest_Names_MessageNames.clear: SwiftProtobuf.Message, SwiftPr
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._clear {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._clear, fieldNumber: 1)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -24871,9 +24871,9 @@ extension SwiftUnittest_Names_MessageNames.data: SwiftProtobuf.Message, SwiftPro
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._data {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._data, fieldNumber: 1)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -24907,9 +24907,9 @@ extension SwiftUnittest_Names_MessageNames.delimitedData: SwiftProtobuf.Message,
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._delimitedData {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._delimitedData, fieldNumber: 1)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -24943,9 +24943,9 @@ extension SwiftUnittest_Names_MessageNames.descriptor: SwiftProtobuf.Message, Sw
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._descriptor {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._descriptor, fieldNumber: 1)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -24979,9 +24979,9 @@ extension SwiftUnittest_Names_MessageNames.extensionRegistry: SwiftProtobuf.Mess
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._extensionRegistry {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._extensionRegistry, fieldNumber: 1)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -25015,9 +25015,9 @@ extension SwiftUnittest_Names_MessageNames.extensionsCurrentlySet: SwiftProtobuf
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._extensionsCurrentlySet {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._extensionsCurrentlySet, fieldNumber: 1)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -25051,9 +25051,9 @@ extension SwiftUnittest_Names_MessageNames.isInitializedMessage: SwiftProtobuf.M
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._isInitialized_p {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._isInitialized_p, fieldNumber: 1)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -25087,9 +25087,9 @@ extension SwiftUnittest_Names_MessageNames.serializedSize: SwiftProtobuf.Message
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._serializedSize {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._serializedSize, fieldNumber: 1)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -25123,9 +25123,9 @@ extension SwiftUnittest_Names_MessageNames.sortedExtensionsInUse: SwiftProtobuf.
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._sortedExtensionsInUse {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._sortedExtensionsInUse, fieldNumber: 1)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -25159,9 +25159,9 @@ extension SwiftUnittest_Names_MessageNames.unknownFieldsMessage: SwiftProtobuf.M
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._unknownFields_p {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._unknownFields_p, fieldNumber: 1)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -25195,9 +25195,9 @@ extension SwiftUnittest_Names_MessageNames.Fixed: SwiftProtobuf.Message, SwiftPr
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._fixed {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._fixed, fieldNumber: 1)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -25231,9 +25231,9 @@ extension SwiftUnittest_Names_MessageNames.Fract: SwiftProtobuf.Message, SwiftPr
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._fract {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._fract, fieldNumber: 1)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -25267,9 +25267,9 @@ extension SwiftUnittest_Names_MessageNames.Size: SwiftProtobuf.Message, SwiftPro
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._size {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._size, fieldNumber: 1)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -25303,9 +25303,9 @@ extension SwiftUnittest_Names_MessageNames.LogicalAddress: SwiftProtobuf.Message
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._logicalAddress {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._logicalAddress, fieldNumber: 1)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -25339,9 +25339,9 @@ extension SwiftUnittest_Names_MessageNames.PhysicalAddress: SwiftProtobuf.Messag
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._physicalAddress {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._physicalAddress, fieldNumber: 1)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -25375,9 +25375,9 @@ extension SwiftUnittest_Names_MessageNames.ByteCount: SwiftProtobuf.Message, Swi
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._byteCount {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._byteCount, fieldNumber: 1)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -25411,9 +25411,9 @@ extension SwiftUnittest_Names_MessageNames.ByteOffset: SwiftProtobuf.Message, Sw
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._byteOffset {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._byteOffset, fieldNumber: 1)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -25447,9 +25447,9 @@ extension SwiftUnittest_Names_MessageNames.Duration: SwiftProtobuf.Message, Swif
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._duration {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._duration, fieldNumber: 1)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -25483,9 +25483,9 @@ extension SwiftUnittest_Names_MessageNames.AbsoluteTime: SwiftProtobuf.Message, 
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._absoluteTime {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._absoluteTime, fieldNumber: 1)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -25519,9 +25519,9 @@ extension SwiftUnittest_Names_MessageNames.OptionBits: SwiftProtobuf.Message, Sw
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._optionBits {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._optionBits, fieldNumber: 1)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -25555,9 +25555,9 @@ extension SwiftUnittest_Names_MessageNames.ItemCount: SwiftProtobuf.Message, Swi
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._itemCount {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._itemCount, fieldNumber: 1)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -25591,9 +25591,9 @@ extension SwiftUnittest_Names_MessageNames.PBVersion: SwiftProtobuf.Message, Swi
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._pbversion {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._pbversion, fieldNumber: 1)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -25627,9 +25627,9 @@ extension SwiftUnittest_Names_MessageNames.ScriptCode: SwiftProtobuf.Message, Sw
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._scriptCode {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._scriptCode, fieldNumber: 1)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -25663,9 +25663,9 @@ extension SwiftUnittest_Names_MessageNames.LangCode: SwiftProtobuf.Message, Swif
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._langCode {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._langCode, fieldNumber: 1)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -25699,9 +25699,9 @@ extension SwiftUnittest_Names_MessageNames.RegionCode: SwiftProtobuf.Message, Sw
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._regionCode {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._regionCode, fieldNumber: 1)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -25735,9 +25735,9 @@ extension SwiftUnittest_Names_MessageNames.OSType: SwiftProtobuf.Message, SwiftP
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._ostype {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._ostype, fieldNumber: 1)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -25771,9 +25771,9 @@ extension SwiftUnittest_Names_MessageNames.ProcessSerialNumber: SwiftProtobuf.Me
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._processSerialNumber {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._processSerialNumber, fieldNumber: 1)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -25807,9 +25807,9 @@ extension SwiftUnittest_Names_MessageNames.Point: SwiftProtobuf.Message, SwiftPr
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._point {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._point, fieldNumber: 1)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -25843,9 +25843,9 @@ extension SwiftUnittest_Names_MessageNames.Rect: SwiftProtobuf.Message, SwiftPro
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._rect {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._rect, fieldNumber: 1)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -25879,9 +25879,9 @@ extension SwiftUnittest_Names_MessageNames.FixedPoint: SwiftProtobuf.Message, Sw
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._fixedPoint {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._fixedPoint, fieldNumber: 1)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -25915,9 +25915,9 @@ extension SwiftUnittest_Names_MessageNames.FixedRect: SwiftProtobuf.Message, Swi
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._fixedRect {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._fixedRect, fieldNumber: 1)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -25951,9 +25951,9 @@ extension SwiftUnittest_Names_MessageNames.Style: SwiftProtobuf.Message, SwiftPr
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._style {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._style, fieldNumber: 1)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -25987,9 +25987,9 @@ extension SwiftUnittest_Names_MessageNames.StyleParameter: SwiftProtobuf.Message
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._styleParameter {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._styleParameter, fieldNumber: 1)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -26023,9 +26023,9 @@ extension SwiftUnittest_Names_MessageNames.StyleField: SwiftProtobuf.Message, Sw
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._styleField {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._styleField, fieldNumber: 1)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -26059,9 +26059,9 @@ extension SwiftUnittest_Names_MessageNames.TimeScale: SwiftProtobuf.Message, Swi
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._timeScale {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._timeScale, fieldNumber: 1)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -26095,9 +26095,9 @@ extension SwiftUnittest_Names_MessageNames.TimeBase: SwiftProtobuf.Message, Swif
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._timeBase {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._timeBase, fieldNumber: 1)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -26131,9 +26131,9 @@ extension SwiftUnittest_Names_MessageNames.TimeRecord: SwiftProtobuf.Message, Sw
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._timeRecord {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._timeRecord, fieldNumber: 1)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -26167,9 +26167,9 @@ extension SwiftUnittest_Names_MessageNames.serializedData: SwiftProtobuf.Message
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._serializedData {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._serializedData, fieldNumber: 1)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -26203,9 +26203,9 @@ extension SwiftUnittest_Names_MessageNames.jsonUTF8Data: SwiftProtobuf.Message, 
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._jsonUtf8Data {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._jsonUtf8Data, fieldNumber: 1)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -26239,9 +26239,9 @@ extension SwiftUnittest_Names_MessageNames.jsonString: SwiftProtobuf.Message, Sw
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._jsonString {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._jsonString, fieldNumber: 1)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -26275,9 +26275,9 @@ extension SwiftUnittest_Names_MessageNames.Extension: SwiftProtobuf.Message, Swi
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._extension {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._extension, fieldNumber: 1)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -26311,9 +26311,9 @@ extension SwiftUnittest_Names_MessageNames.ExtensionsMessage: SwiftProtobuf.Mess
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._extensions {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._extensions, fieldNumber: 1)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -27738,57 +27738,57 @@ extension SwiftUnittest_Names_FieldNamingInitials.Lowers: SwiftProtobuf.Message,
       // allocates stack space for every if/case branch local when no optimizations
       // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
       // https://github.com/apple/swift-protobuf/issues/1182
-      try { if let v = _storage._http {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-      } }()
-      try { if let v = _storage._httpRequest {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 2)
-      } }()
-      try { if let v = _storage._theHTTPRequest {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 3)
-      } }()
-      try { if let v = _storage._theHTTP {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 4)
-      } }()
-      try { if let v = _storage._https {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 11)
-      } }()
-      try { if let v = _storage._httpsRequest {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 12)
-      } }()
-      try { if let v = _storage._theHTTPSRequest {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 13)
-      } }()
-      try { if let v = _storage._theHTTPS {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 14)
-      } }()
-      try { if let v = _storage._url {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 21)
-      } }()
-      try { if let v = _storage._urlValue {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 22)
-      } }()
-      try { if let v = _storage._theURLValue {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 23)
-      } }()
-      try { if let v = _storage._theURL {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 24)
-      } }()
-      try { if let v = _storage._aBC {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 31)
-      } }()
-      try { if let v = _storage._id {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 41)
-      } }()
-      try { if let v = _storage._idNumber {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 42)
-      } }()
-      try { if let v = _storage._theIDNumber {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 43)
-      } }()
-      try { if let v = _storage._requestID {
-        try visitor.visitSingularInt32Field(value: v, fieldNumber: 44)
-      } }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._http, fieldNumber: 1)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._httpRequest, fieldNumber: 2)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._theHTTPRequest, fieldNumber: 3)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._theHTTP, fieldNumber: 4)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._https, fieldNumber: 11)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._httpsRequest, fieldNumber: 12)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._theHTTPSRequest, fieldNumber: 13)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._theHTTPS, fieldNumber: 14)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._url, fieldNumber: 21)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._urlValue, fieldNumber: 22)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._theURLValue, fieldNumber: 23)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._theURL, fieldNumber: 24)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._aBC, fieldNumber: 31)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._id, fieldNumber: 41)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._idNumber, fieldNumber: 42)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._theIDNumber, fieldNumber: 43)
+      }()
+      try {
+        try visitor.visitSingularInt32Field(optionalValue: _storage._requestID, fieldNumber: 44)
+      }()
     }
     try unknownFields.traverse(visitor: &visitor)
   }
@@ -27877,54 +27877,54 @@ extension SwiftUnittest_Names_FieldNamingInitials.Uppers: SwiftProtobuf.Message,
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._http {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-    } }()
-    try { if let v = self._httpRequest {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 2)
-    } }()
-    try { if let v = self._theHTTPRequest {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 3)
-    } }()
-    try { if let v = self._theHTTP {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 4)
-    } }()
-    try { if let v = self._https {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 11)
-    } }()
-    try { if let v = self._httpsRequest {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 12)
-    } }()
-    try { if let v = self._theHTTPSRequest {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 13)
-    } }()
-    try { if let v = self._theHTTPS {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 14)
-    } }()
-    try { if let v = self._url {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 21)
-    } }()
-    try { if let v = self._urlValue {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 22)
-    } }()
-    try { if let v = self._theURLValue {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 23)
-    } }()
-    try { if let v = self._theURL {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 24)
-    } }()
-    try { if let v = self._id {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 41)
-    } }()
-    try { if let v = self._idNumber {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 42)
-    } }()
-    try { if let v = self._theIDNumber {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 43)
-    } }()
-    try { if let v = self._requestID {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 44)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._http, fieldNumber: 1)
+    }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._httpRequest, fieldNumber: 2)
+    }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._theHTTPRequest, fieldNumber: 3)
+    }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._theHTTP, fieldNumber: 4)
+    }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._https, fieldNumber: 11)
+    }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._httpsRequest, fieldNumber: 12)
+    }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._theHTTPSRequest, fieldNumber: 13)
+    }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._theHTTPS, fieldNumber: 14)
+    }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._url, fieldNumber: 21)
+    }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._urlValue, fieldNumber: 22)
+    }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._theURLValue, fieldNumber: 23)
+    }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._theURL, fieldNumber: 24)
+    }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._id, fieldNumber: 41)
+    }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._idNumber, fieldNumber: 42)
+    }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._theIDNumber, fieldNumber: 43)
+    }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._requestID, fieldNumber: 44)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -28003,54 +28003,54 @@ extension SwiftUnittest_Names_FieldNamingInitials.WordCase: SwiftProtobuf.Messag
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._http {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-    } }()
-    try { if let v = self._httpRequest {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 2)
-    } }()
-    try { if let v = self._theHTTPRequest {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 3)
-    } }()
-    try { if let v = self._theHTTP {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 4)
-    } }()
-    try { if let v = self._https {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 11)
-    } }()
-    try { if let v = self._httpsRequest {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 12)
-    } }()
-    try { if let v = self._theHTTPSRequest {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 13)
-    } }()
-    try { if let v = self._theHTTPS {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 14)
-    } }()
-    try { if let v = self._url {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 21)
-    } }()
-    try { if let v = self._urlValue {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 22)
-    } }()
-    try { if let v = self._theURLValue {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 23)
-    } }()
-    try { if let v = self._theURL {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 24)
-    } }()
-    try { if let v = self._id {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 41)
-    } }()
-    try { if let v = self._idNumber {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 42)
-    } }()
-    try { if let v = self._theIDNumber {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 43)
-    } }()
-    try { if let v = self._requestID {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 44)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._http, fieldNumber: 1)
+    }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._httpRequest, fieldNumber: 2)
+    }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._theHTTPRequest, fieldNumber: 3)
+    }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._theHTTP, fieldNumber: 4)
+    }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._https, fieldNumber: 11)
+    }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._httpsRequest, fieldNumber: 12)
+    }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._theHTTPSRequest, fieldNumber: 13)
+    }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._theHTTPS, fieldNumber: 14)
+    }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._url, fieldNumber: 21)
+    }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._urlValue, fieldNumber: 22)
+    }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._theURLValue, fieldNumber: 23)
+    }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._theURL, fieldNumber: 24)
+    }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._id, fieldNumber: 41)
+    }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._idNumber, fieldNumber: 42)
+    }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._theIDNumber, fieldNumber: 43)
+    }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._requestID, fieldNumber: 44)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -28296,15 +28296,15 @@ extension SwiftUnittest_Names_ValidIdentifiers: SwiftProtobuf.Message, SwiftProt
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self.__1Field {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 1)
-    } }()
-    try { if let v = self._field {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 2)
-    } }()
-    try { if let v = self.__3Field3 {
-      try visitor.visitSingularInt32Field(value: v, fieldNumber: 3)
-    } }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self.__1Field, fieldNumber: 1)
+    }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self._field, fieldNumber: 2)
+    }()
+    try {
+      try visitor.visitSingularInt32Field(optionalValue: self.__3Field3, fieldNumber: 3)
+    }()
     switch self._2Of {
     case ._4?: try {
       guard case ._4(let v)? = self._2Of else { preconditionFailure() }
@@ -28316,9 +28316,9 @@ extension SwiftUnittest_Names_ValidIdentifiers: SwiftProtobuf.Message, SwiftProt
     }()
     case nil: break
     }
-    try { if let v = self._enumField {
-      try visitor.visitSingularEnumField(value: v, fieldNumber: 6)
-    } }()
+    try {
+      try visitor.visitSingularEnumField(optionalValue: self._enumField, fieldNumber: 6)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -28408,9 +28408,9 @@ extension SwiftUnittest_Names_SpecialNames2: SwiftProtobuf.Message, SwiftProtobu
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._newValue {
-      try visitor.visitSingularStringField(value: v, fieldNumber: 1)
-    } }()
+    try {
+      try visitor.visitSingularStringField(optionalValue: self._newValue, fieldNumber: 1)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -28481,9 +28481,9 @@ extension SwiftUnittest_Names_SpecialNames3: SwiftProtobuf.Message, SwiftProtobu
       try { if case .str(let v)? = _storage._newValue {
         try visitor.visitSingularStringField(value: v, fieldNumber: 1)
       } }()
-      try { if let v = _storage._forcesStorage {
-        try visitor.visitSingularMessageField(value: v, fieldNumber: 2)
-      } }()
+      try {
+        try visitor.visitSingularMessageField(optionalValue: _storage._forcesStorage, fieldNumber: 2)
+      }()
     }
     try unknownFields.traverse(visitor: &visitor)
   }
@@ -28554,12 +28554,12 @@ extension SwiftUnittest_Names_SpecialNames4: SwiftProtobuf.Message, SwiftProtobu
       // allocates stack space for every if/case branch local when no optimizations
       // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
       // https://github.com/apple/swift-protobuf/issues/1182
-      try { if let v = _storage._newValue {
-        try visitor.visitSingularStringField(value: v, fieldNumber: 1)
-      } }()
-      try { if let v = _storage._forcesStorage {
-        try visitor.visitSingularMessageField(value: v, fieldNumber: 2)
-      } }()
+      try {
+        try visitor.visitSingularStringField(optionalValue: _storage._newValue, fieldNumber: 1)
+      }()
+      try {
+        try visitor.visitSingularMessageField(optionalValue: _storage._forcesStorage, fieldNumber: 2)
+      }()
     }
     try unknownFields.traverse(visitor: &visitor)
   }

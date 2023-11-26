@@ -117,12 +117,10 @@ extension ProtobufUnittest_TestAny: SwiftProtobuf.Message, SwiftProtobuf._Messag
     if self.int32Value != 0 {
       try visitor.visitSingularInt32Field(value: self.int32Value, fieldNumber: 1)
     }
-    try { if let v = self._anyValue {
-      try visitor.visitSingularMessageField(value: v, fieldNumber: 2)
-    } }()
-    if !self.repeatedAnyValue.isEmpty {
-      try visitor.visitRepeatedMessageField(value: self.repeatedAnyValue, fieldNumber: 3)
-    }
+    try {
+      try visitor.visitSingularMessageField(optionalValue: self._anyValue, fieldNumber: 2)
+    }()
+    try visitor.visitRepeatedMessageField(maybeEmptyValue: self.repeatedAnyValue, fieldNumber: 3)
     if !self.text.isEmpty {
       try visitor.visitSingularStringField(value: self.text, fieldNumber: 4)
     }

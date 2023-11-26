@@ -289,9 +289,7 @@ extension Google_Protobuf_Struct: SwiftProtobuf.Message, SwiftProtobuf._MessageI
   }
 
   func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
-    if !self.fields.isEmpty {
-      try visitor.visitMapField(fieldType: SwiftProtobuf._ProtobufMessageMap<SwiftProtobuf.ProtobufString,Google_Protobuf_Value>.self, value: self.fields, fieldNumber: 1)
-    }
+    try visitor.visitMapField(fieldType: SwiftProtobuf._ProtobufMessageMap<SwiftProtobuf.ProtobufString,Google_Protobuf_Value>.self, maybeEmptyValue: self.fields, fieldNumber: 1)
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -443,9 +441,7 @@ extension Google_Protobuf_ListValue: SwiftProtobuf.Message, SwiftProtobuf._Messa
   }
 
   func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
-    if !self.values.isEmpty {
-      try visitor.visitRepeatedMessageField(value: self.values, fieldNumber: 1)
-    }
+    try visitor.visitRepeatedMessageField(maybeEmptyValue: self.values, fieldNumber: 1)
     try unknownFields.traverse(visitor: &visitor)
   }
 

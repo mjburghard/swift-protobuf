@@ -551,9 +551,7 @@ extension Conformance_FailureSet: SwiftProtobuf.Message, SwiftProtobuf._MessageI
   }
 
   func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
-    if !self.failure.isEmpty {
-      try visitor.visitRepeatedStringField(value: self.failure, fieldNumber: 1)
-    }
+    try visitor.visitRepeatedStringField(maybeEmptyValue: self.failure, fieldNumber: 1)
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -651,9 +649,9 @@ extension Conformance_ConformanceRequest: SwiftProtobuf.Message, SwiftProtobuf._
     if self.testCategory != .unspecifiedTest {
       try visitor.visitSingularEnumField(value: self.testCategory, fieldNumber: 5)
     }
-    try { if let v = self._jspbEncodingOptions {
-      try visitor.visitSingularMessageField(value: v, fieldNumber: 6)
-    } }()
+    try {
+      try visitor.visitSingularMessageField(optionalValue: self._jspbEncodingOptions, fieldNumber: 6)
+    }()
     switch self.payload {
     case .jspbPayload?: try {
       guard case .jspbPayload(let v)? = self.payload else { preconditionFailure() }

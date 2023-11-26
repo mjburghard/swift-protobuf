@@ -238,12 +238,12 @@ extension ProtobufUnittest_Extend_EnumOptionalDefault.NestedMessage: SwiftProtob
       // allocates stack space for every if/case branch local when no optimizations
       // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
       // https://github.com/apple/swift-protobuf/issues/1182
-      try { if let v = _storage._message {
-        try visitor.visitSingularMessageField(value: v, fieldNumber: 1)
-      } }()
-      try { if let v = _storage._optionalEnum {
-        try visitor.visitSingularEnumField(value: v, fieldNumber: 17)
-      } }()
+      try {
+        try visitor.visitSingularMessageField(optionalValue: _storage._message, fieldNumber: 1)
+      }()
+      try {
+        try visitor.visitSingularEnumField(optionalValue: _storage._optionalEnum, fieldNumber: 17)
+      }()
     }
     try unknownFields.traverse(visitor: &visitor)
   }
@@ -293,9 +293,9 @@ extension ProtobufUnittest_Extend_EnumOptionalDefault.NestedMessage2: SwiftProto
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
     // https://github.com/apple/swift-protobuf/issues/1182
-    try { if let v = self._optionalEnum {
-      try visitor.visitSingularEnumField(value: v, fieldNumber: 17)
-    } }()
+    try {
+      try visitor.visitSingularEnumField(optionalValue: self._optionalEnum, fieldNumber: 17)
+    }()
     try unknownFields.traverse(visitor: &visitor)
   }
 

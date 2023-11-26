@@ -14581,6 +14581,31 @@ struct ProtobufUnittestGenerated_GeneratedSwiftReservedEnums {
 
   }
 
+  enum maybeEmptyValue: SwiftProtobuf.Enum {
+    typealias RawValue = Int
+    case noneMaybeEmptyValue // = 0
+    case UNRECOGNIZED(Int)
+
+    init() {
+      self = .noneMaybeEmptyValue
+    }
+
+    init?(rawValue: Int) {
+      switch rawValue {
+      case 0: self = .noneMaybeEmptyValue
+      default: self = .UNRECOGNIZED(rawValue)
+      }
+    }
+
+    var rawValue: Int {
+      switch self {
+      case .noneMaybeEmptyValue: return 0
+      case .UNRECOGNIZED(let i): return i
+      }
+    }
+
+  }
+
   enum mdayStart: SwiftProtobuf.Enum {
     typealias RawValue = Int
     case noneMdayStart // = 0
@@ -16175,6 +16200,31 @@ struct ProtobufUnittestGenerated_GeneratedSwiftReservedEnums {
     var rawValue: Int {
       switch self {
       case .noneOptionalMessageExtensionField: return 0
+      case .UNRECOGNIZED(let i): return i
+      }
+    }
+
+  }
+
+  enum optionalValue: SwiftProtobuf.Enum {
+    typealias RawValue = Int
+    case noneOptionalValue // = 0
+    case UNRECOGNIZED(Int)
+
+    init() {
+      self = .noneOptionalValue
+    }
+
+    init?(rawValue: Int) {
+      switch rawValue {
+      case 0: self = .noneOptionalValue
+      default: self = .UNRECOGNIZED(rawValue)
+      }
+    }
+
+    var rawValue: Int {
+      switch self {
+      case .noneOptionalValue: return 0
       case .UNRECOGNIZED(let i): return i
       }
     }
@@ -27960,6 +28010,13 @@ extension ProtobufUnittestGenerated_GeneratedSwiftReservedEnums.maximumEditionEn
   ]
 }
 
+extension ProtobufUnittestGenerated_GeneratedSwiftReservedEnums.maybeEmptyValue: CaseIterable {
+  // The compiler won't synthesize support with the UNRECOGNIZED case.
+  static let allCases: [ProtobufUnittestGenerated_GeneratedSwiftReservedEnums.maybeEmptyValue] = [
+    .noneMaybeEmptyValue,
+  ]
+}
+
 extension ProtobufUnittestGenerated_GeneratedSwiftReservedEnums.mdayStart: CaseIterable {
   // The compiler won't synthesize support with the UNRECOGNIZED case.
   static let allCases: [ProtobufUnittestGenerated_GeneratedSwiftReservedEnums.mdayStart] = [
@@ -28405,6 +28462,13 @@ extension ProtobufUnittestGenerated_GeneratedSwiftReservedEnums.OptionalMessageE
   // The compiler won't synthesize support with the UNRECOGNIZED case.
   static let allCases: [ProtobufUnittestGenerated_GeneratedSwiftReservedEnums.OptionalMessageExtensionField] = [
     .noneOptionalMessageExtensionField,
+  ]
+}
+
+extension ProtobufUnittestGenerated_GeneratedSwiftReservedEnums.optionalValue: CaseIterable {
+  // The compiler won't synthesize support with the UNRECOGNIZED case.
+  static let allCases: [ProtobufUnittestGenerated_GeneratedSwiftReservedEnums.optionalValue] = [
+    .noneOptionalValue,
   ]
 }
 
@@ -31150,6 +31214,7 @@ extension ProtobufUnittestGenerated_GeneratedSwiftReservedEnums.MapValueType: @u
 extension ProtobufUnittestGenerated_GeneratedSwiftReservedEnums.mapVisitor: @unchecked Sendable {}
 extension ProtobufUnittestGenerated_GeneratedSwiftReservedEnums.maximumEdition: @unchecked Sendable {}
 extension ProtobufUnittestGenerated_GeneratedSwiftReservedEnums.maximumEditionEnum: @unchecked Sendable {}
+extension ProtobufUnittestGenerated_GeneratedSwiftReservedEnums.maybeEmptyValue: @unchecked Sendable {}
 extension ProtobufUnittestGenerated_GeneratedSwiftReservedEnums.mdayStart: @unchecked Sendable {}
 extension ProtobufUnittestGenerated_GeneratedSwiftReservedEnums.merge: @unchecked Sendable {}
 extension ProtobufUnittestGenerated_GeneratedSwiftReservedEnums.message: @unchecked Sendable {}
@@ -31214,6 +31279,7 @@ extension ProtobufUnittestGenerated_GeneratedSwiftReservedEnums.OptionalEnumExte
 extension ProtobufUnittestGenerated_GeneratedSwiftReservedEnums.OptionalExtensionField: @unchecked Sendable {}
 extension ProtobufUnittestGenerated_GeneratedSwiftReservedEnums.OptionalGroupExtensionField: @unchecked Sendable {}
 extension ProtobufUnittestGenerated_GeneratedSwiftReservedEnums.OptionalMessageExtensionField: @unchecked Sendable {}
+extension ProtobufUnittestGenerated_GeneratedSwiftReservedEnums.optionalValue: @unchecked Sendable {}
 extension ProtobufUnittestGenerated_GeneratedSwiftReservedEnums.OptionRetention: @unchecked Sendable {}
 extension ProtobufUnittestGenerated_GeneratedSwiftReservedEnums.options: @unchecked Sendable {}
 extension ProtobufUnittestGenerated_GeneratedSwiftReservedEnums.OptionTargetType: @unchecked Sendable {}
@@ -35039,6 +35105,12 @@ extension ProtobufUnittestGenerated_GeneratedSwiftReservedEnums.maximumEditionEn
   ]
 }
 
+extension ProtobufUnittestGenerated_GeneratedSwiftReservedEnums.maybeEmptyValue: SwiftProtobuf._ProtoNameProviding {
+  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+    0: .same(proto: "NONE_maybeEmptyValue"),
+  ]
+}
+
 extension ProtobufUnittestGenerated_GeneratedSwiftReservedEnums.mdayStart: SwiftProtobuf._ProtoNameProviding {
   static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
     0: .same(proto: "NONE_mdayStart"),
@@ -35420,6 +35492,12 @@ extension ProtobufUnittestGenerated_GeneratedSwiftReservedEnums.OptionalGroupExt
 extension ProtobufUnittestGenerated_GeneratedSwiftReservedEnums.OptionalMessageExtensionField: SwiftProtobuf._ProtoNameProviding {
   static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
     0: .same(proto: "NONE_OptionalMessageExtensionField"),
+  ]
+}
+
+extension ProtobufUnittestGenerated_GeneratedSwiftReservedEnums.optionalValue: SwiftProtobuf._ProtoNameProviding {
+  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+    0: .same(proto: "NONE_optionalValue"),
   ]
 }
 
