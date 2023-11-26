@@ -722,4 +722,333 @@ extension Visitor {
   public mutating func visitExtensionFields(fields: ExtensionFieldValueSet, start: Int, end: Int) throws {
     try fields.traverse(visitor: &self, start: start, end: end)
   }
+
+  public mutating func visitSingularFloatField(optionalValue value: Float?, fieldNumber: Int) throws {
+    if let value {
+      try visitSingularFloatField(value: value, fieldNumber: fieldNumber)
+    }
+  }
+
+  public mutating func visitSingularDoubleField(optionalValue value: Double?, fieldNumber: Int) throws {
+    if let value {
+      try visitSingularDoubleField(value: value, fieldNumber: fieldNumber)
+    }
+  }
+
+  public mutating func visitSingularInt32Field(optionalValue value: Int32?, fieldNumber: Int) throws {
+    if let value {
+      try visitSingularInt32Field(value: value, fieldNumber: fieldNumber)
+    }
+  }
+
+  public mutating func visitSingularInt64Field(optionalValue value: Int64?, fieldNumber: Int) throws {
+    if let value {
+      try visitSingularInt64Field(value: value, fieldNumber: fieldNumber)
+    }
+  }
+
+  public mutating func visitSingularUInt32Field(optionalValue value: UInt32?, fieldNumber: Int) throws {
+    if let value {
+      try visitSingularUInt32Field(value: value, fieldNumber: fieldNumber)
+    }
+  }
+
+  public mutating func visitSingularUInt64Field(optionalValue value: UInt64?, fieldNumber: Int) throws {
+    if let value {
+      try visitSingularUInt64Field(value: value, fieldNumber: fieldNumber)
+    }
+  }
+
+  public mutating func visitSingularSInt32Field(optionalValue value: Int32?, fieldNumber: Int) throws {
+    if let value {
+      try visitSingularSInt32Field(value: value, fieldNumber: fieldNumber)
+    }
+  }
+
+  public mutating func visitSingularSInt64Field(optionalValue value: Int64?, fieldNumber: Int) throws {
+    if let value {
+      try visitSingularSInt64Field(value: value, fieldNumber: fieldNumber)
+    }
+  }
+
+  public mutating func visitSingularFixed32Field(optionalValue value: UInt32?, fieldNumber: Int) throws {
+    if let value {
+      try visitSingularFixed32Field(value: value, fieldNumber: fieldNumber)
+    }
+  }
+
+  public mutating func visitSingularFixed64Field(optionalValue value: UInt64?, fieldNumber: Int) throws {
+    if let value {
+      try visitSingularFixed64Field(value: value, fieldNumber: fieldNumber)
+    }
+  }
+
+  public mutating func visitSingularSFixed32Field(optionalValue value: Int32?, fieldNumber: Int) throws {
+    if let value {
+      try visitSingularSFixed32Field(value: value, fieldNumber: fieldNumber)
+    }
+  }
+
+  public mutating func visitSingularSFixed64Field(optionalValue value: Int64?, fieldNumber: Int) throws {
+    if let value {
+      try visitSingularSFixed64Field(value: value, fieldNumber: fieldNumber)
+    }
+  }
+
+  public mutating func visitSingularBoolField(optionalValue value: Bool?, fieldNumber: Int) throws {
+    if let value {
+      try visitSingularBoolField(value: value, fieldNumber: fieldNumber)
+    }
+  }
+
+  public mutating func visitSingularStringField(optionalValue value: String?, fieldNumber: Int) throws {
+    if let value {
+      try visitSingularStringField(value: value, fieldNumber: fieldNumber)
+    }
+  }
+
+  public mutating func visitSingularBytesField(optionalValue value: Data?, fieldNumber: Int) throws {
+    if let value {
+      try visitSingularBytesField(value: value, fieldNumber: fieldNumber)
+    }
+  }
+
+  public mutating func visitSingularEnumField<E: Enum>(optionalValue value: E?, fieldNumber: Int) throws {
+    if let value {
+      try visitSingularEnumField(value: value, fieldNumber: fieldNumber)
+    }
+  }
+
+  public mutating func visitSingularMessageField<M: Message>(optionalValue value: M?, fieldNumber: Int) throws {
+    if let value {
+      try visitSingularMessageField(value: value, fieldNumber: fieldNumber)
+    }
+  }
+
+  public mutating func visitSingularGroupField<G: Message>(optionalValue value: G?, fieldNumber: Int) throws {
+    if let value {
+      try visitSingularGroupField(value: value, fieldNumber: fieldNumber)
+    }
+  }
+
+  public mutating func visitMapField<KeyType, ValueType: MapValueType>(
+    fieldType: _ProtobufMap<KeyType, ValueType>.Type,
+    maybeEmptyValue value: _ProtobufMap<KeyType, ValueType>.BaseType,
+    fieldNumber: Int) throws {
+      if !value.isEmpty {
+        try visitMapField(fieldType: fieldType, value: value, fieldNumber: fieldNumber)
+      }
+    }
+
+  public mutating func visitMapField<KeyType, ValueType>(
+    fieldType: _ProtobufEnumMap<KeyType, ValueType>.Type,
+    maybeEmptyValue value: _ProtobufEnumMap<KeyType, ValueType>.BaseType,
+    fieldNumber: Int) throws where ValueType.RawValue == Int {
+      if !value.isEmpty {
+        try visitMapField(fieldType: fieldType, value: value, fieldNumber: fieldNumber)
+      }
+    }
+
+  public mutating func visitMapField<KeyType, ValueType>(
+    fieldType: _ProtobufMessageMap<KeyType, ValueType>.Type,
+    maybeEmptyValue value: _ProtobufMessageMap<KeyType, ValueType>.BaseType,
+    fieldNumber: Int) throws {
+      if !value.isEmpty {
+        try visitMapField(fieldType: fieldType, value: value, fieldNumber: fieldNumber)
+      }
+    }
+
+
+  public mutating func visitRepeatedFloatField(maybeEmptyValue value: [Float], fieldNumber: Int) throws {
+    if !value.isEmpty {
+      try visitRepeatedFloatField(value: value, fieldNumber: fieldNumber)
+    }
+  }
+
+  public mutating func visitRepeatedDoubleField(maybeEmptyValue value: [Double], fieldNumber: Int) throws {
+    if !value.isEmpty {
+      try visitRepeatedDoubleField(value: value, fieldNumber: fieldNumber)
+    }
+  }
+
+  public mutating func visitRepeatedInt32Field(maybeEmptyValue value: [Int32], fieldNumber: Int) throws {
+    if !value.isEmpty {
+      try visitRepeatedInt32Field(value: value, fieldNumber: fieldNumber)
+    }
+  }
+
+  public mutating func visitRepeatedInt64Field(maybeEmptyValue value: [Int64], fieldNumber: Int) throws {
+    if !value.isEmpty {
+      try visitRepeatedInt64Field(value: value, fieldNumber: fieldNumber)
+    }
+  }
+
+  public mutating func visitRepeatedUInt32Field(maybeEmptyValue value: [UInt32], fieldNumber: Int) throws {
+    if !value.isEmpty {
+      try visitRepeatedUInt32Field(value: value, fieldNumber: fieldNumber)
+    }
+  }
+
+  public mutating func visitRepeatedUInt64Field(maybeEmptyValue value: [UInt64], fieldNumber: Int) throws {
+    if !value.isEmpty {
+      try visitRepeatedUInt64Field(value: value, fieldNumber: fieldNumber)
+    }
+  }
+
+  public mutating func visitRepeatedSInt32Field(maybeEmptyValue value: [Int32], fieldNumber: Int) throws {
+    if !value.isEmpty {
+      try visitRepeatedSInt32Field(value: value, fieldNumber: fieldNumber)
+    }
+  }
+
+  public mutating func visitRepeatedSInt64Field(maybeEmptyValue value: [Int64], fieldNumber: Int) throws {
+    if !value.isEmpty {
+      try visitRepeatedSInt64Field(value: value, fieldNumber: fieldNumber)
+    }
+  }
+
+  public mutating func visitRepeatedFixed32Field(maybeEmptyValue value: [UInt32], fieldNumber: Int) throws {
+    if !value.isEmpty {
+      try visitRepeatedFixed32Field(value: value, fieldNumber: fieldNumber)
+    }
+  }
+
+  public mutating func visitRepeatedFixed64Field(maybeEmptyValue value: [UInt64], fieldNumber: Int) throws {
+    if !value.isEmpty {
+      try visitRepeatedFixed64Field(value: value, fieldNumber: fieldNumber)
+    }
+  }
+
+  public mutating func visitRepeatedSFixed32Field(maybeEmptyValue value: [Int32], fieldNumber: Int) throws {
+    if !value.isEmpty {
+      try visitRepeatedSFixed32Field(value: value, fieldNumber: fieldNumber)
+    }
+  }
+
+  public mutating func visitRepeatedSFixed64Field(maybeEmptyValue value: [Int64], fieldNumber: Int) throws {
+    if !value.isEmpty {
+      try visitRepeatedSFixed64Field(value: value, fieldNumber: fieldNumber)
+    }
+  }
+
+  public mutating func visitRepeatedBoolField(maybeEmptyValue value: [Bool], fieldNumber: Int) throws {
+    if !value.isEmpty {
+      try visitRepeatedBoolField(value: value, fieldNumber: fieldNumber)
+    }
+  }
+
+  public mutating func visitRepeatedStringField(maybeEmptyValue value: [String], fieldNumber: Int) throws {
+    if !value.isEmpty {
+      try visitRepeatedStringField(value: value, fieldNumber: fieldNumber)
+    }
+  }
+
+  public mutating func visitRepeatedBytesField(maybeEmptyValue value: [Data], fieldNumber: Int) throws {
+    if !value.isEmpty {
+      try visitRepeatedBytesField(value: value, fieldNumber: fieldNumber)
+    }
+  }
+
+  public mutating func visitRepeatedEnumField<E: Enum>(maybeEmptyValue value: [E], fieldNumber: Int) throws {
+    if !value.isEmpty {
+      try visitRepeatedEnumField(value: value, fieldNumber: fieldNumber)
+    }
+  }
+
+  public mutating func visitRepeatedMessageField<M: Message>(maybeEmptyValue value: [M],
+                                                             fieldNumber: Int) throws {
+    if !value.isEmpty {
+      try visitRepeatedMessageField(value: value, fieldNumber: fieldNumber)
+    }
+  }
+
+  public mutating func visitRepeatedGroupField<G: Message>(maybeEmptyValue value: [G], fieldNumber: Int) throws {
+    if !value.isEmpty {
+      try visitRepeatedGroupField(value: value, fieldNumber: fieldNumber)
+    }
+  }
+
+  public mutating func visitPackedFloatField(maybeEmptyValue value: [Float], fieldNumber: Int) throws {
+    if !value.isEmpty {
+      try visitPackedFloatField(value: value, fieldNumber: fieldNumber)
+    }
+  }
+
+  public mutating func visitPackedDoubleField(maybeEmptyValue value: [Double], fieldNumber: Int) throws {
+    if !value.isEmpty {
+      try visitPackedDoubleField(value: value, fieldNumber: fieldNumber)
+    }
+  }
+
+  public mutating func visitPackedInt32Field(maybeEmptyValue value: [Int32], fieldNumber: Int) throws {
+    if !value.isEmpty {
+      try visitPackedInt32Field(value: value, fieldNumber: fieldNumber)
+    }
+  }
+
+  public mutating func visitPackedInt64Field(maybeEmptyValue value: [Int64], fieldNumber: Int) throws {
+    if !value.isEmpty {
+      try visitPackedInt64Field(value: value, fieldNumber: fieldNumber)
+    }
+  }
+
+  public mutating func visitPackedUInt32Field(maybeEmptyValue value: [UInt32], fieldNumber: Int) throws {
+    if !value.isEmpty {
+      try visitPackedUInt32Field(value: value, fieldNumber: fieldNumber)
+    }
+  }
+
+  public mutating func visitPackedUInt64Field(maybeEmptyValue value: [UInt64], fieldNumber: Int) throws {
+    if !value.isEmpty {
+      try visitPackedUInt64Field(value: value, fieldNumber: fieldNumber)
+    }
+  }
+
+  public mutating func visitPackedSInt32Field(maybeEmptyValue value: [Int32], fieldNumber: Int) throws {
+    if !value.isEmpty {
+      try visitPackedSInt32Field(value: value, fieldNumber: fieldNumber)
+    }
+  }
+
+  public mutating func visitPackedSInt64Field(maybeEmptyValue value: [Int64], fieldNumber: Int) throws {
+    if !value.isEmpty {
+      try visitPackedSInt64Field(value: value, fieldNumber: fieldNumber)
+    }
+  }
+
+  public mutating func visitPackedFixed32Field(maybeEmptyValue value: [UInt32], fieldNumber: Int) throws {
+    if !value.isEmpty {
+      try visitPackedFixed32Field(value: value, fieldNumber: fieldNumber)
+    }
+  }
+
+  public mutating func visitPackedFixed64Field(maybeEmptyValue value: [UInt64], fieldNumber: Int) throws {
+    if !value.isEmpty {
+      try visitPackedFixed64Field(value: value, fieldNumber: fieldNumber)
+    }
+  }
+
+  public mutating func visitPackedSFixed32Field(maybeEmptyValue value: [Int32], fieldNumber: Int) throws {
+    if !value.isEmpty {
+      try visitPackedSFixed32Field(value: value, fieldNumber: fieldNumber)
+    }
+  }
+
+  public mutating func visitPackedSFixed64Field(maybeEmptyValue value: [Int64], fieldNumber: Int) throws {
+    if !value.isEmpty {
+      try visitPackedSFixed64Field(value: value, fieldNumber: fieldNumber)
+    }
+  }
+
+  public mutating func visitPackedBoolField(maybeEmptyValue value: [Bool], fieldNumber: Int) throws {
+    if !value.isEmpty {
+      try visitPackedBoolField(value: value, fieldNumber: fieldNumber)
+    }
+  }
+
+  public mutating func visitPackedEnumField<E: Enum>(maybeEmptyValue value: [E], fieldNumber: Int) throws {
+    if !value.isEmpty {
+      try visitPackedEnumField(value: value, fieldNumber: fieldNumber)
+    }
+  }
 }

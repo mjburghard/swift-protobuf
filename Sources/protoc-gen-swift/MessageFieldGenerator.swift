@@ -200,16 +200,20 @@ class MessageFieldGenerator: FieldGeneratorBase, FieldGenerator {
             traitsArg = ""
         }
 
-        let varName = hasFieldPresence ? "v" : storedProperty
+        let varName = storedProperty
+        let label: String
 
         var usesLocals = false
-        let conditional: String
+        let conditional: String?
         if isRepeated {  // Also covers maps
-            conditional = "!\(varName).isEmpty"
+            conditional = nil
+            label = "maybeEmptyValue"
         } else if hasFieldPresence {
-            conditional = "let v = \(storedProperty)"
+            conditional = nil
+            label = "optionalValue"
             usesLocals = true
         } else {
+            label = "value"
             // At this point, the fields would be a primative type, and should only
             // be visted if it is the non default value.
             assert(fieldDescriptor.file.syntax == .proto3)
@@ -221,13 +225,30 @@ class MessageFieldGenerator: FieldGeneratorBase, FieldGenerator {
             }
         }
         assert(usesLocals == generateTraverseUsesLocals)
-        let prefix = usesLocals ? "try { " : ""
-        let suffix = usesLocals ? " }()" : ""
+        let prefix = "try {"
+        let suffix = "}()"
 
-        p.print("\(prefix)if \(conditional) {\n")
-        p.indent()
-        p.print("try visitor.\(visitMethod)(\(traitsArg)value: \(varName), fieldNumber: \(number))\n")
-        p.outdent()
-        p.print("}\(suffix)\n")
+        if let conditional {
+            if usesLocals {
+                p.print("\(prefix) ")
+            }
+            p.print("if \(conditional) {\n")
+            p.indent()
+        } else if usesLocals {
+            p.print("\(prefix)\n")
+            p.indent()
+        }
+        p.print("try visitor.\(visitMethod)(\(traitsArg)\(label): \(varName), fieldNumber: \(number))\n")
+        if conditional != nil {
+            p.outdent()
+            p.print("}")
+            if usesLocals {
+              p.print(" \(suffix)")
+            }
+            p.print("\n")
+        } else if usesLocals {
+            p.outdent()
+            p.print("\(suffix)\n")
+        }
     }
 }
